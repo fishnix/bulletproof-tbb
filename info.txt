@@ -1,0 +1,4 @@
+Name: Bulletproof-TBB v1.3 (s9y-bulletproof.com)
+Author: Bulletproof development team (and TheBudgetBabe)
+Date: 2008-11-29
+Require Serendipity: 1.2
