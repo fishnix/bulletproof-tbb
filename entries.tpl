@@ -19,8 +19,8 @@
                             		<div class="addthiswidget">
 						<!-- AddThis Button BEGIN -->
 						<div class="addthis_toolbox addthis_default_style"
-							addthis:url="{$entry.rdf_ident|escape: 'htmlall'}"
-							addthis:title="{$entry.title|escape: 'htmlall'}">
+							addthis:url="{$entry.rdf_ident|escape:htmlall}"
+							addthis:title="{$entry.title|escape:htmlall}">
 						<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
 						<a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
 						<a class="addthis_button_compact">Share</a>
@@ -114,8 +114,8 @@
                             		<div class="addthiswidget">
 						<!-- AddThis Button BEGIN -->
 						<div class="addthis_toolbox addthis_default_style"
-							addthis:url="{$entry.rdf_ident|escape: 'htmlall'}"
-							addthis:title="{$entry.title|escape: 'htmlall'}">
+							addthis:url="{$entry.rdf_ident|escape:htmlall}"
+							addthis:title="{$entry.title|escape:htmlall}">
 						<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
 						<a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
 						<a class="addthis_button_compact">Share</a>
@@ -255,8 +255,8 @@
                             		<div class="addthiswidget">
 						<!-- AddThis Button BEGIN -->
 						<div class="addthis_toolbox addthis_default_style"
-							addthis:url="{$entry.rdf_ident|escape: 'htmlall'}"
-							addthis:title="{$entry.title|escape: 'htmlall'}">
+							addthis:url="{$entry.rdf_ident|escape:htmlall}"
+							addthis:title="{$entry.title|escape:htmlall}">
 						<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
 						<a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
 						<a class="addthis_button_compact">Share</a>
@@ -331,8 +331,8 @@
                             		<div class="addthiswidget">
 						<!-- AddThis Button BEGIN -->
 						<div class="addthis_toolbox addthis_default_style"
-							addthis:url="{$entry.rdf_ident|escape: 'htmlall'}"
-							addthis:title="{$entry.title|escape: 'htmlall'}">
+							addthis:url="{$entry.rdf_ident|escape:htmlall}"
+							addthis:title="{$entry.title|escape:htmlall}">
 						<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
 						<a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
 						<a class="addthis_button_compact">Share</a>
