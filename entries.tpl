@@ -23,6 +23,7 @@
 							addthis:title="{$entry.title|escape:url}">
 						<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
 						<a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
+						<a class="addthis_button_google_plusone"></a>
 						<a class="addthis_button_compact">Share</a>
 						</div>
 						{literal}<script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>{/literal}
@@ -118,6 +119,7 @@
 							addthis:title="{$entry.title|escape:url}">
 						<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
 						<a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
+						<a class="addthis_button_google_plusone"></a>
 						<a class="addthis_button_compact">Share</a>
 						</div>
 						{literal}<script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>{/literal}
@@ -259,6 +261,7 @@
 							addthis:title="{$entry.title|escape:url}">
 						<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
 						<a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
+						<a class="addthis_button_google_plusone"></a>
 						<a class="addthis_button_compact">Share</a>
 						</div>
 						{literal}<script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>{/literal}
@@ -335,6 +338,7 @@
 							addthis:title="{$entry.title|escape:url}">
 						<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
 						<a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
+						<a class="addthis_button_google_plusone"></a>
 						<a class="addthis_button_compact">Share</a>
 						</div>
 						{literal}<script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>{/literal}
