@@ -164,9 +164,9 @@ width: 189px;
     border-bottom: 1px solid #dfdfdf;
 }
 
-#addthis {
-    margin: 0px 0;
-    padding: 0px 0;
+.addthis {
+    margin: 10px 0 10px 0;
+    padding: 0px 0 0 0;
 }
 
 .serendipity_pageFooter {
