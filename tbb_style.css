@@ -120,7 +120,7 @@ body {
 #serendipityLeftSideBar {
 background-color: #ffffff;
     color: #505050;
-    overflow: hidden; 
+    overflow: visible; 
 width: 326px;
 
 }
@@ -172,7 +172,7 @@ width: 189px;
     margin: 2px;
     padding: 0;
     border: 0px none;
-    overflow: hidden;
+    overflow: visible;
     height: 100%; 
 }
 
