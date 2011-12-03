@@ -99,7 +99,7 @@
                 <!-- quicksearch option in the navigational link menu bar only when navbar is    -->
                 <!-- above or below the banner                                                   -->
                 {if $template_option.sitenav_quicksearch == 'true'}
-                    <form action="http://www.google.com/cse" id="cse-search-box">
+                    <form action="http://www.thebudgetbabe.com/pages/searchresults.html" id="cse-search-box">
   <div>
     <input type="hidden" name="cx" value="partner-pub-0870076065709133:6y4kqgfqqh6" />
     <input type="hidden" name="ie" value="ISO-8859-1" />
@@ -109,6 +109,7 @@
 </form>
 
 <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
                 {/if}
             </div>
         {/if}
@@ -133,7 +134,7 @@
                 <!-- quicksearch option in the navigational link menu bar only when navbar is    -->
                 <!-- above or below the banner                                                   -->
                 {if $template_option.sitenav_quicksearch == 'true'}
-                    <form action="http://www.google.com/cse" id="cse-search-box">
+                    <form action="http://www.thebudgetbabe.com/pages/searchresults.html" id="cse-search-box">
   <div>
     <input type="hidden" name="cx" value="partner-pub-0870076065709133:6y4kqgfqqh6" />
     <input type="hidden" name="ie" value="ISO-8859-1" />
@@ -143,6 +144,7 @@
 </form>
 
 <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
                 {/if}
             </div>
         {/if}
