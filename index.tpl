@@ -99,10 +99,10 @@
                 <!-- quicksearch option in the navigational link menu bar only when navbar is    -->
                 <!-- above or below the banner                                                   -->
                 {if $template_option.sitenav_quicksearch == 'true'}
-                    <form action="http://www.thebudgetbabe.com/pages/searchresults.html" id="cse-search-box">
+                    <form action="http://stage-tbb.fishnix.org/pages/searchresults.html" id="cse-search-box">
   <div>
-    <input type="hidden" name="cx" value="partner-pub-0870076065709133:6y4kqgfqqh6" />
-    <input type="hidden" name="ie" value="ISO-8859-1" />
+    <input type="hidden" name="cx" value="partner-pub-0870076065709133:4683431631" />
+    <input type="hidden" name="ie" value="UTF-8" />
     <input type="text" name="q" size="31" />
     <input type="submit" name="sa" value="Search" />
   </div>
@@ -134,16 +134,15 @@
                 <!-- quicksearch option in the navigational link menu bar only when navbar is    -->
                 <!-- above or below the banner                                                   -->
                 {if $template_option.sitenav_quicksearch == 'true'}
-                    <form action="http://www.thebudgetbabe.com/pages/searchresults.html" id="cse-search-box">
-  <div>
-    <input type="hidden" name="cx" value="partner-pub-0870076065709133:6y4kqgfqqh6" />
-    <input type="hidden" name="ie" value="ISO-8859-1" />
-    <input type="text" name="q" size="31" />
-    <input type="submit" name="sa" value="Search" />
-  </div>
-</form>
-
-<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+                    <div id="cse-search-results"></div>
+<script type="text/javascript">
+  var googleSearchIframeName = "cse-search-results";
+  var googleSearchFormName = "cse-search-box";
+  var googleSearchFrameWidth = 800;
+  var googleSearchDomain = "www.google.com";
+  var googleSearchPath = "/cse";
+</script>
+<script type="text/javascript" src="http://www.google.com/afsonline/show_afs_search.js"></script>
 
                 {/if}
             </div>
