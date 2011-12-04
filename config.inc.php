@@ -278,6 +278,17 @@ $template_config = array(
         'default'       => 'true',
     ),
     array(
+        'var'           => 'googlesearch',
+        'name'          => GOOGLESEARCH,
+        'type'          => 'boolean',
+        'default'       => 'false',
+    ),
+    array(
+        'var'           => 'googlesearch_partner_id',
+        'name'          => GOOGLESEARCH_PARTNER_ID,
+        'type'          => 'string',
+    ),
+    array(
         'var'           => 'sitenav_sidebar_title',
         'name'          => SITENAV_TITLE,
         'type'          => 'string',
