@@ -71,6 +71,8 @@
 @define('SITENAV_RIGHT','At the top of the right sidebar');
 @define('SITENAV_FOOTER','Also show navigation links in the footer (not displayed regardless of choice if "No navbar" is selected above)');
 @define('SITENAV_QUICKSEARCH','Show quicksearch in the navbar (only works in navbar above or below banner; quicksearch sidebar item will be suppressed automagically)');
+@define('GOOGLESEARCH','Override quicksearch with a google search box.');
+@define('GOOGLESEARCH_PARTNER_ID','Partner ID to be published in the search form');
 @define('SITENAV_TITLE','Title for navigation menu (only displayed when located at the top of a sidebar)');
 @define('SITENAV_TITLE_TEXT','Main menu');
 @define('NAVLINK_AMOUNT', 'Enter number of links in the navbar (needs reload of the Manage Styles page)');
