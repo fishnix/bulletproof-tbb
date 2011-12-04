@@ -99,12 +99,17 @@
                 <!-- quicksearch option in the navigational link menu bar only when navbar is    -->
                 <!-- above or below the banner                                                   -->
                 {if $template_option.sitenav_quicksearch == 'true'}
-                    <form id="searchform" action="{$serendipityHTTPPath}{$serendipityIndexFile}" method="get">
-                        <input type="hidden" name="serendipity[action]" value="search" />
-                        <input alt="{$CONST.QUICKSEARCH}" type="text" id="serendipityQuickSearchTermField" name="serendipity[searchTerm]" value="{$CONST.QUICKSEARCH}..." onfocus="if(this.value=='{$CONST.QUICKSEARCH}...')value=''" onblur="if(this.value=='')value='{$CONST.QUICKSEARCH}...';" />
-                        <div id="LSResult" style="display: none;"><div id="LSShadow"></div></div>
-                    </form>
-                    {serendipity_hookPlugin hook="quicksearch_plugin" hookAll="true"}
+                    <form action="http://www.google.com/cse" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-0870076065709133:4683431631" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="31" />
+    <input type="submit" name="sa" value="Search" />
+  </div>
+</form>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
                 {/if}
             </div>
         {/if}
@@ -129,12 +134,17 @@
                 <!-- quicksearch option in the navigational link menu bar only when navbar is    -->
                 <!-- above or below the banner                                                   -->
                 {if $template_option.sitenav_quicksearch == 'true'}
-                    <form id="searchform" action="{$serendipityHTTPPath}{$serendipityIndexFile}" method="get">
-                        <input type="hidden" name="serendipity[action]" value="search" />
-                        <input alt="{$CONST.QUICKSEARCH}" type="text" id="serendipityQuickSearchTermField" name="serendipity[searchTerm]" value="{$CONST.QUICKSEARCH}..." onfocus="if(this.value=='{$CONST.QUICKSEARCH}...')value=''" onblur="if(this.value=='')value='{$CONST.QUICKSEARCH}...';" />
-                        <div id="LSResult" style="display: none;"><div id="LSShadow"></div></div>
-                    </form>
-                    {serendipity_hookPlugin hook="quicksearch_plugin" hookAll="true"}
+                    <form action="http://www.google.com/cse" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-0870076065709133:4683431631" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="31" />
+    <input type="submit" name="sa" value="Search" />
+  </div>
+</form>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
                 {/if}
             </div>
         {/if}
