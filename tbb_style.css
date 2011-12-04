@@ -263,6 +263,10 @@ input#serendipityQuickSearchTermField {
     border: 1px solid #1f5f7f;
 }
 
+#sitenav #cse-search-box input {
+    border: 1px solid #1f5f7f;
+}
+
 blockquote {
     background: #d6e2e8;
     color: #505050;
