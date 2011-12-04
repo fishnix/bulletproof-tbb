@@ -99,7 +99,7 @@
                 <!-- quicksearch option in the navigational link menu bar only when navbar is    -->
                 <!-- above or below the banner                                                   -->
                 {if $template_option.sitenav_quicksearch == 'true'}
-                    <form action="http://stage-tbb.fishnix.org/pages/searchresults.html" id="cse-search-box">
+                    <form action="http://www.google.com/cse" id="cse-search-box">
   <div>
     <input type="hidden" name="cx" value="partner-pub-0870076065709133:4683431631" />
     <input type="hidden" name="ie" value="UTF-8" />
@@ -134,7 +134,7 @@
                 <!-- quicksearch option in the navigational link menu bar only when navbar is    -->
                 <!-- above or below the banner                                                   -->
                 {if $template_option.sitenav_quicksearch == 'true'}
-                    <form action="http://stage-tbb.fishnix.org/pages/searchresults.html" id="cse-search-box">
+                    <form action="http://www.google.com/cse" id="cse-search-box">
   <div>
     <input type="hidden" name="cx" value="partner-pub-0870076065709133:4683431631" />
     <input type="hidden" name="ie" value="UTF-8" />
