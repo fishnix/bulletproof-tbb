@@ -102,7 +102,7 @@
 					{if $template_option.googlesearch == 'true'}
 	                    <form action="http://www.google.com/cse" id="cse-search-box">
 	 					 <div>
-						    <input type="hidden" name="cx" value="$template_option.googlesearch_partner_id" />
+						    <input type="hidden" name="cx" value="{$template_option.googlesearch_partner_id}" />
 						    <input type="hidden" name="ie" value="UTF-8" />
 						    <input type="text" name="q" size="31" />
 						    <input type="submit" name="sa" value="Search" />
@@ -144,7 +144,7 @@
 				{if $template_option.googlesearch == 'true'}
                     <form action="http://www.google.com/cse" id="cse-search-box">
  					 <div>
-					    <input type="hidden" name="cx" value="$template_option.googlesearch_partner_id" />
+					    <input type="hidden" name="cx" value="{$template_option.googlesearch_partner_id}" />
 					    <input type="hidden" name="ie" value="UTF-8" />
 					    <input type="text" name="q" size="31" />
 					    <input type="submit" name="sa" value="Search" />
