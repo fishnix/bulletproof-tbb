@@ -65,6 +65,7 @@
     {serendipity_hookPlugin hook="frontend_header"}
 {/if}
 
+{literal}
 	<!-- Begin comScore Tag -->
 	<script>
 	  var _comscore = _comscore || [];
@@ -79,7 +80,7 @@
 	  <img src="http://b.scorecardresearch.com/p?c1=2&c2=6035261&cv=2.0&cj=1" />
 	</noscript>
 	<!-- End comScore Tag -->
-	
+
 	<!-- AUDIENCESCIENCE AD TAG CODE -->
 	<script type="text/javascript">
 	<!--
@@ -109,7 +110,8 @@
 	ord=Math.random()*10000000000000000;
 	//]]>
 	</script>
-	
+{/literal}
+
 
 {if $is_raw_mode != true}
 
@@ -495,12 +497,14 @@
 
 {$raw_data}
 
+{literal}
 	<!-- Audience Science - Start -->
 	<script src="http://js.revsci.net/gateway/gw.js?csid=F10931"></script>
 	<script>
 	F10931.DM_addEncToLoc("AS_Section","thebudgetbabe"); F10931.DM_tag();
 	</script>
 	<!-- Audience Science - End -->
+{/literal}
 
 {serendipity_hookPlugin hook="frontend_footer"}
 {if $is_embedded != true}
