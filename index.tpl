@@ -65,6 +65,52 @@
     {serendipity_hookPlugin hook="frontend_header"}
 {/if}
 
+	<!-- Begin comScore Tag -->
+	<script>
+	  var _comscore = _comscore || [];
+	  _comscore.push({ c1: "2", c2: "6035261" });
+	  (function() {
+	    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+	    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+	    el.parentNode.insertBefore(s, el);
+	  })();
+	</script>
+	<noscript>
+	  <img src="http://b.scorecardresearch.com/p?c1=2&c2=6035261&cv=2.0&cj=1" />
+	</noscript>
+	<!-- End comScore Tag -->
+	
+	<!-- AUDIENCESCIENCE AD TAG CODE -->
+	<script type="text/javascript">
+	<!--
+	var rsi_segs = [];
+	var segs_beg=document.cookie.indexOf('rsi_segs=');
+	if (segs_beg>=0){
+	segs_beg=document.cookie.indexOf('=',segs_beg)+1;
+	if(segs_beg>0){
+	var segs_end=document.cookie.indexOf(';',segs_beg);
+	if(segs_end==-1) segs_end=document.cookie.length;
+	rsi_segs=document.cookie.substring(segs_beg,segs_end)
+	.split('|');
+	}
+	}
+	var segLen=20;
+	var segQS="";
+	if (rsi_segs.length<segLen){segLen=rsi_segs.length}
+	for (var i=0;i<segLen;i++){
+	segQS+=("asi"+"="+rsi_segs[i]+";")
+	}
+	//-->
+	</script>
+	<!-- END AUDIENCESCIENCE AD TAG CODE -->
+
+	<script type="text/javascript">
+	//<![CDATA[
+	ord=Math.random()*10000000000000000;
+	//]]>
+	</script>
+	
+
 {if $is_raw_mode != true}
 
     <!-- #skiplinks: these are links used to navigate quickly in text-based browsers -->
@@ -448,6 +494,13 @@
 {/if}
 
 {$raw_data}
+
+	<!-- Audience Science - Start -->
+	<script src="http://js.revsci.net/gateway/gw.js?csid=F10931"></script>
+	<script>
+	F10931.DM_addEncToLoc("AS_Section","thebudgetbabe"); F10931.DM_tag();
+	</script>
+	<!-- Audience Science - End -->
 
 {serendipity_hookPlugin hook="frontend_footer"}
 {if $is_embedded != true}
