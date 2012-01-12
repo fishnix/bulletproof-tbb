@@ -59,6 +59,9 @@
 // Counter code
 @define('COUNTER_CODE', 'Insert code for counter and/or web stat tool');
 @define('USE_COUNTER', 'Choose whether to use counter code inserted above');
+// Leaderboard Code -- inserted at the top of the body
+@define('LEADERBOARD_CODE', 'Insert code at the top of the body -- like a leaderboard ad');
+@define('USE_LEADERBOARD',  'Choose whether to use the leaderboard code inserted above');
 // Additional footer text
 @define('FOOTER_TEXT', 'Use this to insert additional text into the page footer');
 @define('USE_FOOTER_TEXT', 'Integrate footer text');
