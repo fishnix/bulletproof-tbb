@@ -110,6 +110,18 @@
 	ord=Math.random()*10000000000000000;
 	//]]>
 	</script>
+	<center><table cellpadding="0" cellspacing="0" border="0">
+	<tr>
+	<td>
+		<!-- begin ad tag 728x90 -->
+		<script type="text/javascript">
+		document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/sc.thebudgetbabe/other;ch=fashion;ch=luxury;ch=beauty;sz=728x90;'+segQS+'ord='+ord+ '?"><\/script>');
+		//]]>
+		</script>
+		<!-- end ad tag -->
+	</td></tr>
+	</table>
+	</center>
 {/literal}
 
 
