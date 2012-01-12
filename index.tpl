@@ -65,64 +65,10 @@
     {serendipity_hookPlugin hook="frontend_header"}
 {/if}
 
-{literal}
-	<!-- Begin comScore Tag -->
-	<script>
-	  var _comscore = _comscore || [];
-	  _comscore.push({ c1: "2", c2: "6035261" });
-	  (function() {
-	    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
-	    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
-	    el.parentNode.insertBefore(s, el);
-	  })();
-	</script>
-	<noscript>
-	  <img src="http://b.scorecardresearch.com/p?c1=2&c2=6035261&cv=2.0&cj=1" />
-	</noscript>
-	<!-- End comScore Tag -->
 
-	<!-- AUDIENCESCIENCE AD TAG CODE -->
-	<script type="text/javascript">
-	<!--
-	var rsi_segs = [];
-	var segs_beg=document.cookie.indexOf('rsi_segs=');
-	if (segs_beg>=0){
-	segs_beg=document.cookie.indexOf('=',segs_beg)+1;
-	if(segs_beg>0){
-	var segs_end=document.cookie.indexOf(';',segs_beg);
-	if(segs_end==-1) segs_end=document.cookie.length;
-	rsi_segs=document.cookie.substring(segs_beg,segs_end)
-	.split('|');
-	}
-	}
-	var segLen=20;
-	var segQS="";
-	if (rsi_segs.length<segLen){segLen=rsi_segs.length}
-	for (var i=0;i<segLen;i++){
-	segQS+=("asi"+"="+rsi_segs[i]+";")
-	}
-	//-->
-	</script>
-	<!-- END AUDIENCESCIENCE AD TAG CODE -->
-
-	<script type="text/javascript">
-	//<![CDATA[
-	ord=Math.random()*10000000000000000;
-	//]]>
-	</script>
-	<center><table cellpadding="0" cellspacing="0" border="0">
-	<tr>
-	<td>
-		<!-- begin ad tag 728x90 -->
-		<script type="text/javascript">
-		document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/sc.thebudgetbabe/other;ch=fashion;ch=luxury;ch=beauty;sz=728x90;'+segQS+'ord='+ord+ '?"><\/script>');
-		//]]>
-		</script>
-		<!-- end ad tag -->
-	</td></tr>
-	</table>
-	</center>
-{/literal}
+{if $template_option.leaderboard_code_toggle == 'true'}
+    <div class="leaderboard_code">{$template_option.leaderboard_code}</div>
+{/if}
 
 
 {if $is_raw_mode != true}

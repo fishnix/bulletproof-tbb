@@ -231,6 +231,18 @@ $template_config = array(
                                  'icon' => PREV_NEXT_ICON)
     ),
     array(
+        'var'           => 'leaderboard_code',
+        'name'          => LEADERBOARD_CODE,
+        'type'          => 'text',
+        'default'       => '',
+    ),
+    array(
+        'var'           => 'leaderboard_code_toggle',
+        'name'          => USE_LEADERBOARD,
+        'type'          => 'boolean',
+        'default'       => 'false'
+    ),
+    array(
         'var'           => 'counter_code',
         'name'          => COUNTER_CODE,
         'type'          => 'text',
