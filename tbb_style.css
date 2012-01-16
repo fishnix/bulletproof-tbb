@@ -182,6 +182,16 @@ width: 326px;
     
 }
 
+#content h3 a {
+    color: #df077a;
+    
+}
+
+#content h3 a:hover {
+    color: #c9a480;
+
+}
+
 .serendipity_commentsTitle {
     font-size: 100%;
     font-weight: bold;
