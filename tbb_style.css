@@ -85,7 +85,7 @@ body {
 }
 
 #sitenav {
-    background-color: #efefef; 
+    background-color: #ffffff; 
     border-top: 2px solid #dfdfdf;
     border-bottom: 4px solid #dfdfdf;
     margin: 0;
@@ -103,7 +103,7 @@ body {
 }
 
 #sitenav ul a{
-    border-bottom: 4px solid #efefef;
+    border-bottom: 4px solid #ffffff;
     margin: 0 2px 0 0;
     padding: 6px 10px 6px 10px;
     float: left;
@@ -184,7 +184,7 @@ width: 189px;
     padding: 8px 5px 8px 5px;
     border-left: 4px solid #dfdfdf;
     border-bottom: 1px solid #dfdfdf;
-    background-color: #efefef;
+    background-color: #ffffff;
     margin: 0;
 }
 
@@ -192,7 +192,7 @@ width: 189px;
     font-size: 90%;
     padding: 10px;
     border-left: 4px solid #dfdfdf;
-    background-color: #efefef;
+    background-color: #ffffff;
     margin: 0;
 }
 
@@ -232,7 +232,7 @@ width: 189px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: .2em;
-    background-color: #efefef;
+    background-color: #ffffff;
     margin: 0 0 2px 0;
     padding: 0;
     overflow: hidden;
@@ -246,7 +246,7 @@ width: 189px;
 
 #footer {
     font-size: 80%;
-    background-color: #dfdfdf;
+    background-color: #ffffff;
 }
 
 img.serendipity_entryIcon {
@@ -286,15 +286,15 @@ blockquote p {
 .serendipity_comment_author_self comment_evenbox,
 .comment_evenbox {
     line-height: 1.2em;   
-    border: 1px dotted #3D98C5;
+    border: 1px dotted #efefef;
     background: #efefef;
 }
 
 .serendipity_comment_author_self comment_oddbox,
 .comment_oddbox {
     line-height: 1.2em;
-    border: 1px dotted #3D98C5 ;
-    background: #dfdfdf;
+    border: 1px dotted #efefef;
+    background: #ffffff;
 }
 
 .serendipity_commentsTitle {
@@ -307,5 +307,5 @@ blockquote p {
 
 .s9y_wrap {
     font-size: 69%;
-    background: #fff;
+    background: #ffffff;
 }
