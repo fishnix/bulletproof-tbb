@@ -42,8 +42,8 @@ body {
     font-family:  verdana, arial, helvetica, sans-serif;
     font-size: 69%;
     background-color: #fff;
-    border-left: 8px solid #dfdfdf;
-    border-right: 8px solid #dfdfdf;
+    border-left: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf;
     margin: 0px auto;
 }
 
