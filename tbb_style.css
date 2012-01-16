@@ -87,8 +87,8 @@ body {
 
 #sitenav {
     background-color: #ffffff; 
-    border-top: 2px solid #dfdfdf;
-    border-bottom: 4px solid #dfdfdf;
+    border-top: 0px solid #dfdfdf;
+    border-bottom: 0px solid #dfdfdf;
     margin: 0;
     padding: 0;
 }
