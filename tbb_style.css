@@ -151,6 +151,11 @@ width: 326px;
     
 }
 
+#content border:style {
+    border-left: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf;
+}
+
 #content h3 {
     font-size: 100%;
     margin: 10px 0 0 0;
@@ -167,8 +172,6 @@ width: 326px;
     font-size: 120%;
     letter-spacing: .2em;
     margin: 5px 0 15px 0;
-    border-left: 1px solid #dfdfdf;
-    border-right: 1px solid #dfdfdf;
     
 }
 
