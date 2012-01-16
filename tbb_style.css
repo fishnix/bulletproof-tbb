@@ -131,6 +131,10 @@ width: 189px;
     
 }
 
+#serendipityLeftSideBar a:hover {
+    color: #c9a480;
+    
+}
 
 #serendipityRightSideBar {
     background-color: #ffffff;
