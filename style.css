@@ -10,10 +10,8 @@
 
 body {
     font: 115.01% Verdana, Arial, Helvetica, sans-serif;
-    background: #fff;
-    color: #000;
-    background-image: url({TEMPLATE_PATH}img/quattro-pale-gray-BB.gif);
-    background-repeat: repeat;
+    background-color: #ffffff;
+
 }
 
 /*** General styles ***/
