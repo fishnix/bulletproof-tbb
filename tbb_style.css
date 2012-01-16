@@ -147,13 +147,11 @@ width: 326px;
 #content {
     background-color: #ffffff;
     color: #505050;
-    width: 470px;
-    
-}
+    width: 472px;
+    border-left: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf;
 
-#content border:style {
-    left: 1px solid #dfdfdf;
-    right: 1px solid #dfdfdf;
+
 }
 
 #content h3 {
