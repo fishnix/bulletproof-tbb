@@ -144,6 +144,17 @@ width: 326px;
 
 }
 
+#serendipityRightSideBar a {
+    color: #df077a;
+    
+}
+
+#serendipityRightSideBar a:hover {
+    color: #c9a480;
+    
+}
+
+
 #content {
     background-color: #ffffff;
     color: #505050;
@@ -153,6 +164,17 @@ width: 326px;
 
 
 }
+
+#content a {
+    color: #df077a;
+
+}
+
+#content a:hover {
+    color: #c9a480;
+    
+}
+    
 
 #content h3 {
     font-size: 100%;
