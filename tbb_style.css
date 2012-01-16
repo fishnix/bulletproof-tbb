@@ -202,7 +202,7 @@ width: 326px;
 .serendipitySideBarContent {
     font-size: 90%;
     padding: 10px;
-    border-left: 4px solid #dfdfdf;
+    border-left: 0px solid #dfdfdf;
     background-color: #ffffff;
     margin: 0;
 }
