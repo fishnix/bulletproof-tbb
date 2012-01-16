@@ -148,8 +148,6 @@ width: 326px;
     background-color: #ffffff;
     color: #505050;
     width: 470px;
-    border-left: 1px solid #dfdfdf;
-    border-right: 1px solid #dfdfdf;
     
 }
 
@@ -169,6 +167,9 @@ width: 326px;
     font-size: 120%;
     letter-spacing: .2em;
     margin: 5px 0 15px 0;
+    border-left: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf;
+    
 }
 
 .serendipity_entryFooter {
