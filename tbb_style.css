@@ -113,9 +113,9 @@ body {
 
 #sitenav ul a:hover,
 #sitenav .currentpage a {
-    border-bottom: 4px solid #FFCC33; 
+    border-bottom: 1px dotted #FFCC33; 
     padding: 6px 10px 6px 10px;
-    background-color: #efefef;
+    background-color: #ffffff;
 }
 
 #serendipityLeftSideBar {
