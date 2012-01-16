@@ -152,8 +152,8 @@ width: 326px;
 }
 
 #content border:style {
-    border-left: 1px solid #dfdfdf;
-    border-right: 1px solid #dfdfdf;
+    left: 1px solid #dfdfdf;
+    right: 1px solid #dfdfdf;
 }
 
 #content h3 {
