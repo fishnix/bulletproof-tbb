@@ -20,12 +20,12 @@
 }
 
 a {
-    color: #e2006a;
+    color: #000000;
     text-decoration: none;
 }
 
 a:hover {
-    color: #FFCC33;
+    color: #c9a480;
 }
 
 /*
@@ -120,16 +120,16 @@ body {
 #serendipityLeftSideBar {
 background-color: #ffffff;
     color: #505050;
-    overflow: visible; 
-width: 326px;
+    overflow: hidden; 
+width: 189px;
 
 }
 
 #serendipityRightSideBar {
     background-color: #ffffff;
     color: #505050;
-    overflow: hidden; 
-width: 189px;
+    overflow: visible; 
+width: 326px;
 
 }
 
