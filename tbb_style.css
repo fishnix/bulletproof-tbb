@@ -193,7 +193,7 @@ width: 326px;
     letter-spacing: .2em;
     color: #505050;
     padding: 8px 5px 8px 5px;
-    border-left: 4px solid #dfdfdf;
+    border-left: 0px solid #dfdfdf;
     border-bottom: 1px solid #dfdfdf;
     background-color: #ffffff;
     margin: 0;
@@ -228,7 +228,7 @@ width: 326px;
 }
 
 #sbsitenav ul a {
-    border-left: 4px solid #dfdfdf;
+    border-left: 0px solid #dfdfdf;
     padding: 8px 0px 8px 10px;
     display: block;
 }
