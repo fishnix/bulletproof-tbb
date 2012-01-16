@@ -182,15 +182,6 @@ width: 326px;
     
 }
 
-#content h3 a {
-    color: #df077a;
-    
-}
-
-#content h3 a:hover {
-    color: #c9a480;
-
-}
 
 .serendipity_commentsTitle {
     font-size: 100%;
@@ -203,6 +194,16 @@ width: 326px;
     letter-spacing: .2em;
     margin: 5px 0 15px 0;
     
+}
+
+#content h4 a {
+    color: #000000;
+    
+}
+
+#content h4 a:hover {
+    color: #c9a480;
+
 }
 
 .serendipity_entryFooter {
