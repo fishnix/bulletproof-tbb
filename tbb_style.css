@@ -28,6 +28,7 @@ a:hover {
     color: #c9a480;
 }
 
+
 /*
 body {
     font: 100.01% Verdana, Arial, Helvetica, sans-serif;
@@ -124,6 +125,12 @@ background-color: #ffffff;
 width: 189px;
 
 }
+
+#serendipityLeftSideBar a {
+    color: #df077a;
+    
+}
+
 
 #serendipityRightSideBar {
     background-color: #ffffff;
