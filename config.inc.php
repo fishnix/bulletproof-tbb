@@ -237,6 +237,12 @@ $template_config = array(
         'default'       => '',
     ),
     array(
+        'var'           => 'additional_head_code_toggle',
+        'name'          => USE_ADDITIONAL_HEAD_CODE,
+        'type'          => 'boolean',
+        'default'       => 'false'
+    ),
+    array(
         'var'           => 'leaderboard_code',
         'name'          => LEADERBOARD_CODE,
         'type'          => 'text',
