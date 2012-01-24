@@ -60,7 +60,8 @@
 @define('COUNTER_CODE', 'Insert code for counter and/or web stat tool');
 @define('USE_COUNTER', 'Choose whether to use counter code inserted above');
 // Code in the head area
-@define('ADDITIONAL_HEAD_CODE', 'Insert additional code in the head.')
+@define('ADDITIONAL_HEAD_CODE', 'Insert additional code in the head.');
+@define('USE_ADDITIONAL_HEAD_CODE', 'Choose whether to use the additional code inserted above');
 // Leaderboard Code -- inserted at the top of the body
 @define('LEADERBOARD_CODE', 'Insert code at the top of the body -- like a leaderboard ad');
 @define('USE_LEADERBOARD',  'Choose whether to use the leaderboard code inserted above');
