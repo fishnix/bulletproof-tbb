@@ -231,6 +231,12 @@ $template_config = array(
                                  'icon' => PREV_NEXT_ICON)
     ),
     array(
+        'var'           => 'additional_head_code',
+        'name'          => ADDITIONAL_HEAD_CODE,
+        'type'          => 'text',
+        'default'       => '',
+    ),
+    array(
         'var'           => 'leaderboard_code',
         'name'          => LEADERBOARD_CODE,
         'type'          => 'text',
