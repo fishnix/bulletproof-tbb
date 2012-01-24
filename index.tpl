@@ -459,15 +459,6 @@
 
 {$raw_data}
 
-{literal}
-	<!-- Audience Science - Start -->
-	<script src="http://js.revsci.net/gateway/gw.js?csid=F10931"></script>
-	<script>
-	F10931.DM_addEncToLoc("AS_Section","thebudgetbabe"); F10931.DM_tag();
-	</script>
-	<!-- Audience Science - End -->
-{/literal}
-
 {serendipity_hookPlugin hook="frontend_footer"}
 {if $is_embedded != true}
     </body>
