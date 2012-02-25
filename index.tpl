@@ -134,6 +134,7 @@
         <!-- #serendipity_banner: this is the header area. it holds the blog title and   -->
         <!--                      description headlines                                  -->
         <div id="serendipity_banner">
+<a class="homelinkimage" href="{$serendipityBaseURL}"></a>
             <h1><span class="{if $template_option.firbtitle == 'false'}in{/if}visible"><a class="homelink1" href="{$serendipityBaseURL}">{$head_title|@default:$blogTitle|truncate:80:" ..."}</a></span></h1>
             <h2><span class="{if $template_option.firbdescr == 'false'}in{/if}visible"><a class="homelink2" href="{$serendipityBaseURL}">{$head_subtitle|@default:$blogDescription}</a></span></h2>
         </div>
