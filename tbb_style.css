@@ -359,3 +359,10 @@ blockquote p {
     font-size: 69%;
     background: #ffffff;
 }
+
+.homelinkimage {
+    position: relative;
+    width: 100%;
+    height: 140px;
+    display: block
+}
