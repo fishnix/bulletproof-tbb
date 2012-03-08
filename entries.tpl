@@ -25,7 +25,6 @@
 								<a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
 								<a class="addthis_counter addthis_pill_style"></a>
 							</div>
-							{literal}<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>{/literal}
 							{literal}<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=budgetbabe"></script>{/literal}
 							<!-- AddThis Button END -->
 					</div>
@@ -120,7 +119,6 @@
 							<a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
 							<a class="addthis_counter addthis_pill_style"></a>
 						</div>
-						{literal}<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>{/literal}
 						{literal}<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=budgetbabe"></script>{/literal}
 						<!-- AddThis Button END -->
 					</div>
@@ -261,7 +259,6 @@
 							<a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
 							<a class="addthis_counter addthis_pill_style"></a>
 						</div>
-						{literal}<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>{/literal}
 						{literal}<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=budgetbabe"></script>{/literal}
 						<!-- AddThis Button END -->
 					</div>
