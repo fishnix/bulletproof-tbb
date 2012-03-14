@@ -62,6 +62,8 @@
 				{if $template_option.additional_head_code_toggle == 'true'}
 					{$template_option.additional_head_code}
 				{/if}
+				{literal}<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>{/literal}
+				{literal}<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=budgetbabe"></script>{/literal}
     </head>
 
     <body{if $template_option.jscolumns == 'true'} onload="P7_equalCols2(0,{if $template_option.layouttype != '1col'}'content','DIV',{/if}'serendipityLeftSideBar','DIV','serendipityRightSideBar','DIV')"{/if}>

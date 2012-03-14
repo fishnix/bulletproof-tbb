@@ -14,33 +14,31 @@
     {foreach from=$dategroup.entries item="entry"}
         <h4 class="entry-title serendipity_title"><a href="{$entry.link}" rel="bookmark">{$entry.title}</a></h4>
 
-                        {if $template_option.addthiswidget_loc == 'top' }
-				{if $template_option.addthiswidget == 'fancy' }
-            <div class="addthiswidget">
-							<!-- AddThis Button BEGIN -->
-							<div class="addthis_toolbox addthis_default_style"
-									addthis:url="{$entry.rdf_ident}"
-									addthis:title="{$entry.title}">
-								<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-								<a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
-								<a class="addthis_counter addthis_pill_style"></a>
-							</div>
-							{literal}<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=budgetbabe"></script>{/literal}
-							<!-- AddThis Button END -->
-					</div>
-				{else}
-					{if $template_option.addthiswidget == 'classic' }
-						<div class="addthiswidget">
-							<script type="text/javascript">
-								addthis_url = '{$entry.rdf_ident|escape:url}';
-								addthis_title = '{$entry.title|escape:url}';
-								addthis_pub = '{$template_option.addthisaccount}';
-							</script>
-							<script type="text/javascript" src="http://s7.addthis.com/js/addthis_widget.php?v=12" ></script>
+        {if $template_option.addthiswidget_loc == 'top' }
+					{if $template_option.addthiswidget == 'fancy' }
+	            <div class="addthiswidget">
+								<!-- AddThis Button BEGIN -->
+								<div class="addthis_toolbox addthis_default_style"
+										addthis:url="{$entry.rdf_ident}"
+										addthis:title="{$entry.title}">
+									<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+									<a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
+									<a class="addthis_counter addthis_pill_style"></a>
+								</div>
+								<!-- AddThis Button END -->
 						</div>
+					{else}
+						{if $template_option.addthiswidget == 'classic' }
+							<div class="addthiswidget">
+								<script type="text/javascript">
+									addthis_url = '{$entry.rdf_ident|escape:url}';
+									addthis_title = '{$entry.title|escape:url}';
+									addthis_pub = '{$template_option.addthisaccount}';
+								</script>
+							</div>
+						{/if}
 					{/if}
 				{/if}
-                        {/if}
 
         <div class="serendipity_entry serendipity_entry_author_{$entry.author|@makeFilename} {if $entry.is_entry_owner}serendipity_entry_author_self{/if}">
 
@@ -109,31 +107,29 @@
                         {$entry.add_footer}
 
                         {if $template_option.addthiswidget_loc == 'bottom' }
-				{if $template_option.addthiswidget == 'fancy' }
-					<div class="addthiswidget">
-						<!-- AddThis Button BEGIN -->
-						<div class="addthis_toolbox addthis_default_style"
-								addthis:url="{$entry.rdf_ident}"
-								addthis:title="{$entry.title}">
-							<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-							<a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
-							<a class="addthis_counter addthis_pill_style"></a>
-						</div>
-						{literal}<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=budgetbabe"></script>{/literal}
-						<!-- AddThis Button END -->
-					</div>
-				{else}
-					{if $template_option.addthiswidget == 'classic' }
-						<div class="addthiswidget">
-							<script type="text/javascript">
-								addthis_url = '{$entry.rdf_ident|escape:url}';
-								addthis_title = '{$entry.title|escape:url}';
-								addthis_pub = '{$template_option.addthisaccount}';
-							</script>
-							<script type="text/javascript" src="http://s7.addthis.com/js/addthis_widget.php?v=12" ></script>
-						</div>
-					{/if}
-				{/if}
+													{if $template_option.addthiswidget == 'fancy' }
+														<div class="addthiswidget">
+															<!-- AddThis Button BEGIN -->
+															<div class="addthis_toolbox addthis_default_style"
+																	addthis:url="{$entry.rdf_ident}"
+																	addthis:title="{$entry.title}">
+																<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+																<a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
+																<a class="addthis_counter addthis_pill_style"></a>
+															</div>
+															<!-- AddThis Button END -->
+														</div>
+													{else}
+														{if $template_option.addthiswidget == 'classic' }
+															<div class="addthiswidget">
+																<script type="text/javascript">
+																	addthis_url = '{$entry.rdf_ident|escape:url}';
+																	addthis_title = '{$entry.title|escape:url}';
+																	addthis_pub = '{$template_option.addthisaccount}';
+																</script>
+															</div>
+														{/if}
+													{/if}
                         {/if}
 
                     </div>
@@ -249,31 +245,29 @@
                         {$entry.add_footer}
 
                         {if $template_option.addthiswidget_loc == 'bottom' }
-				{if $template_option.addthiswidget == 'fancy' }
-					<div class="addthiswidget">
-						<!-- AddThis Button BEGIN -->
-						<div class="addthis_toolbox addthis_default_style"
-								addthis:url="{$entry.rdf_ident}"
-								addthis:title="{$entry.title}">
-							<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-							<a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
-							<a class="addthis_counter addthis_pill_style"></a>
-						</div>
-						{literal}<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=budgetbabe"></script>{/literal}
-						<!-- AddThis Button END -->
-					</div>
-				{else}
-					{if $template_option.addthiswidget == 'classic' }
-						<div class="addthiswidget">
-							<script type="text/javascript">
-								addthis_url = '{$entry.rdf_ident|escape:url}';
-								addthis_title = '{$entry.title|escape:url}';
-								addthis_pub = '{$template_option.addthisaccount}';
-							</script>
-							<script type="text/javascript" src="http://s7.addthis.com/js/addthis_widget.php?v=12" ></script>
-						</div>
-					{/if}
-				{/if}
+													{if $template_option.addthiswidget == 'fancy' }
+														<div class="addthiswidget">
+															<!-- AddThis Button BEGIN -->
+															<div class="addthis_toolbox addthis_default_style"
+																	addthis:url="{$entry.rdf_ident}"
+																	addthis:title="{$entry.title}">
+																<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+																<a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
+																<a class="addthis_counter addthis_pill_style"></a>
+															</div>
+															<!-- AddThis Button END -->
+														</div>
+													{else}
+														{if $template_option.addthiswidget == 'classic' }
+															<div class="addthiswidget">
+																<script type="text/javascript">
+																	addthis_url = '{$entry.rdf_ident|escape:url}';
+																	addthis_title = '{$entry.title|escape:url}';
+																	addthis_pub = '{$template_option.addthisaccount}';
+																</script>
+															</div>
+														{/if}
+													{/if}
                         {/if}
 
                     </div>
@@ -324,31 +318,29 @@
                         {$entry.add_footer}
 
                         {if $template_option.addthiswidget_loc == 'bottom' }
-				{if $template_option.addthiswidget == 'fancy' }
-					<div class="addthiswidget">
-						<!-- AddThis Button BEGIN -->
-						<div class="addthis_toolbox addthis_default_style"
-								addthis:url="{$entry.rdf_ident}"
-								addthis:title="{$entry.title}">
-							<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-							<a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
-							<a class="addthis_counter addthis_pill_style"></a>
-						</div>
-						{literal}<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=budgetbabe"></script>{/literal}
-						<!-- AddThis Button END -->
-					</div>
-				{else}
-					{if $template_option.addthiswidget == 'classic' }
-						<div class="addthiswidget">
-							<script type="text/javascript">
-								addthis_url = '{$entry.rdf_ident|escape:url}';
-								addthis_title = '{$entry.title|escape:url}';
-								addthis_pub = '{$template_option.addthisaccount}';
-							</script>
-							<script type="text/javascript" src="http://s7.addthis.com/js/addthis_widget.php?v=12" ></script>
-						</div>
-					{/if}
-				{/if}
+													{if $template_option.addthiswidget == 'fancy' }
+														<div class="addthiswidget">
+															<!-- AddThis Button BEGIN -->
+															<div class="addthis_toolbox addthis_default_style"
+																	addthis:url="{$entry.rdf_ident}"
+																	addthis:title="{$entry.title}">
+																<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+																<a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
+																<a class="addthis_counter addthis_pill_style"></a>
+															</div>
+															<!-- AddThis Button END -->
+														</div>
+													{else}
+														{if $template_option.addthiswidget == 'classic' }
+															<div class="addthiswidget">
+																<script type="text/javascript">
+																	addthis_url = '{$entry.rdf_ident|escape:url}';
+																	addthis_title = '{$entry.title|escape:url}';
+																	addthis_pub = '{$template_option.addthisaccount}';
+																</script>
+															</div>
+														{/if}
+													{/if}
                         {/if}
 
                     </div>
