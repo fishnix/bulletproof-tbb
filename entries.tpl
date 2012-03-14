@@ -23,7 +23,7 @@
 										addthis:title="{$entry.title}">
 									<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
 									<a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
-									<a class="addthis_button_pinterest"></a>
+									<a class="addthis_button_pinterest" pi:pinit:url="{$entry.rdf_ident}"></a>
 									<a class="addthis_counter addthis_pill_style"></a>
 								</div>
 								<!-- AddThis Button END -->
@@ -116,7 +116,7 @@
 																	addthis:title="{$entry.title}">
 																<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
 																<a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
-																<a class="addthis_button_pinterest"></a>
+																<a class="addthis_button_pinterest" pi:pinit:url="{$entry.rdf_ident}"></a>
 																<a class="addthis_counter addthis_pill_style"></a>
 															</div>
 															<!-- AddThis Button END -->
@@ -255,7 +255,7 @@
 																	addthis:title="{$entry.title}">
 																<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
 																<a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
-																<a class="addthis_button_pinterest"></a>
+																<a class="addthis_button_pinterest" pi:pinit:url="{$entry.rdf_ident}"></a>
 																<a class="addthis_counter addthis_pill_style"></a>
 															</div>
 															<!-- AddThis Button END -->
