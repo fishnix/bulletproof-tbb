@@ -3,224 +3,223 @@
 
 {foreach from=$entries item="dategroup"}
 <div class="hentry serendipity_Entry_Date{if $dategroup.is_sticky} serendipity_Sticky_Entry{/if}">
-    {if $dategroup.is_sticky}
-        {if $template_option.show_sticky_entry_heading == 'true'}
-            <h3 class="serendipity_date">{$CONST.STICKY_POSTINGS}</h3>
-        {/if}
-    {else}
-        <h3 class="serendipity_date"><abbr class="published" title="{$dategroup.date|@formatTime:'%Y-%m-%dT%H:%M:%S%Z'}">{$dategroup.date|@formatTime:$template_option.date_format}</abbr></h3>
-    {/if}
+	{if $dategroup.is_sticky}
+		{if $template_option.show_sticky_entry_heading == 'true'}
+	    <h3 class="serendipity_date">{$CONST.STICKY_POSTINGS}</h3>
+		{/if}
+	{else}
+		<h3 class="serendipity_date"><abbr class="published" title="{$dategroup.date|@formatTime:'%Y-%m-%dT%H:%M:%S%Z'}">{$dategroup.date|@formatTime:$template_option.date_format}</abbr></h3>
+	{/if}
 
-    {foreach from=$dategroup.entries item="entry"}
-        <h4 class="entry-title serendipity_title"><a href="{$entry.link}" rel="bookmark">{$entry.title}</a></h4>
+	{foreach from=$dategroup.entries item="entry"}
+		<h4 class="entry-title serendipity_title"><a href="{$entry.link}" rel="bookmark">{$entry.title}</a></h4>
 
-        {if $template_option.addthiswidget_loc == 'top' }
-					{if $template_option.addthiswidget == 'fancy' }
-	            <div class="addthiswidget">
-								<!-- AddThis Button BEGIN -->
-								<div class="addthis_toolbox addthis_default_style"
-										addthis:url="{$entry.rdf_ident}"
-										addthis:title="{$entry.title}">
-									<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-									<a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
-									<a class="addthis_button_pinterest" pi:pinit:layout="horizontal" pi:pinit:url="{$entry.rdf_ident}" pi:pinit:media="{$entry.rdf_ident}" pi:pinit:description="{$entry.title}"></a>
-									<a class="addthis_counter addthis_pill_style"></a>
-								</div>
-								<!-- AddThis Button END -->
-						</div>
-					{else}
-						{if $template_option.addthiswidget == 'classic' }
-							<div class="addthiswidget">
-								<script type="text/javascript">
-									addthis_url = '{$entry.rdf_ident|escape:url}';
-									addthis_title = '{$entry.title|escape:url}';
-									addthis_pub = '{$template_option.addthisaccount}';
-								</script>
-							</div>
+		{if $template_option.addthiswidget_loc == 'top' }
+			{if $template_option.addthiswidget == 'fancy' }
+				<div class="addthiswidget">
+				<!-- AddThis Button BEGIN -->
+					<div class="addthis_toolbox addthis_default_style"
+						addthis:url="{$entry.rdf_ident}"
+						addthis:title="{$entry.title}">
+				   	<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+				   	<a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
+				   	<a class="addthis_counter addthis_pill_style"></a>
+				  </div>
+				<!-- AddThis Button END -->
+				</div>
+			{else}
+				{if $template_option.addthiswidget == 'classic' }
+					<div class="addthiswidget">
+						<script type="text/javascript">
+					    addthis_url = '{$entry.rdf_ident|escape:url}';
+					    addthis_title = '{$entry.title|escape:url}';
+					    addthis_pub = '{$template_option.addthisaccount}';
+						</script>
+					</div>
+				{/if}
+			{/if}
+		{/if}
+
+		<div class="serendipity_entry serendipity_entry_author_{$entry.author|@makeFilename} {if $entry.is_entry_owner}serendipity_entry_author_self{/if}">
+
+		{if (not $dategroup.is_sticky or ($dategroup.is_sticky and $template_option.show_sticky_entry_footer == 'true'))}
+			{if $template_option.entryfooterpos == 'belowtitle'}
+				<div class='serendipity_entryFooter belowtitle'>
+					{if $template_option.footerauthor == 'true'}
+						{$CONST.POSTED_BY} <address class="author"><a href="{$entry.link_author}">{$entry.author}</a></address>
+					{/if}
+
+					{if $template_option.footercategories == 'true'}
+						{if $entry.categories}
+							{$CONST.IN} {foreach from=$entry.categories item="entry_category" name="categories"}<a href="{$entry_category.category_link}">{$entry_category.category_name|@escape}</a>{if not $smarty.foreach.categories.last}, {/if}{/foreach}
 						{/if}
 					{/if}
-				{/if}
 
-        <div class="serendipity_entry serendipity_entry_author_{$entry.author|@makeFilename} {if $entry.is_entry_owner}serendipity_entry_author_self{/if}">
+					{if $template_option.footertimestamp == 'true'}
+						{if $dategroup.is_sticky}
+							{$CONST.ON}
+						{else}
+							{$CONST.AT}
+						{/if}
+						<a href="{$entry.link}">{if $dategroup.is_sticky}{$entry.timestamp|@formatTime:$template_option.date_format} {/if}{$entry.timestamp|@formatTime:'%H:%M'}</a>
+					{/if}
 
-            {if (not $dategroup.is_sticky or ($dategroup.is_sticky and $template_option.show_sticky_entry_footer == 'true'))}
-                {if $template_option.entryfooterpos == 'belowtitle'}
-                    <div class='serendipity_entryFooter belowtitle'>
-                        {if $template_option.footerauthor == 'true'}
-                            {$CONST.POSTED_BY} <address class="author"><a href="{$entry.link_author}">{$entry.author}</a></address>
-                        {/if}
+					{if $template_option.footercomments == 'true'}
+						{if $entry.has_comments}
+							{if $use_popups}
+								{if $template_option.altcommtrack == 'true'}
+									| <a href="{$entry.link_popup_comments}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
+								{else}
+									| <a href="{$entry.link_popup_comments}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{$entry.label_comments} ({$entry.comments})</a>
+								{/if}
+							{else}
+								{if $template_option.altcommtrack == 'true'}
+									| <a href="{$entry.link}#comments">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
+								{else}
+									| <a href="{$entry.link}#comments">{$entry.label_comments} ({$entry.comments})</a>
+								{/if}
+							{/if}
+						{/if}
+					{/if}
 
-                        {if $template_option.footercategories == 'true'}
-                            {if $entry.categories}
-                                {$CONST.IN} {foreach from=$entry.categories item="entry_category" name="categories"}<a href="{$entry_category.category_link}">{$entry_category.category_name|@escape}</a>{if not $smarty.foreach.categories.last}, {/if}{/foreach}
-                            {/if}
-                        {/if}
+					{if $template_option.footertrackbacks == 'true'}
+						{if $entry.has_trackbacks}
+							{if $use_popups}
+								{if $template_option.altcommtrack == 'true'}
+									| <a href="{$entry.link_popup_trackbacks}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{if $entry.trackbacks == 0}{$CONST.NO_TRACKBACKS}{else}{$entry.trackbacks} {$entry.label_trackbacks}{/if}</a>
+								{else}
+									| <a href="{$entry.link_popup_trackbacks}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{$entry.label_trackbacks} ({$entry.trackbacks})</a>
+								{/if}
+							{else}
+								{if $template_option.altcommtrack == 'true'}
+									| <a href="{$entry.link}#trackbacks">{if $entry.trackbacks == 0}{$CONST.NO_TRACKBACKS}{else}{$entry.trackbacks} {$entry.label_trackbacks}{/if}</a>
+								{else}
+									| <a href="{$entry.link}#trackbacks">{$entry.label_trackbacks} ({$entry.trackbacks})</a>
+								{/if}
+							{/if}
+						{/if}
+					{/if}
 
-                        {if $template_option.footertimestamp == 'true'}
-                            {if $dategroup.is_sticky}
-                                {$CONST.ON}
-                            {else}
-                                {$CONST.AT}
-                            {/if}
-                            <a href="{$entry.link}">{if $dategroup.is_sticky}{$entry.timestamp|@formatTime:$template_option.date_format} {/if}{$entry.timestamp|@formatTime:'%H:%M'}</a>
-                        {/if}
+					{if $entry.is_entry_owner and not $is_preview}
+						<div class="editentrylink"><a href="{$entry.link_edit}">{$CONST.EDIT_ENTRY}</a></div>
+					{/if}
 
-                        {if $template_option.footercomments == 'true'}
-                            {if $entry.has_comments}
-                                {if $use_popups}
-                                    {if $template_option.altcommtrack == 'true'}
-                                        | <a href="{$entry.link_popup_comments}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
-                                    {else}
-                                        | <a href="{$entry.link_popup_comments}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{$entry.label_comments} ({$entry.comments})</a>
-                                    {/if}
-                                {else}
-                                    {if $template_option.altcommtrack == 'true'}
-                                        | <a href="{$entry.link}#comments">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
-                                    {else}
-                                        | <a href="{$entry.link}#comments">{$entry.label_comments} ({$entry.comments})</a>
-                                    {/if}
-                                {/if}
-                            {/if}
-                        {/if}
+					{$entry.add_footer}
 
-                        {if $template_option.footertrackbacks == 'true'}
-                            {if $entry.has_trackbacks}
-                                {if $use_popups}
-                                    {if $template_option.altcommtrack == 'true'}
-                                        | <a href="{$entry.link_popup_trackbacks}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{if $entry.trackbacks == 0}{$CONST.NO_TRACKBACKS}{else}{$entry.trackbacks} {$entry.label_trackbacks}{/if}</a>
-                                    {else}
-                                        | <a href="{$entry.link_popup_trackbacks}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{$entry.label_trackbacks} ({$entry.trackbacks})</a>
-                                    {/if}
-                                {else}
-                                    {if $template_option.altcommtrack == 'true'}
-                                        | <a href="{$entry.link}#trackbacks">{if $entry.trackbacks == 0}{$CONST.NO_TRACKBACKS}{else}{$entry.trackbacks} {$entry.label_trackbacks}{/if}</a>
-                                    {else}
-                                        | <a href="{$entry.link}#trackbacks">{$entry.label_trackbacks} ({$entry.trackbacks})</a>
-                                    {/if}
-                                {/if}
-                            {/if}
-                        {/if}
+					{if $template_option.addthiswidget_loc == 'bottom' }
+						{if $template_option.addthiswidget == 'fancy' }
+							<div class="addthiswidget">
+							<!-- AddThis Button BEGIN -->
+								<div class="addthis_toolbox addthis_default_style"
+									addthis:url="{$entry.rdf_ident}"
+									addthis:title="{$entry.title}">
+									<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+									<a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
+									<a class="addthis_counter addthis_pill_style"></a>
+								</div>
+							<!-- AddThis Button END -->
+							</div>
+						{else}
+							{if $template_option.addthiswidget == 'classic' }
+								<div class="addthiswidget">
+									<script type="text/javascript">
+									  addthis_url = '{$entry.rdf_ident|escape:url}';
+									  addthis_title = '{$entry.title|escape:url}';
+									  addthis_pub = '{$template_option.addthisaccount}';
+									</script>
+								</div>
+							{/if}
+						{/if}
+					{/if}
 
-                        {if $entry.is_entry_owner and not $is_preview}
-                        <div class="editentrylink"><a href="{$entry.link_edit}">{$CONST.EDIT_ENTRY}</a></div>
-                        {/if}
+				</div>
+			{/if}
 
-                        {$entry.add_footer}
+			{if $template_option.entryfooterpos == 'splitfoot'}
+				<div class='serendipity_entryFooter byline'>
+					{if $template_option.footerauthor == 'true'}
+						{$CONST.POSTED_BY} <address class="author"><a href="{$entry.link_author}">{$entry.author}</a></address>
+					{/if}
 
-                        {if $template_option.addthiswidget_loc == 'bottom' }
-													{if $template_option.addthiswidget == 'fancy' }
-														<div class="addthiswidget">
-															<!-- AddThis Button BEGIN -->
-															<div class="addthis_toolbox addthis_default_style"
-																	addthis:url="{$entry.rdf_ident}"
-																	addthis:title="{$entry.title}">
-																<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-																<a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
-																<a class="addthis_button_pinterest" pi:pinit:layout="horizontal" pi:pinit:url="{$entry.rdf_ident}" pi:pinit:media="{$entry.rdf_ident}" pi:pinit:description="{$entry.title}"></a>
-																<a class="addthis_counter addthis_pill_style"></a>
-															</div>
-															<!-- AddThis Button END -->
-														</div>
-													{else}
-														{if $template_option.addthiswidget == 'classic' }
-															<div class="addthiswidget">
-																<script type="text/javascript">
-																	addthis_url = '{$entry.rdf_ident|escape:url}';
-																	addthis_title = '{$entry.title|escape:url}';
-																	addthis_pub = '{$template_option.addthisaccount}';
-																</script>
-															</div>
-														{/if}
-													{/if}
-                        {/if}
+					{if $template_option.footercategories == 'true'}
+						{if $entry.categories}
+							{$CONST.IN} {foreach from=$entry.categories item="entry_category" name="categories"}<a href="{$entry_category.category_link}">{$entry_category.category_name|@escape}</a>{if not $smarty.foreach.categories.last}, {/if}{/foreach}
+						{/if}
+					{/if}
 
-                    </div>
-                {/if}
+					{if $template_option.footertimestamp == 'true'}
+						{if $dategroup.is_sticky}
+							{$CONST.ON}
+						{else}
+							{$CONST.AT}
+						{/if}
+							<a href="{$entry.link}">{if $dategroup.is_sticky}{$entry.timestamp|@formatTime:$template_option.date_format} {/if}{$entry.timestamp|@formatTime:'%H:%M'}</a>
+					{/if}
+				</div>
+			{/if}
+		{/if}
 
-                {if $template_option.entryfooterpos == 'splitfoot'}
-                    <div class='serendipity_entryFooter byline'>
-                        {if $template_option.footerauthor == 'true'}
-                            {$CONST.POSTED_BY} <address class="author"><a href="{$entry.link_author}">{$entry.author}</a></address>
-                        {/if}
-
-                        {if $template_option.footercategories == 'true'}
-                            {if $entry.categories}
-                                {$CONST.IN} {foreach from=$entry.categories item="entry_category" name="categories"}<a href="{$entry_category.category_link}">{$entry_category.category_name|@escape}</a>{if not $smarty.foreach.categories.last}, {/if}{/foreach}
-                            {/if}
-                        {/if}
-
-                        {if $template_option.footertimestamp == 'true'}
-                            {if $dategroup.is_sticky}
-                                {$CONST.ON}
-                            {else}
-                                {$CONST.AT}
-                            {/if}
-                            <a href="{$entry.link}">{if $dategroup.is_sticky}{$entry.timestamp|@formatTime:$template_option.date_format} {/if}{$entry.timestamp|@formatTime:'%H:%M'}</a>
-                        {/if}
-                    </div>
-                {/if}
-            {/if}
-
-            {if $entry.categories}
-                <span class="serendipity_entryIcon">
-                    {foreach from=$entry.categories item="entry_category"}
-                        {if $entry_category.category_icon}
-                            <a href="{$entry_category.category_link}"><img class="serendipity_entryIcon" title="{$entry_category.category_name|@escape}{$entry_category.category_description|@emptyPrefix}" alt="{$entry_category.category_name|@escape}" src="{$entry_category.category_icon}" /></a>
-                        {/if}
-                    {/foreach}
-               </span>
-            {/if}
+		{if $entry.categories}
+			<span class="serendipity_entryIcon">
+				{foreach from=$entry.categories item="entry_category"}
+					{if $entry_category.category_icon}
+						<a href="{$entry_category.category_link}"><img class="serendipity_entryIcon" title="{$entry_category.category_name|@escape}{$entry_category.category_description|@emptyPrefix}" alt="{$entry_category.category_name|@escape}" src="{$entry_category.category_icon}" /></a>
+					{/if}
+				{/foreach}
+			</span>
+		{/if}
   
-            <div class="entry-content serendipity_entry_body">
-                {$entry.body}
-                {if $entry.has_extended and not $is_single_entry and not $entry.is_extended}
-                    <span class="continue_reading"><a href="{$entry.link}#extended" title='{$CONST.VIEW_EXTENDED_ENTRY|@sprintf:$entry.title|truncate:50:" ..."}'>{$CONST.VIEW_EXTENDED_ENTRY|@sprintf:$entry.title|truncate:50:" ..."} &raquo;</a></span>
-                {/if}
-           </div>
+		<div class="entry-content serendipity_entry_body">
+			{$entry.body}
+			{if $entry.has_extended and not $is_single_entry and not $entry.is_extended}
+				<span class="continue_reading"><a href="{$entry.link}#extended" title='{$CONST.VIEW_EXTENDED_ENTRY|@sprintf:$entry.title|truncate:50:" ..."}'>{$CONST.VIEW_EXTENDED_ENTRY|@sprintf:$entry.title|truncate:50:" ..."} &raquo;</a></span>
+			{/if}
+		</div>
 
-            {if $entry.is_extended}
-                <div class="serendipity_entry_extended"><a id="extended"></a>{$entry.extended}</div>
-            {/if}
+		{if $entry.is_extended}
+			<div class="serendipity_entry_extended"><a id="extended"></a>{$entry.extended}</div>
+		{/if}
 
-            {if (not $dategroup.is_sticky or ($dategroup.is_sticky and $template_option.show_sticky_entry_footer == 'true'))}
-                {if $template_option.entryfooterpos == 'belowentry'}
-                    <div class='serendipity_entryFooter belowentry'>
-                        {if $template_option.footerauthor == 'true'}
-                            {$CONST.POSTED_BY} <address class="author"><a href="{$entry.link_author}">{$entry.author}</a></address>
-                        {/if}
+		{if (not $dategroup.is_sticky or ($dategroup.is_sticky and $template_option.show_sticky_entry_footer == 'true'))}
+			{if $template_option.entryfooterpos == 'belowentry'}
+				<div class='serendipity_entryFooter belowentry'>
+					{if $template_option.footerauthor == 'true'}
+						{$CONST.POSTED_BY} <address class="author"><a href="{$entry.link_author}">{$entry.author}</a></address>
+					{/if}
 
-                        {if $template_option.footercategories == 'true'}
-                            {if $entry.categories}
-                                {$CONST.IN} {foreach from=$entry.categories item="entry_category" name="categories"}<a href="{$entry_category.category_link}">{$entry_category.category_name|@escape}</a>{if not $smarty.foreach.categories.last}, {/if}{/foreach}
-                            {/if}
-                        {/if}
+					{if $template_option.footercategories == 'true'}
+						{if $entry.categories}
+							{$CONST.IN} {foreach from=$entry.categories item="entry_category" name="categories"}<a href="{$entry_category.category_link}">{$entry_category.category_name|@escape}</a>{if not $smarty.foreach.categories.last}, {/if}{/foreach}
+						{/if}
+					{/if}
 
-                        {if $template_option.footertimestamp == 'true'}
-                            {if $dategroup.is_sticky}
-                                {$CONST.ON}
-                            {else}
-                                {$CONST.AT}
-                            {/if}
-                                <a href="{$entry.link}">{if $dategroup.is_sticky}{$entry.timestamp|@formatTime:$template_option.date_format} {/if}{$entry.timestamp|@formatTime:'%H:%M'}</a>
-                        {/if}
+					{if $template_option.footertimestamp == 'true'}
+						{if $dategroup.is_sticky}
+							{$CONST.ON}
+						{else}
+							{$CONST.AT}
+						{/if}
+						
+						<a href="{$entry.link}">{if $dategroup.is_sticky}{$entry.timestamp|@formatTime:$template_option.date_format} {/if}{$entry.timestamp|@formatTime:'%H:%M'}</a>
+					{/if}
 
-                        {if $template_option.footercomments == 'true'}
-                            {if $entry.has_comments}
-                                {if $use_popups}
-                                    {if $template_option.altcommtrack == 'true'}
-                                        | <a href="{$entry.link_popup_comments}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
-                                    {else}
-                                        | <a href="{$entry.link_popup_comments}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{$entry.label_comments} ({$entry.comments})</a>
-                                    {/if}
-                                {else}
-                                    {if $template_option.altcommtrack == 'true'}
-                                        | <a href="{$entry.link}#comments">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
-                                    {else}
-                                        | <a href="{$entry.link}#comments">{$entry.label_comments} ({$entry.comments})</a>
-                                    {/if}
-                                {/if}
-                            {/if}
-                        {/if}
+					{if $template_option.footercomments == 'true'}
+						{if $entry.has_comments}
+							{if $use_popups}
+								{if $template_option.altcommtrack == 'true'}
+									| <a href="{$entry.link_popup_comments}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
+								{else}
+									| <a href="{$entry.link_popup_comments}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{$entry.label_comments} ({$entry.comments})</a>
+								{/if}
+							{else}
+								{if $template_option.altcommtrack == 'true'}
+									| <a href="{$entry.link}#comments">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
+								{else}
+									| <a href="{$entry.link}#comments">{$entry.label_comments} ({$entry.comments})</a>
+								{/if}
+							{/if}
+						{/if}
+					{/if}
 
                         {if $template_option.footertrackbacks == 'true'}
                             {if $entry.has_trackbacks}
@@ -247,30 +246,29 @@
                         {$entry.add_footer}
 
                         {if $template_option.addthiswidget_loc == 'bottom' }
-													{if $template_option.addthiswidget == 'fancy' }
-														<div class="addthiswidget">
-															<!-- AddThis Button BEGIN -->
-															<div class="addthis_toolbox addthis_default_style"
-																	addthis:url="{$entry.rdf_ident}"
-																	addthis:title="{$entry.title}">
-																<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-																<a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
-																<a class="addthis_button_pinterest" pi:pinit:layout="horizontal" pi:pinit:url="{$entry.rdf_ident}" pi:pinit:media="{$entry.rdf_ident}" pi:pinit:description="{$entry.title}"></a>
-																<a class="addthis_counter addthis_pill_style"></a>
-															</div>
-															<!-- AddThis Button END -->
-														</div>
-													{else}
-														{if $template_option.addthiswidget == 'classic' }
-															<div class="addthiswidget">
-																<script type="text/javascript">
-																	addthis_url = '{$entry.rdf_ident|escape:url}';
-																	addthis_title = '{$entry.title|escape:url}';
-																	addthis_pub = '{$template_option.addthisaccount}';
-																</script>
-															</div>
-														{/if}
-													{/if}
+                          {if $template_option.addthiswidget == 'fancy' }
+                            <div class="addthiswidget">
+                              <!-- AddThis Button BEGIN -->
+                              <div class="addthis_toolbox addthis_default_style"
+                                  addthis:url="{$entry.rdf_ident}"
+                                  addthis:title="{$entry.title}">
+                                <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+                                <a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
+                                <a class="addthis_counter addthis_pill_style"></a>
+                              </div>
+                              <!-- AddThis Button END -->
+                            </div>
+                          {else}
+                            {if $template_option.addthiswidget == 'classic' }
+                              <div class="addthiswidget">
+                                <script type="text/javascript">
+                                  addthis_url = '{$entry.rdf_ident|escape:url}';
+                                  addthis_title = '{$entry.title|escape:url}';
+                                  addthis_pub = '{$template_option.addthisaccount}';
+                                </script>
+                              </div>
+                            {/if}
+                          {/if}
                         {/if}
 
                     </div>
@@ -321,30 +319,29 @@
                         {$entry.add_footer}
 
                         {if $template_option.addthiswidget_loc == 'bottom' }
-													{if $template_option.addthiswidget == 'fancy' }
-														<div class="addthiswidget">
-															<!-- AddThis Button BEGIN -->
-															<div class="addthis_toolbox addthis_default_style"
-																	addthis:url="{$entry.rdf_ident}"
-																	addthis:title="{$entry.title}">
-																<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-																<a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
-																<a class="addthis_button_pinterest" pi:pinit:layout="horizontal" pi:pinit:url="{$entry.rdf_ident}" pi:pinit:media="{$entry.rdf_ident}" pi:pinit:description="{$entry.title}"></a>
-																<a class="addthis_counter addthis_pill_style"></a>
-															</div>
-															<!-- AddThis Button END -->
-														</div>
-													{else}
-														{if $template_option.addthiswidget == 'classic' }
-															<div class="addthiswidget">
-																<script type="text/javascript">
-																	addthis_url = '{$entry.rdf_ident|escape:url}';
-																	addthis_title = '{$entry.title|escape:url}';
-																	addthis_pub = '{$template_option.addthisaccount}';
-																</script>
-															</div>
-														{/if}
-													{/if}
+                          {if $template_option.addthiswidget == 'fancy' }
+                            <div class="addthiswidget">
+                              <!-- AddThis Button BEGIN -->
+                              <div class="addthis_toolbox addthis_default_style"
+                                  addthis:url="{$entry.rdf_ident}"
+                                  addthis:title="{$entry.title}">
+                                <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+                                <a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
+                                <a class="addthis_counter addthis_pill_style"></a>
+                              </div>
+                              <!-- AddThis Button END -->
+                            </div>
+                          {else}
+                            {if $template_option.addthiswidget == 'classic' }
+                              <div class="addthiswidget">
+                                <script type="text/javascript">
+                                  addthis_url = '{$entry.rdf_ident|escape:url}';
+                                  addthis_title = '{$entry.title|escape:url}';
+                                  addthis_pub = '{$template_option.addthisaccount}';
+                                </script>
+                              </div>
+                            {/if}
+                          {/if}
                         {/if}
 
                     </div>
