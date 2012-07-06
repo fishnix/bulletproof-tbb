@@ -288,7 +288,7 @@
 								{if $template_option.altcommtrack == 'true'}
 									<a href="{$entry.link}#comments">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
 								{else}
-									<a href="{$entry.link}#comments">{$entry.label_comments} ({$entry.comments})</a>
+									<a href="{$entry.link}#comments">{$entry.label_comments} (<fb:comments-count href=http://example.com/></fb:comments-count>)</a>
 								{/if}
 							{/if}
 						{/if}
