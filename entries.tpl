@@ -206,35 +206,9 @@
 					{if $template_option.footercomments == 'true'}
 						{if $entry.has_comments}
 							{if $use_popups}
-								{if $template_option.altcommtrack == 'true'}
-									| <a href="{$entry.link_popup_comments}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
-								{else}
-									| <a href="{$entry.link_popup_comments}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{$entry.label_comments} ({$entry.comments})</a>
-								{/if}
+									| <a href="{$entry.link_popup_comments}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{$entry.label_comments} (<fb:comments-count href=http://example.com/></fb:comments-count>)</a>
 							{else}
-								{if $template_option.altcommtrack == 'true'}
-									| <a href="{$entry.link}#comments">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
-								{else}
-									| <a href="{$entry.link}#comments">{$entry.label_comments} ({$entry.comments})</a>
-								{/if}
-							{/if}
-						{/if}
-					{/if}
-
-					{if $template_option.footertrackbacks == 'true'}
-						{if $entry.has_trackbacks}
-							{if $use_popups}
-								{if $template_option.altcommtrack == 'true'}
-									| <a href="{$entry.link_popup_trackbacks}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{if $entry.trackbacks == 0}{$CONST.NO_TRACKBACKS}{else}{$entry.trackbacks} {$entry.label_trackbacks}{/if}</a>
-								{else}
-									| <a href="{$entry.link_popup_trackbacks}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{$entry.label_trackbacks} ({$entry.trackbacks})</a>
-								{/if}
-							{else}
-								{if $template_option.altcommtrack == 'true'}
-									| <a href="{$entry.link}#trackbacks">{if $entry.trackbacks == 0}{$CONST.NO_TRACKBACKS}{else}{$entry.trackbacks} {$entry.label_trackbacks}{/if}</a>
-								{else}
-									| <a href="{$entry.link}#trackbacks">{$entry.label_trackbacks} ({$entry.trackbacks})</a>
-								{/if}
+									| <a href="{$entry.link}#comments">{$entry.label_comments} (<fb:comments-count href=http://example.com/></fb:comments-count>)</a>
 							{/if}
 						{/if}
 					{/if}
