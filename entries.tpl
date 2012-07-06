@@ -355,7 +355,7 @@
 			<div class="serendipity_comments serendipity_section_comments">
 				<a id="comments"></a>
 				<div class="serendipity_commentsTitle">{$CONST.COMMENTS}</div>
-				{if entry.comments == 0}
+				{if $entry.comments == 0}
           <div class="fb-comments" data-href="{$entry.rdf_ident}" data-num-posts="10" data-width="440"></div>
         {else}
           <div class="serendipity_center">{$CONST.DISPLAY_COMMENTS_AS}
