@@ -47,6 +47,8 @@
 @define('ADDTHIS_ACCOUNT','AddThis.com account number.  Not required but will provide statistics about how readers are bookmarking and sharing your content if provided.');
 @define('ADDTHIS_TWITTER_VIA','This account will be attributed tweets from AddThis');
 @define('ADDTHIS_FACEBOOK_IMAGE','The full URL to an image to show shen sharing links on Facebook');
+@define('FACEBOOK_COMMENTS','Show facebook comments.  This will only override posts with no comments.');
+@define('FACEBOOK_COMMENT_ADMIN','This is the facebook admin to control facebook comments.  Comma separate multiple userids without spaces.');
 @define('SHOW_STICKY_ENTRY_FOOTER','Show entry footer for sticky postings (requires plugin "Extended properties for entries")');
 @define('SHOW_STICKY_ENTRY_HEADING','Show entry heading for sticky postings (requires plugin "Extended properties for entries")');
 // Page footer next page  and previous page links

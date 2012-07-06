@@ -204,6 +204,18 @@ $template_config = array(
         'default'       => '',
     ),
     array(
+        'var'           => 'facebook_comments',
+        'name'          => FACEBOOK_COMMENTS,
+        'type'          => 'boolean',
+        'default'       => 'false',
+    ),
+    array(
+        'var'           => 'facebook_comment_admins',
+        'name'          => FACEBOOK_COMMENT_ADMIN,
+        'type'          => 'string',
+        'default'       => '',
+    ),
+    array(
         'var'           => 'show_sticky_entry_footer',
         'name'          => SHOW_STICKY_ENTRY_FOOTER,
         'type'          => 'boolean',

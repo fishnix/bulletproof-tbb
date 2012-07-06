@@ -82,15 +82,21 @@
 						}
 					</script>
 					<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=budgetbabe"></script>
-					<div id="fb-root"></div>
-          <script>(function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-            fjs.parentNode.insertBefore(js, fjs);
-          }(document, 'script', 'facebook-jssdk'));</script>
 				{/literal}
+				{if $template_option.facebook_comments == 'true'}
+  				{literal}
+  					<div id="fb-root"></div>
+            <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+  				{/literal}
+  				<meta property="fb:admins" content="{$template_option.facebook_comment_admins}"/>
+  			{/if}
+				
     </head>
 
     <body{if $template_option.jscolumns == 'true'} onload="P7_equalCols2(0,{if $template_option.layouttype != '1col'}'content','DIV',{/if}'serendipityLeftSideBar','DIV','serendipityRightSideBar','DIV')"{/if}>

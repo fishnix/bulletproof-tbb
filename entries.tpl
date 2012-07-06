@@ -66,7 +66,7 @@
 
 					{if $template_option.footercomments == 'true'}
 						{if $entry.has_comments}
-						  {if $entry.comments == 0}
+						  {if $entry.comments == 0 and $template_option.facebook_comments == 'true'}
   						  {if $use_popups}
   									| <a href="{$entry.link_popup_comments}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{$entry.label_comments} (<fb:comments-count href="{$entry.rdf_ident}"></fb:comments-count>)</a>
   							{else}
@@ -195,7 +195,7 @@
 
 				  {if $template_option.footercomments == 'true'}
           	{if $entry.has_comments}
-          	  {if $entry.comments == 0 }
+          	  {if $entry.comments == 0 and $template_option.facebook_comments == 'true' }
             	  {if $use_popups}
   									| <a href="{$entry.link_popup_comments}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{$entry.label_comments} (<fb:comments-count href="{$entry.rdf_ident}"></fb:comments-count>)</a>
   							{else}
@@ -257,7 +257,7 @@
 			{if $template_option.entryfooterpos == 'splitfoot'}
 				<div class='serendipity_entryFooter infofooter'>
 				  {if $entry.has_comments}
-				    {if $entry.comments == 0}
+				    {if $entry.comments == 0 and $template_option.facebook_comments == 'true' }
     				  {if $template_option.footercomments == 'true'}
     					  <a href="{$entry.link}#comments">{$entry.label_comments} (<fb:comments-count href="{$entry.rdf_ident}"></fb:comments-count>)</a>
     					{/if}
@@ -355,7 +355,7 @@
 			<div class="serendipity_comments serendipity_section_comments">
 				<a id="comments"></a>
 				<div class="serendipity_commentsTitle">{$CONST.COMMENTS}</div>
-				{if $entry.comments == 0}
+				{if $entry.comments == 0 and $template_option.facebook_comments == 'true'}
           <div class="fb-comments" data-href="{$entry.rdf_ident}" data-num-posts="10" data-width="440"></div>
         {else}
           <div class="serendipity_center">{$CONST.DISPLAY_COMMENTS_AS}
