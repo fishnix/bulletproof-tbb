@@ -66,36 +66,26 @@
 
 					{if $template_option.footercomments == 'true'}
 						{if $entry.has_comments}
-							{if $use_popups}
-								{if $template_option.altcommtrack == 'true'}
-									| <a href="{$entry.link_popup_comments}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
-								{else}
-									| <a href="{$entry.link_popup_comments}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{$entry.label_comments} ({$entry.comments})</a>
-								{/if}
-							{else}
-								{if $template_option.altcommtrack == 'true'}
-									| <a href="{$entry.link}#comments">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
-								{else}
-									| <a href="{$entry.link}#comments">{$entry.label_comments} ({$entry.comments})</a>
-								{/if}
-							{/if}
-						{/if}
-					{/if}
-
-					{if $template_option.footertrackbacks == 'true'}
-						{if $entry.has_trackbacks}
-							{if $use_popups}
-								{if $template_option.altcommtrack == 'true'}
-									| <a href="{$entry.link_popup_trackbacks}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{if $entry.trackbacks == 0}{$CONST.NO_TRACKBACKS}{else}{$entry.trackbacks} {$entry.label_trackbacks}{/if}</a>
-								{else}
-									| <a href="{$entry.link_popup_trackbacks}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{$entry.label_trackbacks} ({$entry.trackbacks})</a>
-								{/if}
-							{else}
-								{if $template_option.altcommtrack == 'true'}
-									| <a href="{$entry.link}#trackbacks">{if $entry.trackbacks == 0}{$CONST.NO_TRACKBACKS}{else}{$entry.trackbacks} {$entry.label_trackbacks}{/if}</a>
-								{else}
-									| <a href="{$entry.link}#trackbacks">{$entry.label_trackbacks} ({$entry.trackbacks})</a>
-								{/if}
+						  {if $entry.comments == 0}
+  						  {if $use_popups}
+  									| <a href="{$entry.link_popup_comments}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{$entry.label_comments} (<fb:comments-count href="{$entry.rdf_ident}"></fb:comments-count>)</a>
+  							{else}
+  									| <a href="{$entry.link}#comments">{$entry.label_comments} (<fb:comments-count href="{$entry.rdf_ident}"></fb:comments-count>)</a>
+  							{/if}
+						  {else}
+  							{if $use_popups}
+  								{if $template_option.altcommtrack == 'true'}
+  									| <a href="{$entry.link_popup_comments}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
+  								{else}
+  									| <a href="{$entry.link_popup_comments}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{$entry.label_comments} ({$entry.comments})</a>
+  								{/if}
+  							{else}
+  								{if $template_option.altcommtrack == 'true'}
+  									| <a href="{$entry.link}#comments">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
+  								{else}
+  									| <a href="{$entry.link}#comments">{$entry.label_comments} ({$entry.comments})</a>
+  								{/if}
+  							{/if}
 							{/if}
 						{/if}
 					{/if}
@@ -203,15 +193,31 @@
 						<a href="{$entry.link}">{if $dategroup.is_sticky}{$entry.timestamp|@formatTime:$template_option.date_format} {/if}{$entry.timestamp|@formatTime:'%H:%M'}</a>
 					{/if}
 
-					{if $template_option.footercomments == 'true'}
-						{if $entry.has_comments}
-							{if $use_popups}
-									| <a href="{$entry.link_popup_comments}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{$entry.label_comments} (<fb:comments-count href="{$entry.rdf_ident}"></fb:comments-count>)</a>
-							{else}
-									| <a href="{$entry.link}#comments">{$entry.label_comments} (<fb:comments-count href="{$entry.rdf_ident}"></fb:comments-count>)</a>
-							{/if}
-						{/if}
-					{/if}
+				  {if $template_option.footercomments == 'true'}
+          	{if $entry.has_comments}
+          	  {if $entry.comments == 0 }
+            	  {if $use_popups}
+  									| <a href="{$entry.link_popup_comments}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{$entry.label_comments} (<fb:comments-count href="{$entry.rdf_ident}"></fb:comments-count>)</a>
+  							{else}
+  									| <a href="{$entry.link}#comments">{$entry.label_comments} (<fb:comments-count href="{$entry.rdf_ident}"></fb:comments-count>)</a>
+  							{/if}
+          	  {else}
+            		{if $use_popups}
+            			{if $template_option.altcommtrack == 'true'}
+            				| <a href="{$entry.link_popup_comments}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
+            			{else}
+            				| <a href="{$entry.link_popup_comments}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{$entry.label_comments} ({$entry.comments})</a>
+            			{/if}
+            		{else}
+            			{if $template_option.altcommtrack == 'true'}
+            				| <a href="{$entry.link}#comments">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
+            			{else}
+            				| <a href="{$entry.link}#comments">{$entry.label_comments} ({$entry.comments})</a>
+            			{/if}
+            		{/if}
+          		{/if}
+            {/if}
+          {/if}
 
 					{if $entry.is_entry_owner and not $is_preview}
 						<div class="editentrylink"><a href="{$entry.link_edit}">{$CONST.EDIT_ENTRY}</a></div>
@@ -250,9 +256,27 @@
 
 			{if $template_option.entryfooterpos == 'splitfoot'}
 				<div class='serendipity_entryFooter infofooter'>
-					{if $template_option.footercomments == 'true'}
-								<a href="{$entry.link}#comments">{$entry.label_comments} (<fb:comments-count href="{$entry.rdf_ident}"></fb:comments-count>)</a>
-					{/if}
+				  {if $entry.has_comments}
+				    {if $entry.comments == 0}
+    				  {if $template_option.footercomments == 'true'}
+    					  <a href="{$entry.link}#comments">{$entry.label_comments} (<fb:comments-count href="{$entry.rdf_ident}"></fb:comments-count>)</a>
+    					{/if}
+    				{else}
+              {if $use_popups}
+                {if $template_option.altcommtrack == 'true'}
+                	<a href="{$entry.link_popup_comments}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
+                {else}
+                	<a href="{$entry.link_popup_comments}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{$entry.label_comments} ({$entry.comments})</a>
+                {/if}
+              {else}
+                {if $template_option.altcommtrack == 'true'}
+                	<a href="{$entry.link}#comments">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
+                {else}
+                	<a href="{$entry.link}#comments">{$entry.label_comments} ({$entry.comments})</a>
+                {/if}
+              {/if}
+            {/if}
+          {/if}
 
 					{if $entry.is_entry_owner and not $is_preview}
 						<div class="editentrylink"><a href="{$entry.link_edit}">{$CONST.EDIT_ENTRY}</a></div>
@@ -331,7 +355,44 @@
 			<div class="serendipity_comments serendipity_section_comments">
 				<a id="comments"></a>
 				<div class="serendipity_commentsTitle">{$CONST.COMMENTS}</div>
+				{if entries.comments == 0}
           <div class="fb-comments" data-href="{$entry.rdf_ident}" data-num-posts="10" data-width="440"></div>
+        {else}
+          <div class="serendipity_center">{$CONST.DISPLAY_COMMENTS_AS}
+  					{if $entry.viewmode eq $CONST.VIEWMODE_LINEAR}
+  						({$CONST.COMMENTS_VIEWMODE_LINEAR} | <a href="{$entry.link_viewmode_threaded}#comments" rel="nofollow">{$CONST.COMMENTS_VIEWMODE_THREADED}</a>)
+  					{else}
+  						(<a rel="nofollow" href="{$entry.link_viewmode_linear}#comments">{$CONST.COMMENTS_VIEWMODE_LINEAR}</a> | {$CONST.COMMENTS_VIEWMODE_THREADED})
+  					{/if}
+  				</div>
+  				<div id="serendipity_commentlist">{serendipity_printComments entry=$entry.id mode=$entry.viewmode}</div>
+
+  				{if $entry.is_entry_owner}
+  					{if $entry.allow_comments}
+  						<div class="serendipity_center">(<a href="{$entry.link_deny_comments}">{$CONST.COMMENTS_DISABLE}</a>)</div>
+  					{else}
+  						<div class="serendipity_center">(<a href="{$entry.link_allow_comments}">{$CONST.COMMENTS_ENABLE}</a>)</div>
+  					{/if}
+  				{/if}
+  				<a id="feedback"></a>
+
+  				{foreach from=$comments_messagestack item="message"}
+  					<div class="serendipity_center serendipity_msg_important">{$message}</div>
+  				{/foreach}
+
+  				{if $is_comment_added}
+  					<div class="serendipity_center serendipity_msg_notice">{$CONST.COMMENT_ADDED}</div>
+  				{elseif $is_comment_moderate}
+  					<div class="serendipity_center serendipity_msg_notice">{$CONST.COMMENT_ADDED}<br />{$CONST.THIS_COMMENT_NEEDS_REVIEW}</div>
+  				{elseif not $entry.allow_comments}
+  					<div class="serendipity_center serendipity_msg_important">{$CONST.COMMENTS_CLOSED}</div>
+  				{else}
+  					<div class="serendipity_section_commentform">
+  						<div class="serendipity_commentsTitle">{$CONST.ADD_COMMENT}</div>
+  							{$COMMENTFORM}
+  						</div>
+  				{/if}
+        {/if}
 			</div>
 		{/if}
 
