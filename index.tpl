@@ -85,6 +85,7 @@
 				{/literal}
 				{if $template_option.facebook_comments == 'true'}
   				{literal}
+  				  <meta property="fb:admins" content="{$template_option.facebook_comment_admins}"/>
   					<div id="fb-root"></div>
             <script>(function(d, s, id) {
               var js, fjs = d.getElementsByTagName(s)[0];
@@ -94,7 +95,6 @@
               fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));</script>
   				{/literal}
-  				<meta property="fb:admins" content="{$template_option.facebook_comment_admins}"/>
   			{/if}
 				
     </head>
