@@ -84,8 +84,8 @@
 					<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=budgetbabe"></script>
 				{/literal}
 				{if $template_option.facebook_comments == 'true'}
-  				{literal}
   				  <meta property="fb:admins" content="{$template_option.facebook_comment_admins}"/>
+  				{literal}
   					<div id="fb-root"></div>
             <script>(function(d, s, id) {
               var js, fjs = d.getElementsByTagName(s)[0];
