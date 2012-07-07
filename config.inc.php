@@ -210,6 +210,12 @@ $template_config = array(
         'default'       => 'false',
     ),
     array(
+        'var'           => 'facebook_app_id',
+        'name'          => FACEBOOK_APP_ID,
+        'type'          => 'string',
+        'default'       => '',
+    ),
+    array(
         'var'           => 'facebook_comment_admins',
         'name'          => FACEBOOK_COMMENT_ADMIN,
         'type'          => 'string',

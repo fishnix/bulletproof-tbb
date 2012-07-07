@@ -49,6 +49,7 @@
 @define('ADDTHIS_FACEBOOK_IMAGE','The full URL to an image to show shen sharing links on Facebook');
 @define('FACEBOOK_COMMENTS','Show facebook comments.  This will only override posts with no comments.');
 @define('FACEBOOK_COMMENT_ADMIN','This is the facebook admin to control facebook comments.  Comma separate multiple userids without spaces.');
+@define('FACEBOOK_APP_ID','This is the facebook application ID.');
 @define('SHOW_STICKY_ENTRY_FOOTER','Show entry footer for sticky postings (requires plugin "Extended properties for entries")');
 @define('SHOW_STICKY_ENTRY_HEADING','Show entry heading for sticky postings (requires plugin "Extended properties for entries")');
 // Page footer next page  and previous page links
