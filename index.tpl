@@ -86,21 +86,24 @@
 				{if $template_option.facebook_comments == 'true'}
 				  <meta property="fb:app_id" content="{$template_option.facebook_app_id}"/>
   			  <meta property="fb:admins" content="{$template_option.facebook_comment_admins}"/>
-  			  <div id="fb-root"></div>
-  				{literal}
-            <script>(function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0];
-              if (d.getElementById(id)) return;
-              js = d.createElement(s); js.id = id;
-              js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-              fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
-  				{/literal}
   			{/if}
 				
     </head>
 
     <body{if $template_option.jscolumns == 'true'} onload="P7_equalCols2(0,{if $template_option.layouttype != '1col'}'content','DIV',{/if}'serendipityLeftSideBar','DIV','serendipityRightSideBar','DIV')"{/if}>
+
+		{if $template_option.facebook_comments == 'true'}
+		  <div id="fb-root"></div>
+			{literal}
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+			{/literal}
+		{/if}
 {else}
     {serendipity_hookPlugin hook="frontend_header"}
 {/if}
