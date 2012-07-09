@@ -84,20 +84,33 @@
 					<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=budgetbabe"></script>
 				{/literal}
 				{if $template_option.facebook_comments == 'true'}
-  			  <meta property="fb:app_id" content="{$template_option.facebook_app_id}"/>
-  			  <meta property="fb:admins" content="{$template_option.facebook_comment_admins}"/>
-          <meta property="og:type" content="article"/>
-          <meta property="og:site_name" content="TheBudgetBabe"/>
-          <meta property="og:title" content="{$entry.title}"/>
-    			{literal}
-            <script>(function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0];
-              if (d.getElementById(id)) return;
-              js = d.createElement(s); js.id = id;
-              js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-              fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
-    			{/literal}
+				  {if not $is_preview}
+      			  <meta property="fb:app_id" content="{$template_option.facebook_app_id}"/>
+      			  <meta property="fb:admins" content="{$template_option.facebook_comment_admins}"/>
+              <meta property="og:site_name" content="{$blogTitle}"/>
+              {if $is_single_entry}
+                <meta property="og:type" content="article"/>
+                <meta property="og:title" content="{$entry.title}"/>
+                <meta property="og:article:published_time" content="{$dategroup.date|@formatTime:'%Y-%m-%dT%H:%M:%S%Z'}"/>
+                {if $entry.categories}
+    							{foreach from=$entry.categories item="entry_category" name="categories"}
+    							  <meta property="og:article:tag" content="{$entry_category.category_name|@escape}"/>
+                  {/foreach}
+    						{/if}
+              {else}
+                <meta property="og:type" content="website"/>
+                <meta property="og:title" content="{$blogTitle}"/>
+          		{/if}
+        			{literal}
+                <script>(function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+        			{/literal}
+        	{/if}
   			{/if}
 				
     </head>
