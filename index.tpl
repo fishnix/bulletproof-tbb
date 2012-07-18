@@ -71,7 +71,7 @@
 						    url_transforms : {
 						        shorten: {      
 						            twitter: 'bitly'
-						        },
+						        }
 						    },
 						    shorteners : {
 						        bitly : { 
