@@ -66,20 +66,20 @@
 					<script type="text/javascript">
 						var addthis_config = {
 							data_track_addressbar:true
-							var addthis_share = {
-  						    url_transforms : {
-  						        shorten: {      
-  						            twitter: 'bitly'
-  						        },
-      						    shorteners : {
-      						        bitly : { 
-      						            username: 'thebudgetbabe',
-      						            apiKey: 'R_56f3e479d1f3ef4a3e933b1f0da2bc9c'
-      						        }
-      						    }
-  						    }
-  						}
 						};
+						var addthis_share = {
+						    url_transforms : {
+						        shorten: {      
+						            twitter: 'bitly'
+						        },
+						    },
+						    shorteners : {
+						        bitly : { 
+						            username: 'thebudgetbabe',
+						            apiKey: 'R_56f3e479d1f3ef4a3e933b1f0da2bc9c'
+						        }
+						    }
+						}
 					</script>
 					<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=budgetbabe"></script>
 				{/literal}
