@@ -66,6 +66,13 @@
 					<script type="text/javascript">
 						var addthis_config = {
 							data_track_addressbar:true
+							var addthis_share = {
+  						    url_transforms : {
+  						        shorten: {      
+  						            twitter: 'bitly'
+  						        },
+  						    }
+  						}
 						};
 					</script>
 					<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=budgetbabe"></script>
