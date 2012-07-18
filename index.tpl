@@ -71,6 +71,12 @@
   						        shorten: {      
   						            twitter: 'bitly'
   						        },
+      						    shorteners : {
+      						        bitly : { 
+      						            username: 'thebudgetbabe',
+      						            apiKey: 'R_56f3e479d1f3ef4a3e933b1f0da2bc9c'
+      						        }
+      						    }
   						    }
   						}
 						};
