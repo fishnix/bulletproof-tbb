@@ -75,8 +75,8 @@
 						    },
 						    shorteners : {
 						        bitly : { 
-						            login: 'thebudgetbabe',
-						            apiKey: 'R_56f3e479d1f3ef4a3e933b1f0da2bc9c'
+						            username: "thebudgetbabe",
+						            apiKey: "R_56f3e479d1f3ef4a3e933b1f0da2bc9c"
 						        }
 						    }
 						}
