@@ -83,24 +83,6 @@
 						{/if}
 					{/if}
 
-					{if $template_option.footertrackbacks == 'true'}
-						{if $entry.has_trackbacks}
-							{if $use_popups}
-								{if $template_option.altcommtrack == 'true'}
-									| <a href="{$entry.link_popup_trackbacks}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{if $entry.trackbacks == 0}{$CONST.NO_TRACKBACKS}{else}{$entry.trackbacks} {$entry.label_trackbacks}{/if}</a>
-								{else}
-									| <a href="{$entry.link_popup_trackbacks}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{$entry.label_trackbacks} ({$entry.trackbacks})</a>
-								{/if}
-							{else}
-								{if $template_option.altcommtrack == 'true'}
-									| <a href="{$entry.link}#trackbacks">{if $entry.trackbacks == 0}{$CONST.NO_TRACKBACKS}{else}{$entry.trackbacks} {$entry.label_trackbacks}{/if}</a>
-								{else}
-									| <a href="{$entry.link}#trackbacks">{$entry.label_trackbacks} ({$entry.trackbacks})</a>
-								{/if}
-							{/if}
-						{/if}
-					{/if}
-
 					{if $entry.is_entry_owner and not $is_preview}
 						<div class="editentrylink"><a href="{$entry.link_edit}">{$CONST.EDIT_ENTRY}</a></div>
 					{/if}
@@ -223,24 +205,6 @@
 						{/if}
 					{/if}
 
-					{if $template_option.footertrackbacks == 'true'}
-						{if $entry.has_trackbacks}
-							{if $use_popups}
-								{if $template_option.altcommtrack == 'true'}
-									| <a href="{$entry.link_popup_trackbacks}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{if $entry.trackbacks == 0}{$CONST.NO_TRACKBACKS}{else}{$entry.trackbacks} {$entry.label_trackbacks}{/if}</a>
-								{else}
-									| <a href="{$entry.link_popup_trackbacks}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{$entry.label_trackbacks} ({$entry.trackbacks})</a>
-								{/if}
-							{else}
-								{if $template_option.altcommtrack == 'true'}
-									| <a href="{$entry.link}#trackbacks">{if $entry.trackbacks == 0}{$CONST.NO_TRACKBACKS}{else}{$entry.trackbacks} {$entry.label_trackbacks}{/if}</a>
-								{else}
-									| <a href="{$entry.link}#trackbacks">{$entry.label_trackbacks} ({$entry.trackbacks})</a>
-								{/if}
-							{/if}
-						{/if}
-					{/if}
-
 					{if $entry.is_entry_owner and not $is_preview}
 						<div class="editentrylink"><a href="{$entry.link_edit}">{$CONST.EDIT_ENTRY}</a></div>
 					{/if}
@@ -292,24 +256,6 @@
 									<a href="{$entry.link}#comments">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
 								{else}
 									<a href="{$entry.link}#comments">{$entry.label_comments} ({$entry.comments})</a>
-								{/if}
-							{/if}
-						{/if}
-					{/if}
-
-					{if $template_option.footertrackbacks == 'true'}
-						{if $entry.has_trackbacks}
-							{if $use_popups}
-								{if $template_option.altcommtrack == 'true'}
-									| <a href="{$entry.link_popup_trackbacks}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{if $entry.trackbacks == 0}{$CONST.NO_TRACKBACKS}{else}{$entry.trackbacks} {$entry.label_trackbacks}{/if}</a>
-								{else}
-									| <a href="{$entry.link_popup_trackbacks}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{$entry.label_trackbacks} ({$entry.trackbacks})</a>
-								{/if}
-							{else}
-								{if $template_option.altcommtrack == 'true'}
-									| <a href="{$entry.link}#trackbacks">{if $entry.trackbacks == 0}{$CONST.NO_TRACKBACKS}{else}{$entry.trackbacks} {$entry.label_trackbacks}{/if}</a>
-								{else}
-									| <a href="{$entry.link}#trackbacks">{$entry.label_trackbacks} ({$entry.trackbacks})</a>
 								{/if}
 							{/if}
 						{/if}
@@ -387,14 +333,6 @@
 				<div class="serendipity_center serendipity_msg_notice">{$CONST.DATA_COMMENT_APPROVED|@sprintf:$CONST.COMMENT_APPROVED}</div>
 			{/if}
 
-			<div class="serendipity_comments serendipity_section_trackbacks">
-				<a id="trackbacks"></a>
-				<div class="serendipity_commentsTitle">{$CONST.TRACKBACKS}</div>
-				<div class="serendipity_center">
-					<a rel="nofollow" style="font-weight: normal" href="{$entry.link_trackback}" onclick="alert('{$CONST.TRACKBACK_SPECIFIC_ON_CLICK|@escape:html}'); return false;" title="{$CONST.TRACKBACK_SPECIFIC_ON_CLICK|@escape}">{$CONST.TRACKBACK_SPECIFIC}</a>
-				</div>
-				<div id="serendipity_trackbacklist">{serendipity_printTrackbacks entry=$entry.id}</div>
-			</div>
 		{/if}
 
 		{if $is_single_entry and not $is_preview}
