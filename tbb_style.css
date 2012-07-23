@@ -31,7 +31,7 @@ a:hover {
 
 /*
 body {
-    font: 100.01% Verdana, Arial, Helvetica, sans-serif;
+    font: 100.01% Georgia, Verdana, Arial, Helvetica, sans-serif;
     background: #fff;
     color: #000;
    
@@ -40,7 +40,7 @@ body {
 
 #wrapper {
     width: 988px;
-    font-family:  verdana, arial, helvetica, sans-serif;
+    font-family:  georgia, verdana, arial, helvetica, sans-serif;
     font-size: 69%;
     background-color: #ffffff;
     border-left: 1px solid #ffffff;
@@ -50,7 +50,7 @@ body {
 
 #serendipity_banner {
     margin: 0;
-    height: 127px;
+    height: 194px;
     background: #000000 url('img/blue_header.jpg') repeat-x center left ;
     border: 0px;
 
