@@ -9,11 +9,9 @@
 
 
 body {
-    font: 115.01% Verdana, Arial, Helvetica, sans-serif;
-    background: #fff;
-    color: #000;
-    background-image: url({TEMPLATE_PATH}img/quattro-pale-gray-BB.gif);
-    background-repeat: repeat;
+    font: 115.01% Georgia, Verdana, Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+
 }
 
 /*** General styles ***/
