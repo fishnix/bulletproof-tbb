@@ -62,27 +62,6 @@
 				{if $template_option.additional_head_code_toggle == 'true'}
 					{$template_option.additional_head_code}
 				{/if}
-				{literal}
-					<script type="text/javascript">
-						var addthis_config = {
-							data_track_addressbar:true
-						};
-						var addthis_share = {
-						    url_transforms : {
-						        shorten: {      
-						            twitter: 'bitly'
-						        }
-						    },
-						    shorteners : {
-						        bitly : { 
-						            username: "thebudgetbabe",
-						            apiKey: "R_56f3e479d1f3ef4a3e933b1f0da2bc9c"
-						        }
-						    }
-						}
-					</script>
-					<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=budgetbabe"></script>
-				{/literal}
     </head>
 
     <body{if $template_option.jscolumns == 'true'} onload="P7_equalCols2(0,{if $template_option.layouttype != '1col'}'content','DIV',{/if}'serendipityLeftSideBar','DIV','serendipityRightSideBar','DIV')"{/if}>
@@ -452,15 +431,8 @@
             <!-- or create your own template based on the bulletproof framework -->
             <!-- ************************************************************** -->
 
-            <div id="serendipity_bulletproof_button"><a href="http://s9y-bulletproof.com" title="Based on the s9y Bulletproof template framework"><img src="{$serendipityHTTPPath}templates/{$template}/img/bulletproof_button.png" alt="Based on the s9y Bulletproof template framework" width="100" height="28" /></a></div>
+            <div id="serendipity_bulletproof_button"><a href="http://s9y-bulletproof.com" title="Based on the s9y Bulletproof template framework"><img src="{$serendipityHTTPPath}templates/{$template}/img/bulletproof_button.png" alt="Based on the s9y Bulletproof template framework" width="80" height="22" /></a></div>
 
-            <!-- ************************************************************** -->
-            <!-- Feel free to insert your own "Template by" name and link below -->
-            <!-- if you create a custom template based on bulletproof.          -->
-            <!-- ************************************************************** -->
-
-            <div id="serendipity_credit_line">{$CONST.POWERED_BY} <a href="http://www.s9y.org">s9y</a> &ndash; Template by <a href="http://s9y-bulletproof.com">Bulletproof development team</a>.<br />{$template_option.colorset_data.attribution}</div>
-            
             {if $template_option.counter_code_toggle == 'true'}
                 <div class="counter_code">{$template_option.counter_code}</div>
             {/if}
@@ -480,6 +452,22 @@
 {/if}
 
 {$raw_data}
+
+{literal}
+	<script type="text/javascript">
+		var addthis_config = {
+			data_track_addressbar:true
+		};
+		var addthis_share = {
+		    url_transforms : {
+		        shorten: {      
+		            twitter: 'bitly'
+		        }
+		    }
+		}
+	</script>
+	<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=budgetbabe"></script>
+{/literal}
 
 {serendipity_hookPlugin hook="frontend_footer"}
 {if $is_embedded != true}
