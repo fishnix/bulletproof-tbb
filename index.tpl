@@ -110,15 +110,15 @@
                 <!-- above or below the banner                                                   -->
                 {if $template_option.sitenav_quicksearch == 'true'}
 					{if $template_option.googlesearch == 'true'}
-	                    <form action="http://www.google.com/cse" id="cse-search-box">
-	 					 <div>
-						    <input type="hidden" name="cx" value="{$template_option.googlesearch_partner_id}" />
-						    <input type="hidden" name="ie" value="UTF-8" />
-						    <input type="text" name="q" size="31" />
-						    <input type="submit" name="sa" value="Search" />
-						  </div>
-						</form>
-						<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+          <form action="http://www.google.com/cse" id="cse-search-box">
+            <div>
+              <input type="hidden" name="cx" value="{$template_option.googlesearch_partner_id}" />
+              <input type="hidden" name="ie" value="UTF-8" />
+              <input type="text" name="q" size="31" />
+              <input type="submit" name="sa" value="Search" />
+            </div>
+          </form>
+          <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
 					{else}
 						<form id="searchform" action="{$serendipityHTTPPath}{$serendipityIndexFile}" method="get">
 	                        <input type="hidden" name="serendipity[action]" value="search" />
