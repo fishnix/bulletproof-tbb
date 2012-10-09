@@ -457,7 +457,7 @@
 	<script type="text/javascript">
 		var addthis_config = {
 			data_track_addressbar:true,
-			ui_hover_direction:-1
+			ui_hover_direction:1
 		};
 		var addthis_share = {
 		    url_transforms : {
