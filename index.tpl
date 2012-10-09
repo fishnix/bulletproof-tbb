@@ -466,7 +466,7 @@
 		    }
 		}
 	</script>
-	<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=budgetbabe"></script>
+	<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=budgetbabe"></script>
 {/literal}
 
 {serendipity_hookPlugin hook="frontend_footer"}
