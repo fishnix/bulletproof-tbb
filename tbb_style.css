@@ -162,8 +162,7 @@ width: 326px;
     width: 470px;
     border-left: 1px solid #dfdfdf;
     border-right: 1px solid #dfdfdf;
-
-
+    overflow: visible;
 }
 
 #content a {
