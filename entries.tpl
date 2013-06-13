@@ -12,6 +12,7 @@
 	{/if}
 
 	{foreach from=$dategroup.entries item="entry"}
+		{assign var="entry" value=$entry scope="parent"}
 		<h4 class="entry-title serendipity_title"><a href="{$entry.link}" rel="bookmark">{$entry.title}</a></h4>
 
 		{if $template_option.addthiswidget_loc == 'top' }
