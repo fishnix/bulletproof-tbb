@@ -125,6 +125,7 @@ abbr, acronym, .help{
 /*** Entry styles ***/
 .serendipity_Entry_Date {
     margin: 0.5em 1em;
+    overflow: visible;
 }
 
 .serendipity_entry {

@@ -162,8 +162,7 @@ width: 326px;
     width: 470px;
     border-left: 1px solid #dfdfdf;
     border-right: 1px solid #dfdfdf;
-
-
+    overflow: visible;
 }
 
 #content a {
@@ -217,6 +216,7 @@ width: 326px;
 
 .serendipity_pageFooter {
     margin: 5px 0 10px;
+    overflow: visible;
 }
 
 .serendipitySideBarItem {
@@ -298,6 +298,7 @@ width: 326px;
 #footer {
     font-size: 80%;
     background-color: #ffffff;
+    overflow: visible;
 }
 
 img.serendipity_entryIcon {

@@ -5,7 +5,7 @@
         <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
     {/if}
 
-    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{$lang}" lang="{$lang}">
+    <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" xml:lang="{$lang}" lang="{$lang}">
     <head>
         <title>{$head_title|@default:$blogTitle}{if $head_subtitle} - {$head_subtitle}{/if}</title>
         {serendipity_hookPlugin hook="frontend_header"}
@@ -470,7 +470,7 @@
 		    }
 		}
 	</script>
-	<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=budgetbabe"></script>
+	<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=budgetbabe"></script>
 {/literal}
 
 {serendipity_hookPlugin hook="frontend_footer"}
