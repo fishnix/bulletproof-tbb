@@ -183,7 +183,8 @@ $template_config = array(
         'type'          => 'select',
         'default'       => 'bottom',
         'select_values' => array('top' => top,
-                                 'bottom' => bottom)
+                                 'bottom' => bottom,
+                                 'none' => none)
     ),
     array(
         'var'           => 'addthisaccount',
