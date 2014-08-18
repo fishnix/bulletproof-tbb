@@ -1,7 +1,8 @@
 <!-- ENTRIES START -->
 {serendipity_hookPlugin hook="entries_header" addData="$entry_id"}
 
-{foreach from=$entries item="dategroup"}
+{foreach name=dg from=$entries item="dategroup"}
+
 <div class="hentry serendipity_Entry_Date{if $dategroup.is_sticky} serendipity_Sticky_Entry{/if}">
 	{if $dategroup.is_sticky}
 		{if $template_option.show_sticky_entry_heading == 'true'}
@@ -11,7 +12,8 @@
 		<h3 class="serendipity_date"><abbr class="published" title="{$dategroup.date|@formatTime:'%Y-%m-%dT%H:%M:%S%Z'}">{$dategroup.date|@formatTime:$template_option.date_format}</abbr></h3>
 	{/if}
 
-	{foreach from=$dategroup.entries item="entry"}
+	{foreach name=dg_entries from=$dategroup.entries item="entry"}
+    
 		{assign var="entry" value=$entry scope="parent"}
 		<h4 class="entry-title serendipity_title"><a href="{$entry.link}" rel="bookmark">{$entry.title}</a></h4>
 
@@ -376,6 +378,19 @@
 				{/if}
 			</div>
 		{/if}
+
+    {if not $is_preview}
+      <!-- Between post tags ("{$template_option.between_post_code_toggle}") -->
+  		{if $template_option.between_post_code_toggle == 'all'}
+        {if not ($smarty.foreach.dg_entries.last)}
+    			{$template_option.between_post_code}
+        {/if}
+      {elseif $template_option.between_post_code_toggle == 'first'}
+        {if ($smarty.foreach.dg_entries.first and $smarty.foreach.dg.first)}
+    			{$template_option.between_post_code}
+        {/if}
+  		{/if}
+    {/if}
 
 		{$entry.backend_preview}
 	{/foreach}

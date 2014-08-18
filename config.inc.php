@@ -256,6 +256,21 @@ $template_config = array(
         'default'       => 'false'
     ),
     array(
+        'var'           => 'between_post_code',
+        'name'          => BETWEEN_POST_CODE,
+        'type'          => 'text',
+        'default'       => '',
+    ),
+    array(
+        'var'           => 'between_post_code_toggle',
+        'name'          => USE_BETWEEN_POST,
+        'type'          => 'select',
+        'default'       => 'false',
+        'select_values' => array('none' => 'Disabled',
+                                 'all' => 'All Posts',
+                                 'first' => 'After first')
+   ),
+    array(
         'var'           => 'counter_code',
         'name'          => COUNTER_CODE,
         'type'          => 'text',

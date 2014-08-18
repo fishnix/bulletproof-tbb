@@ -65,6 +65,9 @@
 // Leaderboard Code -- inserted at the top of the body
 @define('LEADERBOARD_CODE', 'Insert code at the top of the body -- like a leaderboard ad');
 @define('USE_LEADERBOARD',  'Choose whether to use the leaderboard code inserted above');
+// Between post Code -- inserted between posts
+@define('BETWEEN_POST_CODE', 'Insert code between posts on the main pages');
+@define('USE_BETWEEN_POST',  'Choose whether to use the between post code inserted above');
 // Additional footer text
 @define('FOOTER_TEXT', 'Use this to insert additional text into the page footer');
 @define('USE_FOOTER_TEXT', 'Integrate footer text');
