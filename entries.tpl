@@ -341,15 +341,12 @@
 		{if $is_single_entry and not $is_preview}
 			<div class="serendipity_comments serendipity_section_comments">
 				<a id="comments"></a>
-				<div class="serendipity_commentsTitle">{$CONST.COMMENTS}</div>
-				<div class="serendipity_center">{$CONST.DISPLAY_COMMENTS_AS}
-					{if $entry.viewmode eq $CONST.VIEWMODE_LINEAR}
-						({$CONST.COMMENTS_VIEWMODE_LINEAR} | <a href="{$entry.link_viewmode_threaded}#comments" rel="nofollow">{$CONST.COMMENTS_VIEWMODE_THREADED}</a>)
-					{else}
-						(<a rel="nofollow" href="{$entry.link_viewmode_linear}#comments">{$CONST.COMMENTS_VIEWMODE_LINEAR}</a> | {$CONST.COMMENTS_VIEWMODE_THREADED})
-					{/if}
-				</div>
-				<div id="serendipity_commentlist">{serendipity_printComments entry=$entry.id mode=$entry.viewmode}</div>
+				{if $entry.comments}
+					<div class="serendipity_commentsTitle">Comments</div>
+					<div id="serendipity_commentlist">{serendipity_printComments entry=$entry.id mode=$entry.viewmode}</div>
+				{else}
+					<div class="serendipity_commentsTitle"></div>
+				{/if}
 
 				{if $entry.is_entry_owner}
 					{if $entry.allow_comments}
@@ -372,7 +369,7 @@
 					<div class="serendipity_center serendipity_msg_important">{$CONST.COMMENTS_CLOSED}</div>
 				{else}
 					<div class="serendipity_section_commentform">
-						<div class="serendipity_commentsTitle">{$CONST.ADD_COMMENT}</div>
+						<div class="serendipity_commentsTitle">Leave a comment</div>
 							{$COMMENTFORM}
 						</div>
 				{/if}

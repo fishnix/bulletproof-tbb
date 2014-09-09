@@ -31,7 +31,7 @@ coco =
   <dd class="serendipity_commentsValue"><input class="frm" type="text" id="serendipity_commentform_name" name="serendipity[name]" value="{$commentform_name}" size="30" /></dd>
   <dt class="serendipity_commentsLabel"><label for="serendipity_commentform_email">{$CONST.EMAIL}</label></dt>
   <dd class="serendipity_commentsValue"><input class="frm" type="text" id="serendipity_commentform_email" name="serendipity[email]" value="{$commentform_email}" size="30" /></dd>
-  <dt class="serendipity_commentsLabel"><label for="serendipity_commentform_url">{$CONST.HOMEPAGE}</label></dt>
+  <dt class="serendipity_commentsLabel"><label for="serendipity_commentform_url">URL</label></dt>
   <dd class="serendipity_commentsValue"><input class="frm" type="text" id="serendipity_commentform_url" name="serendipity[url]" value="{$commentform_url}" size="30" /></dd>
   <dt class="serendipity_commentsLabel"><label for="serendipity_replyTo">{$CONST.IN_REPLY_TO}</label></dt>
   <dd class="serendipity_commentsValue">{$commentform_replyTo}</dd>
@@ -41,7 +41,9 @@ coco =
   {if $is_commentform_showToolbar}
     <dt>&#160;</dt>
     <dd class="serendipity_commentsLabel">
+		<div class="serendipity_remember_comment">
     <span class="checkbox"><input id="checkbox_remember" type="checkbox" name="serendipity[remember]" {$commentform_remember} />&#160;<label for="checkbox_remember">{$CONST.REMEMBER_INFO}</label></span>
+		</div>
     {if $is_allowSubscriptions}
     <span class="checkbox"><input id="checkbox_subscribe" type="checkbox" name="serendipity[subscribe]" {$commentform_subscribe} />&#160;<label for="checkbox_subscribe">{$CONST.SUBSCRIBE_TO_THIS_ENTRY}</label></span>
     {/if}
@@ -54,7 +56,10 @@ coco =
   {/if}
   <dt>&#160;</dt><dd class="serendipity_commentsLabel">
     <input type="submit" name="serendipity[submit]" value="{$CONST.SUBMIT_COMMENT}" />
-    <input type="submit" id="serendipity_preview" name="serendipity[preview]" value="{$CONST.PREVIEW}" /></dd>
+		<div class="serendipity_preview_comment_button">
+    <input type="submit" id="serendipity_preview" name="serendipity[preview]" value="{$CONST.PREVIEW}" />
+		</div>
+		</dd>
 </dl>
 </form>
 </div>

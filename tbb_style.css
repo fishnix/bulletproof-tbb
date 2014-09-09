@@ -8,6 +8,18 @@
 /**********************************************************************/
 
 
+.serendipity_preview_comment_button {
+	display: none;
+}
+
+.serendipity_remember_comment {
+	display: none;
+}
+
+.serendipity_commentDirection {
+  display: none;
+}
+
 .serendipity_xml_icon {
     background: url('img/blue_xml.png') center center no-repeat;
     padding: 10px 0;
