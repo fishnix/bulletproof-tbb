@@ -485,6 +485,7 @@ twttr.conversion.trackPid('l4iog');
 <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l4iog&p_id=Twitter" />
 <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l4iog&p_id=Twitter" />
 </noscript>
+<a href="https://plus.google.com/+thebudgetbabe" rel="publisher"></a>
 
 {serendipity_hookPlugin hook="frontend_footer"}
 {if $is_embedded != true}
