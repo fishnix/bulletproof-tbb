@@ -9,7 +9,7 @@
 	    <h3 class="serendipity_date">{$CONST.STICKY_POSTINGS}</h3>
 		{/if}
 	{else}
-		<h3 class="serendipity_date"><abbr class="published" title="{$dategroup.date|@formatTime:'%Y-%m-%dT%H:%M:%S%Z'}">{$dategroup.date|@formatTime:$template_option.date_format}</abbr></h3>
+		<h3 class="serendipity_date"><abbr class="published updated" title="{$dategroup.date|@formatTime:'%Y-%m-%dT%H:%M:%S%Z'}">{$dategroup.date|@formatTime:$template_option.date_format}</abbr></h3>
 	{/if}
 
 	{foreach name=dg_entries from=$dategroup.entries item="entry"}
