@@ -50,7 +50,7 @@
 			{if $template_option.entryfooterpos == 'belowtitle'}
 				<div class='serendipity_entryFooter belowtitle'>
 					{if $template_option.footerauthor == 'true'}
-						{$CONST.POSTED_BY} <address class="author"><a href="{$entry.link_author}">{$entry.author}</a></address>
+						{$CONST.POSTED_BY} <address class="author vcard"><a class="fn" href="{$entry.link_author}">{$entry.author}</a></address>
 					{/if}
 
 					{if $template_option.footercategories == 'true'}
@@ -125,7 +125,7 @@
 			{if $template_option.entryfooterpos == 'splitfoot'}
 				<div class='serendipity_entryFooter byline'>
 					{if $template_option.footerauthor == 'true'}
-						{$CONST.POSTED_BY} <address class="author"><a href="{$entry.link_author}">{$entry.author}</a></address>
+						{$CONST.POSTED_BY} <address class="author vcard"><a class="fn" href="{$entry.link_author}">{$entry.author}</a></address>
 					{/if}
 
 					{if $template_option.footercategories == 'true'}
@@ -171,7 +171,7 @@
 			{if $template_option.entryfooterpos == 'belowentry'}
 				<div class='serendipity_entryFooter belowentry'>
 					{if $template_option.footerauthor == 'true'}
-						{$CONST.POSTED_BY} <address class="author"><a href="{$entry.link_author}">{$entry.author}</a></address>
+						{$CONST.POSTED_BY} <address class="author vcard"><a class="fn" href="{$entry.link_author}">{$entry.author}</a></address>
 					{/if}
 
 					{if $template_option.footercategories == 'true'}
