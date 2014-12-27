@@ -40,6 +40,10 @@ a:hover {
     color: #c9a480;
 }
 
+.between-post-ad {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 /*
 body {
