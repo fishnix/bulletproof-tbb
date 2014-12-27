@@ -377,7 +377,8 @@
 		{/if}
 
     {if not $is_preview}
-      <!-- Between post tags ("{$template_option.between_post_code_toggle}") -->
+      	<!-- Between post tags ("{$template_option.between_post_code_toggle}") -->
+      	<div class="between-post-ad">
   		{if $template_option.between_post_code_toggle == 'all'}
         {if not ($smarty.foreach.dg_entries.last)}
     			{$template_option.between_post_code}
@@ -387,6 +388,7 @@
     			{$template_option.between_post_code}
         {/if}
   		{/if}
+		</div>
     {/if}
 
 		{$entry.backend_preview}
