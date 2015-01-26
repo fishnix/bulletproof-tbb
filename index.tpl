@@ -38,8 +38,8 @@
         <!-- additional colorset stylesheet -->
         <link rel="stylesheet" type="text/css" href="{$serendipityHTTPPath}templates/{$template}/{$template_option.colorset}_style.css" />
         
-        <link rel="stylesheet" type="text/css" href="{$serendipityHTTPPath}templates/{$template}/chosen.min.css" />
-        <script type="text/javascript" src="{$serendipityHTTPPath}templates/{$template}/chosen.jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="{$serendipityHTTPPath}templates/{$template}/chosen/chosen.min.css" />
+        <script type="text/javascript" src="{$serendipityHTTPPath}templates/{$template}/chosen/chosen.jquery.min.js"></script>
         
         {if $template_option.custheader == 'true'}
         <style type="text/css">
