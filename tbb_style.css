@@ -55,7 +55,7 @@ body {
 */
 
 #wrapper {
-    width: 988px;
+    width: 1018px;
     font-family:  georgia, verdana, arial, helvetica, sans-serif;
     font-size: 69%;
     background-color: #ffffff;
@@ -157,8 +157,7 @@ width: 189px;
     background-color: #ffffff;
     color: #505050;
     overflow: visible; 
-width: 326px;
-
+    width: 326px;
 }
 
 #serendipityRightSideBar a {
@@ -175,7 +174,7 @@ width: 326px;
 #content {
     background-color: #ffffff;
     color: #505050;
-    width: 470px;
+    width: 500px;
     border-left: 1px solid #dfdfdf;
     border-right: 1px solid #dfdfdf;
     overflow: visible;
