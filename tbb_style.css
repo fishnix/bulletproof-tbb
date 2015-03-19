@@ -55,7 +55,7 @@ body {
 */
 
 #wrapper {
-    width: 1018px;
+    width: 1043px;
     font-family:  georgia, verdana, arial, helvetica, sans-serif;
     font-size: 69%;
     background-color: #ffffff;
@@ -174,7 +174,7 @@ width: 189px;
 #content {
     background-color: #ffffff;
     color: #505050;
-    width: 500px;
+    width: 525px;
     border-left: 1px solid #dfdfdf;
     border-right: 1px solid #dfdfdf;
     overflow: visible;
