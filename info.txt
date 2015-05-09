@@ -1,4 +1,4 @@
-Name: Bulletproof-TBB v1.5 (s9y-bulletproof.com)
+Name: Bulletproof-TBB v2.0
 Author: TheBudgetBabe (based on a theme by the Bulletproof development team)
-Date: 2012-07-24
+Date: 2015-05-01
 Require Serendipity: 1.2

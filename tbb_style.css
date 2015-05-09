@@ -1,224 +1,156 @@
 /**********************************************************************/
-/* Template: bulletproof for Serendipity (http://www.s9y.org)         */
-/* Authors: Matthias Mees, David Cummins and Don Chambers             */
-/*                                                                    */
-/* Stylesheet for the colorset 'tbb' using 'blue' as base                             */
-/*                                                                    */
-/* http://s9y-bulletproof.com                                         */
+/* Template: bulletproof-tbb for Serendipity (http://www.s9y.org)     */
 /**********************************************************************/
 
-
-.serendipity_preview_comment_button {
-	display: none;
+body a {
+    color: #df077a;
 }
 
-.serendipity_remember_comment {
-	display: none;
-}
-
-.serendipity_commentDirection {
-  display: none;
-}
-
-.serendipity_xml_icon {
-    background: url('img/blue_xml.png') center center no-repeat;
-    padding: 10px 0;
-    margin: 0;
-    visibility: visible;
-}
-
- .serendipity_xml_icon img {
-    visibility: hidden;
-}
-
-a {
-    color: #000000;
-    text-decoration: none;
-}
-
-a:hover {
+body a:hover {
     color: #c9a480;
 }
 
-.between-post-ad {
-    padding-top: 10px;
-    padding-bottom: 10px;
+body h1,
+body h2,
+body h3 {
+    font-weight: bold;
 }
 
-/*
-body {
-    font: 100.01% Georgia, Verdana, Arial, Helvetica, sans-serif;
-    background: #fff;
-    color: #000;
-   
-}
-*/
-
-#wrapper {
-    width: 1043px;
-    font-family:  georgia, verdana, arial, helvetica, sans-serif;
-    font-size: 69%;
-    background-color: #ffffff;
-    border-left: 1px solid #ffffff;
-    border-right: 1px solid #ffffff;
-    margin: 0px auto;
-    line-height: 150%
+footer p {
+    text-align: center;
 }
 
-#serendipity_banner {
-    margin: 0;
-    height: 194px;
-    background: #ffffff url('img/blue_header.jpg') repeat-x center left ;
+.container {
+    max-width: 1064px;
+}
+
+.navbar {
+    margin-bottom: 10px;
+}
+
+.navbar-header {
+    max-width: 509px;
+    margin-top: 10px;
+}
+
+.navbar-header img {
+    max-width: 75%;
+}
+
+.navbar-nav {
     border: 0px;
-
-
-}
-
-#serendipity_banner h1 {
+    margin-bottom: 0px;
+    text-transform: uppercase;
     font-weight: bold;
-    font-size: 140%;
-    text-transform: uppercase;
-    letter-spacing: .3em;
-    font-size: 180%;
-    padding: 0.25em;
 }
 
-#serendipity_banner h2 {
-    font-weight: normal;
-    font-size: 100%;
-    text-transform: uppercase;
-    letter-spacing: .3em;
-    font-size: 130%;
-    padding: 0.25em;
+.navbar-nav li a {
+    color: #080808;
 }
 
-#serendipity_banner a { 
-    color: #ffffff;
-    text-decoration: none; 
-
+.navbar-nav li a:hover,
+.navbar-nav li a:focus {
+    background-color: transparent;
+    color: #df077a;
 }
 
-#serendipity_below_banner {
-    /* not used in this template */
+.navbar-toggle {
+    border-color: #dddddd;
+    background-color: transparent;
+    border-radius: 4px;
 }
 
-#sitenav {
-    background-color: #ffffff; 
-    border-top: 0px solid #dfdfdf;
-    border-bottom: 0px solid #dfdfdf;
-    margin: 0;
-    padding: 0;
+.form-control:focus {
+    border-color: #FF0000;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(223, 7, 122, 1);
 }
 
-#sitenav ul li {
-    font-size: 80%;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    margin: 0;
-    padding: 0; 
-    display: inline;
+.brand-img {
+    padding-left: 0px;
 }
 
-#sitenav ul a{
-    border-bottom: 4px solid #ffffff;
-    margin: 0 2px 0 0;
-    padding: 6px 10px 6px 10px;
-    float: left;
-    overflow: hidden;
-}
-
-#sitenav ul a:hover,
-#sitenav .currentpage a {
-    border-bottom: 1px dotted #FFCC33; 
-    padding: 6px 10px 6px 10px;
+.content {
     background-color: #ffffff;
+    padding: 0px;
+    max-width: 532px;
+    font-size: 100%;
+    line-height: 20px;
+    border: 1px;
+}
+
+.content h1 {
+    text-transform: none;
+    font-size: 160%;
+    line-height: 150%;
+    letter-spacing: .2em;
+    margin: 5px 0 15px 0;
+}
+
+.content h1 a {
+    color: #080808;
+}
+
+.content h1 a:hover {
+    text-decoration: none;
+    color: #df077a;
+}
+
+.content h2 {
+    font-size: 140%;
+}
+
+.content h3 {
+    font-size: 130%;
+}
+
+.entry-content {
+    font-size: 110%;
+}
+
+.serendipity_image_center {
+    display: block;
+    height: auto;
+    max-width: 100%;
 }
 
 #serendipityLeftSideBar {
-background-color: #ffffff;
+    background-color: #ffffff;
     color: #505050;
-    overflow: hidden; 
-width: 189px;
-
-}
-
-#serendipityLeftSideBar a {
-    color: #df077a;
-    
-}
-
-#serendipityLeftSideBar a:hover {
-    color: #c9a480;
-    
+    overflow: hidden;
+    padding: 0px;
+    min-width: 170px;
 }
 
 #serendipityRightSideBar {
     background-color: #ffffff;
     color: #505050;
-    overflow: visible; 
-    width: 326px;
-}
-
-#serendipityRightSideBar a {
-    color: #df077a;
-    
-}
-
-#serendipityRightSideBar a:hover {
-    color: #c9a480;
-    
-}
-
-
-#content {
-    background-color: #ffffff;
-    color: #505050;
-    width: 525px;
-    border-left: 1px solid #dfdfdf;
-    border-right: 1px solid #dfdfdf;
     overflow: visible;
+    padding: 0px;
+    /*min-width: 322px;*/
 }
 
-#content a {
-    color: #df077a;
-
+#serendipityRightSideBar .serendipitySideBarItem .serendipitySideBarTitle {
+    width: 300px;
 }
 
-#content a:hover {
-    color: #c9a480;
-    
-}
-    
-
-#content h3 {
-    font-size: 100%;
-    margin: 10px 0 0 0;
-    
+.leaderboard_code {
+    overflow-y: auto;
 }
 
+.between-post-ad {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    overflow: hidden
+}
 
 .serendipity_commentsTitle {
     font-size: 100%;
     font-weight: bold;
 }
 
-#content h4 {
-    text-transform: none;
-    font-size: 120%;
-    letter-spacing: .2em;
-    margin: 5px 0 15px 0;
-    
-}
-
-#content h4 a {
-    color: #000000;
-    
-}
-
-#content h4 a:hover {
-    color: #c9a480;
-
+.serendipity_entry_body {
+    font-size: 100%;
 }
 
 .serendipity_entryFooter {
@@ -227,11 +159,11 @@ width: 189px;
     padding: 8px 0;
     border-top: 1px solid #dfdfdf;
     border-bottom: 1px solid #dfdfdf;
+    clear: left;
 }
 
-.serendipity_pageFooter {
-    margin: 5px 0 10px;
-    overflow: visible;
+.serendipity_entryFooter address {
+    display: inline;
 }
 
 .serendipitySideBarItem {
@@ -255,15 +187,26 @@ width: 189px;
 }
 
 .serendipitySideBarContent {
-    font-size: 90%;
+    /*font-size: 100%;*/
     padding: 10px;
     border-left: 0px solid #dfdfdf;
     background-color: #ffffff;
     margin: 0;
+    line-height: 20px;
+    text-align: left;
 }
 
-.serendipitySideBarFooter {
-    /* not used in this template */
+.serendipity_social_follow {
+    margin: 2px;
+    padding: 5px;
+}
+
+.serendipity_social_follow a {
+    color: #080808;
+}
+
+.serendipity_social_follow a:hover {
+    color: #df077a;
 }
 
 #sbsitenav .serendipitySideBarContent {
@@ -310,28 +253,11 @@ width: 189px;
     font-size: 100%;
 }
 
-#footer {
+.copyright {
     font-size: 80%;
     background-color: #ffffff;
     overflow: visible;
-}
-
-img.serendipity_entryIcon {
-    float: left;
-    border: 0px;
-    margin:0 5px 0px 0;
-}
-
-input#serendipityQuickSearchTermField {
-    border: 1px solid #1F5F7F!important;
-}
-
-#sitenav #searchform input {
-    border: 1px solid #1f5f7f;
-}
-
-#sitenav #cse-search-box input {
-    border: 1px solid #1f5f7f;
+    text-align: center;
 }
 
 blockquote {
@@ -346,20 +272,20 @@ blockquote {
 }
 
 blockquote p {
-   margin: 0.5em 0;
-   padding: 0;
+    margin: 0.5em 0;
+    padding: 0;
 }
 
 .serendipity_comment_author_self comment_evenbox,
 .comment_evenbox {
-    line-height: 1.2em;   
+    line-height: 2em;
     border: 1px dotted #efefef;
     background: #efefef;
 }
 
 .serendipity_comment_author_self comment_oddbox,
 .comment_oddbox {
-    line-height: 1.2em;
+    line-height: 2em;
     border: 1px dotted #efefef;
     background: #ffffff;
 }
@@ -370,23 +296,4 @@ blockquote p {
     letter-spacing: .2em;
     margin: 1em 0;
     padding: 0.5em 0;
-}
-
-.s9y_wrap {
-    font-size: 69%;
-    background: #ffffff;
-}
-
-.homelinkimage {
-    position: relative;
-    width: 100%;
-    height: 140px;
-    display: block
-}
-
-.homelinkimage {
-    position: relative;
-    width: 100%;
-    height: 140px;
-    display: block
 }

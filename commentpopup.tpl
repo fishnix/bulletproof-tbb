@@ -15,16 +15,18 @@
    <link rel="stylesheet" type="text/css" href="{serendipity_getFile file="base.css"}" />
    <!-- style.css -->
    <link rel="stylesheet" type="text/css" href="{$serendipityHTTPPath}serendipity.css.php" />
-   <!--[if IE 6]>
-   <link rel="stylesheet" type="text/css" href="{serendipity_getFile file="ie6.css"}" />
-   <![endif]-->
-   <!--[if IE 7]>
-   <link rel="stylesheet" type="text/css" href="{serendipity_getFile file="ie7.css"}" />
-   <![endif]-->
-   <!-- additional colorset stylesheet -->
-   <link rel="stylesheet" type="text/css" href="{$serendipityHTTPPath}templates/{$template}/{$template_option.colorset}_style.css" />
-   <link rel="alternate"  type="application/rss+xml" title="{$blogTitle} RSS feed" href="{$serendipityBaseURL}{$serendipityRewritePrefix}feeds/index.rss2" />
-   <link rel="alternate"  type="application/x.atom+xml"  title="{$blogTitle} Atom feed"  href="{$serendipityBaseURL}{$serendipityRewritePrefix}feeds/atom.xml" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/bootstrap-3.3.4-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/bootstrap-3.3.4-dist/css/bootstrap-theme.min.css">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/font-awesome-4.3.0/css/font-awesome.min.css">
+  <!-- style.css -->
+  <link rel="stylesheet" type="text/css" href="{$head_link_stylesheet}" />
+
+  <!-- tbb  -->
+  <link rel="stylesheet" type="text/css" href="{$serendipityHTTPPath}templates/{$template}/tbb_style.css" />
+  <link rel="alternate"  type="application/rss+xml" title="{$blogTitle} RSS feed" href="{$serendipityBaseURL}{$serendipityRewritePrefix}feeds/index.rss2" />
+  <link rel="alternate"  type="application/x.atom+xml"  title="{$blogTitle} Atom feed"  href="{$serendipityBaseURL}{$serendipityRewritePrefix}feeds/atom.xml" />
 </head>
 
 <body class="s9y_wrap" id="serendipity_comment_page">

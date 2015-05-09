@@ -1,9 +1,10 @@
+<article>
 {if $staticpage_articleformat}
 <div id="staticpage_{$staticpage_pagetitle|@makeFilename}" class="serendipity_Entry_Date serendipity_staticpage">
     <h3 class="serendipity_date">{$staticpage_articleformattitle|@escape}</h3>
 {/if}
 
-    <h4 class="serendipity_title"><a href="#">{$staticpage_headline|@escape}</a></h4>
+    <h1 class="serendipity_title"><a href="#">{$staticpage_headline|@escape}</a></h1>
 
 {if $staticpage_navigation AND $staticpage_shownavi}
     <ul class="staticpage_navigation">
@@ -70,3 +71,4 @@
 </div>
 {/if}
     </div>
+</article>

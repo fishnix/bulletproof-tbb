@@ -61,4 +61,4 @@
 {if $staticpage_articleformat}
 </div>
 {/if}
-    </div>
+</div>

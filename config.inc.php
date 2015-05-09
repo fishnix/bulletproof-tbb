@@ -25,39 +25,6 @@ if ($serendipity['GET']['adminModule'] == 'templates') {
 
 $template_config = array(
     array(
-        'var'           => 'colorset',
-        'name'          => THEME_COLORSET,
-        'type'          => 'select',
-        'default'       => 'purple',
-        'select_values' => $colorsets
-    ),
-    array(
-        'var'           => 'userstylesheet',
-        'name'          => USER_STYLESHEET,
-        'type'          => 'boolean',
-        'default'       => 'false',
-    ),
-    array(
-        'var'           => 'layouttype',
-        'name'          => LAYOUT_TYPE,
-        'type'          => 'select',
-        'default'       => '3sbs',
-        'select_values' => array('3sbs' => LAYOUT_SBS,
-                                 '3bss' => LAYOUT_BSS,
-                                 '3ssb' => LAYOUT_SSB,
-                                 '2sb'  => LAYOUT_SB,
-                                 '2bs'  => LAYOUT_BS,
-                                 '1col' => LAYOUT_SC,
-                                 '2sbf' => LAYOUT_SBF,
-                                 '2bsf' => LAYOUT_BSF)
-    ),
-    array(
-        'var'           => 'jscolumns',
-        'name'          => JAVASCRIPT_COLUMNS,
-        'type'          => 'boolean',
-        'default'       => 'false',
-    ),
-    array(
         'var'           => 'custheader',
         'name'          => BP_CUSTOM_HEADER,
         'type'          => 'boolean',
@@ -68,34 +35,6 @@ $template_config = array(
         'name'          => BP_HEADER_IMAGE,
         'type'          => 'media',
         'default'       => serendipity_getTemplateFile('header.png')
-    ),
-    array(
-        'var'           => 'headertype',
-        'name'          => BP_HEADER_TYPE,
-        'type'          => 'select',
-        'default'       => 'banner',
-        'select_values' => array('banner' => BP_HEADER_BANNER,
-                                 'htiled' => BP_HEADER_HTILED,
-                                 'vtiled' => BP_HEADER_VTILED,
-                                 'btiled' => BP_HEADER_BTILED)
-    ),
-    array(
-        'var'           => 'headerposhor',
-        'name'          => BP_HEADER_POSHOR,
-        'type'          => 'select',
-        'default'       => 'left',
-        'select_values' => array('left' => LEFT,
-                                 'center' => BP_CENTER,
-                                 'right' => RIGHT)
-    ),
-    array(
-        'var'           => 'headerposver',
-        'name'          => BP_HEADER_POSVER,
-        'type'          => 'select',
-        'default'       => 'top',
-        'select_values' => array('top' => BP_TOP,
-                                 'center' => BP_CENTER,
-                                 'bottom' => BP_BOTTOM)
     ),
     array(
         'var'           => 'firbtitle',
@@ -122,15 +61,6 @@ $template_config = array(
                                  '%a %m-%d-%y' => '%a %m-%d-%y',
                                  '%b %d' => '%b %d',
                                  "%b %d '%y" => "%b %d '%y")
-    ),
-    array(
-        'var'           => 'entryfooterpos',
-        'name'          => ENTRY_FOOTER_POS,
-        'type'          => 'select',
-        'default'       => 'belowentry',
-        'select_values' => array('belowentry' => BELOW_ENTRY,
-                                 'belowtitle' => BELOW_TITLE,
-                                 'splitfoot' => SPLIT_FOOTER)
     ),
     array(
         'var'           => 'footerauthor',
@@ -167,24 +97,6 @@ $template_config = array(
         'name'          => ALT_COMMTRACK,
         'type'          => 'boolean',
         'default'       => 'false',
-    ),
-    array(
-        'var'           => 'addthiswidget',
-        'name'          => SHOW_ADDTHIS_WIDGET,
-        'type'          => 'select',
-        'default'       => 'false',
-        'select_values' => array('false' => AddThis_OFF,
-                                 'classic' => AddThis_Classic,
-                                 'fancy' => AddThis_Fancy)
-    ),
-    array(
-        'var'           => 'addthiswidget_loc',
-        'name'          => ADDTHIS_WIDGET_LOC,
-        'type'          => 'select',
-        'default'       => 'bottom',
-        'select_values' => array('top' => top,
-                                 'bottom' => bottom,
-                                 'none' => none)
     ),
     array(
         'var'           => 'addthisaccount',
@@ -293,17 +205,6 @@ $template_config = array(
         'name'          => USE_FOOTER_TEXT,
         'type'          => 'boolean',
         'default'       => 'false'
-    ),
-    array(
-        'var'           => 'sitenavpos',
-        'name'          => SITENAV_POSITION,
-        'type'          => 'select',
-        'default'       => 'none',
-        'select_values' => array('none' => SITENAV_NONE,
-                                 'above' => SITENAV_ABOVE,
-                                 'below' => SITENAV_BELOW,
-                                 'left' => SITENAV_LEFT,
-                                 'right' => SITENAV_RIGHT)
     ),
     array(
         'var'           => 'sitenav_footer',
