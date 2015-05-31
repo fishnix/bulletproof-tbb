@@ -60,21 +60,27 @@
       </div>
 
       {if (not $dategroup.is_sticky or ($dategroup.is_sticky and $template_option.show_sticky_entry_footer == 'true'))}
-        <div class='serendipity_entryFooter infofooter'>
+        <div class='serendipity_entryFooter text-center'>
           {if $template_option.footercomments == 'true'}
             {if $entry.has_comments}
-              {if $use_popups}
-                {if $template_option.altcommtrack == 'true'}
-                  <a href="{$entry.link_popup_comments}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
-                {else}
-                  <a href="{$entry.link_popup_comments}" onclick="window.open(this.href, 'comments', 'width=600,height=600,scrollbars=yes,resizable=yes'); return false;">{$entry.label_comments} ({$entry.comments})</a>
-                {/if}
+              {if $template_option.altcommtrack == 'true'}
+                <!-- AddThis Widget -->
+                <div class="addthis_sharing_toolbox"
+                     data-url="{$entry.rdf_ident}"
+                     data-title="{$entry.title}"
+                     addthis:url="{$entry.rdf_ident}"
+                     addthis:title="{$entry.title}">
+                </div>
+                <a href="{$entry.link}#comments">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
               {else}
-                {if $template_option.altcommtrack == 'true'}
-                  <a href="{$entry.link}#comments">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
-                {else}
-                  <a href="{$entry.link}#comments">{$entry.label_comments} ({$entry.comments})</a>
-                {/if}
+                <!-- AddThis Widget -->
+                <div class="addthis_sharing_toolbox"
+                     data-url="{$entry.rdf_ident}"
+                     data-title="{$entry.title}"
+                     addthis:url="{$entry.rdf_ident}"
+                     addthis:title="{$entry.title}">
+                </div>
+                <a href="{$entry.link}#comments">{$entry.label_comments} ({$entry.comments})</a>
               {/if}
             {/if}
           {/if}
@@ -84,18 +90,6 @@
           {/if}
 
           {$entry.add_footer}
-
-          <!-- AddThis Widget -->
-          <div class="addthiswidget">
-            <div class="addthis_toolbox addthis_default_style"
-                 addthis:url="{$entry.rdf_ident}"
-                 addthis:title="{$entry.title}">
-              <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-              <a class="addthis_button_tweet" tw:url="{$entry.rdf_ident}" tw:text="{$entry.title}" tw:via="{$template_option.addthistwittervia}"></a>
-              <a class="addthis_button_pinterest_pinit"></a>
-              <a class="addthis_counter addthis_pill_style"></a>
-            </div>
-          </div>
       {/if}
       </div>
 

@@ -186,7 +186,9 @@
     {literal}
       <script type="text/javascript" async>
         var addthis_config = {
-          data_track_addressbar: false
+          data_track_addressbar: false,
+          data_ga_property: 'UA-2676654-1',
+          data_ga_social : true
         };
         var addthis_share = {
           url_transforms : {
