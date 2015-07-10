@@ -83,7 +83,7 @@ footer p {
     font-size: 160%;
     line-height: 150%;
     letter-spacing: .2em;
-    margin: 5px 0 15px 0;
+    margin: 5px 0 5px 0;
 }
 
 .content h1 a {
@@ -105,6 +105,12 @@ footer p {
 
 .entry-content {
     font-size: 110%;
+    border-bottom: 1px solid #dfdfdf;
+    padding-bottom: 10px;
+}
+
+.serendipity_entryFooter .byline {
+    margin-top: 0px;
 }
 
 .serendipity_image_center {
@@ -126,7 +132,6 @@ footer p {
     color: #505050;
     overflow: visible;
     padding: 0px;
-    /*min-width: 322px;*/
 }
 
 #serendipityRightSideBar .serendipitySideBarItem .serendipitySideBarTitle {
@@ -137,11 +142,15 @@ footer p {
     overflow-y: auto;
 }
 
+.addthis_sharing_toolbox {
+    padding-top: 10px;
+}
+
 .between-post-ad {
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     display: block;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .serendipity_commentsTitle {
@@ -155,9 +164,7 @@ footer p {
 
 .serendipity_entryFooter {
     margin: 5px 0;
-    padding: 8px 0;
-    border-top: 1px solid #dfdfdf;
-    border-bottom: 1px solid #dfdfdf;
+    padding: 5px 0 10px;
     clear: left;
 }
 
@@ -262,10 +269,9 @@ footer p {
 blockquote {
     background: #d6e2e8;
     color: #505050;
-    border-left: 1px solid #85a8b9;
-    border-top: 1px solid #85a8b9;
-    border-right: 1px solid #1f5f7f;
-    border-bottom: 1px solid #1f5f7f;
+    border: 1px solid #85a8b9;
+    border-right-color: #1f5f7f;
+    border-bottom-color: #1f5f7f;
     margin: 1em 4em;
     padding: 1em;
 }

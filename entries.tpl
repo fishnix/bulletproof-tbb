@@ -25,12 +25,6 @@
                 {$CONST.POSTED_BY} <address class="author vcard"><a class="fn" href="{$entry.link_author}">{$entry.author}</a></address>
               {/if}
 
-              {if $template_option.footercategories == 'true'}
-                {if $entry.categories}
-                  {$CONST.IN} {foreach from=$entry.categories item="entry_category" name="categories"}<a href="{$entry_category.category_link}">{$entry_category.category_name|@escape}</a>{if not $smarty.foreach.categories.last}, {/if}{/foreach}
-                {/if}
-              {/if}
-
               {if $template_option.footertimestamp == 'true'}
                 {if $dategroup.is_sticky}
                   {$CONST.ON}
@@ -57,29 +51,26 @@
         {if $entry.is_extended}
           <div class="serendipity_entry_extended"><a id="extended"></a>{$entry.extended}</div>
         {/if}
+
+        <!-- AddThis Widget -->
+        <div class="addthis_sharing_toolbox text-center"
+             data-url="{$entry.rdf_ident}"
+             data-title="{$entry.title}"
+             addthis:url="{$entry.rdf_ident}"
+             addthis:title="{$entry.title}">
+        </div>
       </div>
 
       {if (not $dategroup.is_sticky or ($dategroup.is_sticky and $template_option.show_sticky_entry_footer == 'true'))}
         <div class='serendipity_entryFooter text-center'>
+          {if $is_single_entry and not $is_preview}
+            <div class="center-block addthis_recommended_horizontal"></div>
+          {/if}
           {if $template_option.footercomments == 'true'}
             {if $entry.has_comments}
               {if $template_option.altcommtrack == 'true'}
-                <!-- AddThis Widget -->
-                <div class="addthis_sharing_toolbox"
-                     data-url="{$entry.rdf_ident}"
-                     data-title="{$entry.title}"
-                     addthis:url="{$entry.rdf_ident}"
-                     addthis:title="{$entry.title}">
-                </div>
                 <a href="{$entry.link}#comments">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
               {else}
-                <!-- AddThis Widget -->
-                <div class="addthis_sharing_toolbox"
-                     data-url="{$entry.rdf_ident}"
-                     data-title="{$entry.title}"
-                     addthis:url="{$entry.rdf_ident}"
-                     addthis:title="{$entry.title}">
-                </div>
                 <a href="{$entry.link}#comments">{$entry.label_comments} ({$entry.comments})</a>
               {/if}
             {/if}
@@ -87,6 +78,14 @@
 
           {if $entry.is_entry_owner and not $is_preview}
             <div class="editentrylink"><a href="{$entry.link_edit}">{$CONST.EDIT_ENTRY}</a></div>
+          {/if}
+
+          {if $template_option.footercategories == 'true'}
+            {if $entry.categories}
+              <p class="entry-catagories text-center">
+                Posted in: {foreach from=$entry.categories item="entry_category" name="categories"}<a href="{$entry_category.category_link}">{$entry_category.category_name|@escape}</a>{if not $smarty.foreach.categories.last}, {/if}{/foreach}
+              </p>
+            {/if}
           {/if}
 
           {$entry.add_footer}
@@ -169,18 +168,21 @@
     </article>
 
     {if not $is_preview}
-      	<!-- Between post tags -->
-      	<div class="between-post-ad">
   		{if $template_option.between_post_code_toggle == 'all'}
         {if not ($smarty.foreach.dg_entries.last)}
-    			{$template_option.between_post_code}
+          <!-- Between post tags -->
+          <div class="between-post-ad">
+    			  {$template_option.between_post_code}
+          </div>
         {/if}
       {elseif $template_option.between_post_code_toggle == 'first'}
         {if ($smarty.foreach.dg_entries.first and $smarty.foreach.dg.first)}
-    			{$template_option.between_post_code}
+          <!-- Between post tags -->
+          <div class="between-post-ad">
+    			  {$template_option.between_post_code}
+          </div>
         {/if}
   		{/if}
-		</div>
     {/if}
 
 		{$entry.backend_preview}
