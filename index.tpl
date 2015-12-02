@@ -49,7 +49,6 @@
         {literal}
           <script>
             window.addThisLinkFilter = function(link, layer) {
-              console.log('Checking link url: ' + link.url);
               if (link.url && link.url.indexOf('/serendipity_admin.php') > -1) {
                 return false;
               } else {
