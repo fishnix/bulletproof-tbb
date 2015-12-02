@@ -30,24 +30,35 @@
       <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/font-awesome-4.3.0/css/font-awesome.min.css">
       <!-- style.css -->
       <link rel="stylesheet" type="text/css" href="{$head_link_stylesheet}" />
-
       <!-- tbb  -->
       <link rel="stylesheet" type="text/css" href="{$serendipityHTTPPath}templates/{$template}/tbb_style.css" />
-
       <!-- Chosen -->
       <link rel="stylesheet" type="text/css" href="{$serendipityHTTPPath}templates/{$template}/chosen-1.4.2/chosen.min.css" />
-      <script type="text/javascript" src="{$serendipityHTTPPath}templates/{$template}/chosen-1.4.2/chosen.jquery.min.js" async></script>
-
-
+      <script src="{$serendipityHTTPPath}templates/{$template}/chosen-1.4.2/chosen.jquery.min.js" async></script>
       <!--[if lt IE 9]>
       <script src="{$serendipityHTTPPath}templates/{$template}/js/html5shiv.min.js" type="text/javascript"></script>
       <script src="{$serendipityHTTPPath}templates/{$template}/js/respond.min.js" type="text/javascript"></script>
       <![endif]-->
-
       <script src="{$serendipityHTTPPath}templates/{$template}/bootstrap-3.3.4-dist/js/bootstrap.min.js" async></script>
-      <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en" async></script>
+      <script src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en" async></script>
+      <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=budgetbabe&async=1"></script>
 
-      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=budgetbabe" async="async"></script>
+      {if $template_option.addthiswidget_loc == 'none' }
+        /* Disable addthis */
+      {else}
+        {literal}
+          <script>
+            window.addThisLinkFilter = function(link, layer) {
+              console.log('Checking link url: ' + link.url);
+              if (link.url && link.url.indexOf('/serendipity_admin.php') > -1) {
+                return false;
+              } else {
+                return link;
+              }
+            };
+          </script>
+        {/literal}
+      {/if}
 
       {if $template_option.additional_head_code_toggle == 'true'}
         {$template_option.additional_head_code}
@@ -196,11 +207,11 @@
               twitter: 'bitly'
             }
           }
-        }
+        };
       </script>
     {/literal}
   {/if}
-  <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+  <script src="//platform.twitter.com/oct.js"></script>
   <script type="text/javascript">twttr.conversion.trackPid('l4iog');</script>
   <noscript>
     <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l4iog&p_id=Twitter" />
