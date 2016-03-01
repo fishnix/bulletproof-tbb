@@ -27,14 +27,14 @@
       <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/bootstrap-3.3.4-dist/css/bootstrap.min.css">
       <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/bootstrap-3.3.4-dist/css/bootstrap-theme.min.css">
       <!-- FontAwesome -->
-      <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/font-awesome-4.3.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/font-awesome-4.5.0/css/font-awesome.min.css">
       <!-- style.css -->
       <link rel="stylesheet" type="text/css" href="{$head_link_stylesheet}" />
       <!-- tbb  -->
       <link rel="stylesheet" type="text/css" href="{$serendipityHTTPPath}templates/{$template}/tbb_style.css" />
       <!-- Chosen -->
-      <link rel="stylesheet" type="text/css" href="{$serendipityHTTPPath}templates/{$template}/chosen-1.4.2/chosen.min.css" />
-      <script src="{$serendipityHTTPPath}templates/{$template}/chosen-1.4.2/chosen.jquery.min.js" async></script>
+      <link rel="stylesheet" type="text/css" href="{$serendipityHTTPPath}templates/{$template}/chosen-1.5.1/chosen.min.css" />
+      <script src="{$serendipityHTTPPath}templates/{$template}/chosen-1.5.1/chosen.jquery.min.js" async></script>
       <!--[if lt IE 9]>
       <script src="{$serendipityHTTPPath}templates/{$template}/js/html5shiv.min.js" type="text/javascript"></script>
       <script src="{$serendipityHTTPPath}templates/{$template}/js/respond.min.js" type="text/javascript"></script>
