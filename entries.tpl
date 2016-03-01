@@ -171,15 +171,19 @@
   		{if $template_option.between_post_code_toggle == 'all'}
         {if not ($smarty.foreach.dg_entries.last)}
           <!-- Between post tags -->
-          <div class="between-post-ad">
-    			  {$template_option.between_post_code}
+          <div class="row">
+            <div class="col-md-12 text-center center-block between-post-ad">
+              {$template_option.between_post_code}
+            </div>
           </div>
         {/if}
       {elseif $template_option.between_post_code_toggle == 'first'}
         {if ($smarty.foreach.dg_entries.first and $smarty.foreach.dg.first)}
           <!-- Between post tags -->
-          <div class="between-post-ad">
-    			  {$template_option.between_post_code}
+          <div class="row">
+            <div class="col-md-12 text-center center-block between-post-ad">
+              {$template_option.between_post_code}
+            </div>
           </div>
         {/if}
   		{/if}

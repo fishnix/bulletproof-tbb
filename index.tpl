@@ -84,7 +84,11 @@
       </div>
 
       {if $template_option.leaderboard_code_toggle == 'true'}
-        <div class="leaderboard_code text-center">{$template_option.leaderboard_code}</div>
+      <div class="row">
+        <div class="col-md-12 text-center center-block leaderboard_code">
+          {$template_option.leaderboard_code}
+        </div>
+      </div>
       {/if}
 
       <nav class="navbar">

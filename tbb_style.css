@@ -140,6 +140,8 @@ footer p {
 
 .leaderboard_code {
     overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 5px;
 }
 
 .addthis_sharing_toolbox {
