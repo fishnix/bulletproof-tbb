@@ -34,7 +34,7 @@
       <link rel="stylesheet" type="text/css" href="{$serendipityHTTPPath}templates/{$template}/tbb_style.css" />
       <!-- Chosen -->
       <link rel="stylesheet" type="text/css" href="{$serendipityHTTPPath}templates/{$template}/chosen-1.5.1/chosen.min.css" />
-      <script src="{$serendipityHTTPPath}templates/{$template}/chosen-1.5.1/chosen.jquery.min.js" async></script>
+      <script src="{$serendipityHTTPPath}templates/{$template}/chosen-1.5.1/chosen.jquery.min.js"></script>
       <!--[if lt IE 9]>
       <script src="{$serendipityHTTPPath}templates/{$template}/js/html5shiv.min.js" type="text/javascript"></script>
       <script src="{$serendipityHTTPPath}templates/{$template}/js/respond.min.js" type="text/javascript"></script>
