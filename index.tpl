@@ -7,11 +7,11 @@
     <!--<![endif]-->
     <head>
       <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>{$head_title|@default:$blogTitle}{if $head_subtitle} - {$head_subtitle}{/if}</title>
-      {serendipity_hookPlugin hook="frontend_header"}
       <meta name="title" content="{$head_title|@default:$blogTitle}{if $head_subtitle} - {$head_subtitle}{/if}" />
+      {serendipity_hookPlugin hook="frontend_header"}
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
       {if $is_single_entry and not $is_preview}
         {if !empty($template_option.addthisfbimage) }<link rel="image_src" href="{$template_option.addthisfbimage}" />
         {/if}
