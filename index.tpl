@@ -155,7 +155,7 @@
                 </a>
               </li>
               <li>
-                <a href="http://www.bloglovin.com/en/blog/226954/the-budget-babe/follow" target="_blank" title="Follow The Budget Babe on Bloglovin!">
+                <a href="https://www.bloglovin.com/blogs/budget-babe-226954" target="_blank" title="Follow The Budget Babe on Bloglovin!">
                   <i class="fa fa-2x fa-plus-square"></i>
                 </a>
               </li>
