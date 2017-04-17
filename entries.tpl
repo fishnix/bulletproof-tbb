@@ -202,45 +202,17 @@
 {/foreach}
 
 <div class='serendipity_pageFooter' style="text-align: center">
-  {if $footer_prev_page}
-    {if $template_option.prev_next_style == 'texticon'}
-      {if $template_option.colorset == 'blank'}
-        <a title="{$CONST.PREVIOUS_PAGE}" href="{$footer_prev_page}"><img alt="{$CONST.PREVIOUS_PAGE}" title="{$CONST.PREVIOUS_PAGE}" src="{serendipity_getFile file="img/back.png"}" />{$CONST.PREVIOUS_PAGE}</a>
-      {else}
-        <a title="{$CONST.PREVIOUS_PAGE}" href="{$footer_prev_page}"><img alt="{$CONST.PREVIOUS_PAGE}" title="{$CONST.PREVIOUS_PAGE}" src="{$serendipityHTTPPath}templates/{$template}/img/{$template_option.colorset}_back.png" />{$CONST.PREVIOUS_PAGE}</a>
-      {/if}
-    {elseif  $template_option.prev_next_style == 'icon'}
-      {if $template_option.colorset == 'blank'}
-        <a title="{$CONST.PREVIOUS_PAGE}" href="{$footer_prev_page}"><img alt="{$CONST.PREVIOUS_PAGE}" src="{serendipity_getFile file="img/back.png"}" />{$CONST.PREVIOUS_PAGE}</a>
-      {else}
-        <a title="{$CONST.PREVIOUS_PAGE}" href="{$footer_prev_page}"><img alt="{$CONST.PREVIOUS_PAGE}" src="{$serendipityHTTPPath}templates/{$template}/img/{$template_option.colorset}_back.png" /></a>
-      {/if}
-    {else}
-      <a title="{$CONST.PREVIOUS_PAGE}" href="{$footer_prev_page}">&laquo; {$CONST.PREVIOUS_PAGE}</a>&#160;&#160;
+    {if $footer_prev_page}
+    <a href="{$footer_prev_page}" class="btn btn-default btn-lg" role="button">Previous</a>
     {/if}
-  {/if}
 
-  {if $footer_info}
-    ({$footer_info})
-  {/if}
-
-  {if $footer_next_page}
-    {if $template_option.prev_next_style == 'texticon'}
-      {if $template_option.colorset == 'blank'}
-        <a title="{$CONST.NEXT_PAGE}" href="{$footer_next_page}">{$CONST.NEXT_PAGE}<img alt="{$CONST.NEXT_PAGE}" title="{$CONST.NEXT_PAGE}" src="{serendipity_getFile file="img/forward.png"}" /></a>
-      {else}
-        <a title="{$CONST.NEXT_PAGE}" href="{$footer_next_page}">{$CONST.NEXT_PAGE}<img alt="{$CONST.NEXT_PAGE}" title="{$CONST.NEXT_PAGE}" src="{$serendipityHTTPPath}templates/{$template}/img/{$template_option.colorset}_forward.png" /></a>
-      {/if}
-    {elseif $template_option.prev_next_style == 'icon'}
-      {if $template_option.colorset == 'blank'}
-        <a title="{$CONST.NEXT_PAGE}" href="{$footer_next_page}"><img alt="{$CONST.NEXT_PAGE}" src="{serendipity_getFile file="img/forward.png"}" /></a>
-      {else}
-        <a title="{$CONST.NEXT_PAGE}" href="{$footer_next_page}"><img alt="{$CONST.NEXT_PAGE}" src="{$serendipityHTTPPath}templates/{$template}/img/{$template_option.colorset}_forward.png" /></a>
-      {/if}
-    {else}
-       <a title="{$CONST.NEXT_PAGE}" href="{$footer_next_page}">{$CONST.NEXT_PAGE} &raquo;</a>
+    {if $footer_next_page}
+    <a href="{$footer_next_page}" class="btn btn-primary btn-lg" role="button">Next Page</a>
     {/if}
-  {/if}
+
+    {if $footer_info}
+    <!-- ({$footer_info}) -->
+    {/if}
 
   {serendipity_hookPlugin hook="entries_footer"}
 </div>
