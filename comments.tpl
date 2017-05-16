@@ -18,7 +18,7 @@
             {/if}
             </span>
             {if $comment.url}
-                (<a class="comment_source_url" href="{$comment.url}" title="{$comment.url|@escape}">{$CONST.HOMEPAGE}</a>)
+                (<a class="comment_source_url" href="{$comment.url}" title="{$comment.url|@escape}" target="_blank">{$CONST.HOMEPAGE}</a>)
             {/if}
             {$CONST.ON}
             <span class="comment_source_date">{$comment.timestamp|@formatTime:$CONST.DATE_FORMAT_SHORT}</span>
