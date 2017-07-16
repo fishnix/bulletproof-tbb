@@ -24,10 +24,10 @@
       <link rel="shortcut icon" href="{$serendipityBaseURL}favicon.ico" />
 
       <!-- Bootstrap -->
-      <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/bootstrap-3.3.4-dist/css/bootstrap.min.css">
-      <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/bootstrap-3.3.4-dist/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
       <!-- FontAwesome -->
-      <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/font-awesome-4.5.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/font-awesome-4.7.0/css/font-awesome.min.css">
       <!-- style.css -->
       <link rel="stylesheet" type="text/css" href="{$head_link_stylesheet}" />
       <!-- tbb  -->
@@ -39,7 +39,7 @@
       <script src="{$serendipityHTTPPath}templates/{$template}/js/html5shiv.min.js" type="text/javascript"></script>
       <script src="{$serendipityHTTPPath}templates/{$template}/js/respond.min.js" type="text/javascript"></script>
       <![endif]-->
-      <script src="{$serendipityHTTPPath}templates/{$template}/bootstrap-3.3.4-dist/js/bootstrap.min.js" async></script>
+      <script src="{$serendipityHTTPPath}templates/{$template}/bootstrap-3.3.7-dist/js/bootstrap.min.js" async></script>
       <script src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en" async></script>
       <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=budgetbabe&async=1"></script>
 
@@ -130,7 +130,7 @@
     </div>
 
     <div class="container">
-      <div class="row">
+       <div class="row">
         <aside id="serendipityLeftSideBar" class="hidden-xs col-sm-2">
           <div class="serendipity_social_follow">
             <ul class="list-inline">

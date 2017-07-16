@@ -4,4 +4,4 @@ Date: 2017-04-17
 Require Serendipity: 2.0
 Engine: '2k11'
 Backend: Yes
-Version: 2.1.1
+Version: 2.1.2

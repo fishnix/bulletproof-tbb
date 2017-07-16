@@ -13,7 +13,9 @@
 	{/if}
 
 	{foreach name=dg_entries from=$dategroup.entries item="entry"}
-    
+    <!-- ENTRY ROW START -->
+    <div class="row">
+      <div class="col-xs-12">
 		{assign var="entry" value=$entry scope="parent"}
     <article>
       <header>
@@ -44,6 +46,10 @@
         <div class="serendipity_entry_body">
           {$entry.body}
           {if $entry.has_extended and not $is_single_entry and not $entry.is_extended}
+            <!-- <div class="text-center">
+              <a href="{$entry.link}#extended" title='{$CONST.VIEW_EXTENDED_ENTRY|@sprintf:$entry.title|truncate:50:" ..."}' class="btn btn-primary btn-lg" role="button">Read More</a>
+            </div>
+            -->
             <span class="continue_reading"><a href="{$entry.link}#extended" title='{$CONST.VIEW_EXTENDED_ENTRY|@sprintf:$entry.title|truncate:50:" ..."}'>{$CONST.VIEW_EXTENDED_ENTRY|@sprintf:$entry.title|truncate:50:" ..."} &raquo;</a></span>
           {/if}
         </div>
@@ -166,6 +172,9 @@
       {/if}
 
     </article>
+    </div>
+    </div>
+    <!-- ENTRY ROW END -->
 
     {if not $is_preview}
   		{if $template_option.between_post_code_toggle == 'all'}
