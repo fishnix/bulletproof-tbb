@@ -107,7 +107,7 @@
             <button class="wrap_selection lang-html" type="button" name="insQ" data-tag-open="blockquote" data-tag-close="blockquote" data-tarea="serendipity[extended]">{$CONST.QUOTE}</button>
             <button class="wrap_insimg" type="button" name="insJ" data-tarea="serendipity[extended]">img</button>
             <button class="wrap_insmedia" type="button" name="insImage" data-tarea="serendipity[extended]">{$CONST.MEDIA}</button>
-            <button class="wrap_insurl" type="button" name="insURL" data-tarea="serendipity[extended]">URL</button>
+            <button class="pop_insurlModal" type="button" data-toggle="modal" data-tarea="serendipity[extended]">URL</button>
             {serendipity_hookPlugin hook="backend_entry_toolbar_extended" data=$entry_data.entry hookAll="true"}
         </div>
     {else}
