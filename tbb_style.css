@@ -2,62 +2,164 @@
 /* Template: bulletproof-tbb for Serendipity (http://www.s9y.org)     */
 /**********************************************************************/
 
-body a {
-    color: #df077a;
+.leaderboard_code {
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 5px;
 }
 
-body a:hover {
-    color: #c9a480;
+.header-image {
+    max-width: 500px;
+    height: auto;
 }
 
-body h1,
-body h2,
-body h3 {
-    font-weight: bold;
-}
-
-footer p {
-    text-align: center;
-}
-
-.container {
-    max-width: 1064px;
-}
-
-.navbar {
-    margin-bottom: 10px;
-}
-
-.navbar-header {
-    max-width: 509px;
-    margin-top: 10px;
-}
-
-.navbar-header img {
-    max-width: 75%;
-}
-
-.navbar-nav {
+.navbar.main-nav {
+    background-color: #f8c9c9;
+    /* background-color:#e2bdbd; */
+    margin: 7.5px -15px;
     border: 0px;
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
     text-transform: uppercase;
-    font-weight: bold;
+    /* font-weight: bold; */
+    padding: 0px;
 }
 
-.navbar-nav li a {
+#sbsitenav > li > a {
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    padding-right: 20px;
+    padding-left:20px;
+    line-height: 20px;
+    color: #ffffff;
+    /* font-family: 'Futura URW', sans-serif !important;     */
+}
+
+#sbsitenav > li > a:hover,
+#sbsitenav > li > a:focus {
+    background-color: transparent;
+    color: #df077a; 
+}
+
+#cse-search-box > input.form-control::-webkit-input-placeholder {
+    display: none;
+}
+
+#cse-search-box > input.form-control::-moz-placeholder {
+    display: none;
+}
+#cse-search-box > input.sb-closed.form-control {
+    display: none;
+}
+
+#cse-search-box > .input-group-btn > button {
+    color: #ffffff;
+    /* color: rgba(0,0,0,.5); */
+    border: 0px;  
+}
+
+#cse-search-box > .input-group-btn > button.sb-closed {
+    border: 0px;
+}
+
+.serendipity_image_center {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.serendipity_social_follow {
+    margin: 2px;
+    padding: 5px;
+    font-size: 100%;
+}
+
+.serendipity_social_follow a {
     color: #080808;
 }
 
-.navbar-nav li a:hover,
-.navbar-nav li a:focus {
-    background-color: transparent;
-    color: #df077a;
+.serendipity_social_follow a:hover {
+    color: #f8c9c9;
 }
 
-.navbar-toggle {
-    border-color: #dddddd;
-    background-color: transparent;
-    border-radius: 4px;
+#serendipityRightSideBar {
+    /* background-color: #ffffff;
+    color: #505050; */
+    overflow: visible;
+    padding: 0px;
+}
+
+/*
+#serendipityRightSideBar .serendipitySideBarItem .serendipitySideBarTitle {
+    width: 300px;
+}
+*/
+
+.addthis_sharing_toolbox {
+    padding-top: 12px;
+}
+
+.between-post-ad {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    display: block;
+    overflow: hidden;
+}
+
+.serendipity_commentsTitle {
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.serendipity_entry_body {
+    font-size: 110%;
+}
+
+.serendipity_entryFooter.byline {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.serendipity_entryFooter address {
+    display: inline;
+}
+
+.serendipity_entryFooter {
+    margin: 5px 0;
+    padding: 5px 0 10px;
+    clear: left;
+}
+
+.serendipitySideBarItem {
+    margin: 2px;
+    padding: 0;
+    border: 0px none;
+    overflow: visible;
+}
+
+.serendipitySideBarTitle {
+    text-transform: uppercase;
+    font-size: 95%;
+    letter-spacing: .2em;
+    color: #505050;
+    padding: 8px 5px 8px 5px;
+    border-left: 0px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+.serendipitySideBarContent {
+    /*font-size: 100%;*/
+    padding: 10px;
+    border-left: 0px solid #dfdfdf;
+    background-color: #ffffff;
+    margin: 0;
+    line-height: 20px;
+    text-align: left;
+}
+
+.search-box {
+    width: 80%;
 }
 
 .form-control:focus {
@@ -65,14 +167,9 @@ footer p {
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(223, 7, 122, 1);
 }
 
-.brand-img {
-    padding-left: 0px;
-}
-
 .content {
     background-color: #ffffff;
     padding: 0px;
-    max-width: 532px;
     font-size: 100%;
     line-height: 20px;
     border: 1px;
@@ -80,7 +177,7 @@ footer p {
 
 .content h1 {
     text-transform: none;
-    font-size: 160%;
+    font-size: 140%;
     line-height: 150%;
     letter-spacing: .2em;
     margin: 5px 0 5px 0;
@@ -107,156 +204,6 @@ footer p {
     font-size: 110%;
     border-bottom: 1px solid #dfdfdf;
     padding-bottom: 10px;
-}
-
-.serendipity_entryFooter .byline {
-    margin-top: 0px;
-}
-
-.serendipity_image_center {
-    display: block;
-    height: auto;
-    max-width: 100%;
-}
-
-#serendipityLeftSideBar {
-    background-color: #ffffff;
-    color: #505050;
-    overflow: hidden;
-    padding: 0px;
-    min-width: 170px;
-}
-
-#serendipityRightSideBar {
-    background-color: #ffffff;
-    color: #505050;
-    overflow: visible;
-    padding: 0px;
-}
-
-#serendipityRightSideBar .serendipitySideBarItem .serendipitySideBarTitle {
-    width: 300px;
-}
-
-.leaderboard_code {
-    overflow-y: auto;
-    overflow-x: hidden;
-    margin-top: 5px;
-}
-
-.addthis_sharing_toolbox {
-    padding-top: 12px;
-}
-
-.between-post-ad {
-    padding-top: 10px;
-    padding-bottom: 15px;
-    display: block;
-    overflow: hidden;
-}
-
-.serendipity_commentsTitle {
-    font-size: 100%;
-    font-weight: bold;
-}
-
-.serendipity_entry_body {
-    font-size: 100%;
-}
-
-.serendipity_entryFooter {
-    margin: 5px 0;
-    padding: 5px 0 10px;
-    clear: left;
-}
-
-.serendipity_entryFooter address {
-    display: inline;
-}
-
-.serendipitySideBarItem {
-    margin: 2px;
-    padding: 0;
-    border: 0px none;
-    overflow: visible;
-    height: 100%; 
-}
-
-.serendipitySideBarTitle {
-    text-transform: uppercase;
-    font-size: 95%;
-    letter-spacing: .2em;
-    color: #505050;
-    padding: 8px 5px 8px 5px;
-    border-left: 0px solid #dfdfdf;
-    border-bottom: 1px solid #dfdfdf;
-    background-color: #ffffff;
-    margin: 0;
-}
-
-.serendipitySideBarContent {
-    /*font-size: 100%;*/
-    padding: 10px;
-    border-left: 0px solid #dfdfdf;
-    background-color: #ffffff;
-    margin: 0;
-    line-height: 20px;
-    text-align: left;
-}
-
-.serendipity_social_follow {
-    margin: 2px;
-    padding: 5px;
-}
-
-.serendipity_social_follow a {
-    color: #080808;
-}
-
-.serendipity_social_follow a:hover {
-    color: #df077a;
-}
-
-#serendipity_social_nav a {
-    display: inline-block;
-}
-
-#sbsitenav .serendipitySideBarContent {
-    padding: 0;
-    border: 0;
-    margin: 0;
-}
-
-#sbsitenav {
-    padding: 10px;
-    margin: 0;
-}
-
-#sbsitenav ul{
-    margin: 0;
-    list-style-type: none;
-}
-
-#sbsitenav ul a {
-    border-left: 0px solid #dfdfdf;
-    padding: 8px 0px 8px 10px;
-    display: block;
-}
-
-#sbsitenav ul a:hover,
-#sbsitenav .currentpage a {
-    border-left: 4px solid #3D98C5;
-}
-
-#sbsitenav li {
-    font-size: 90%;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    background-color: #ffffff;
-    margin: 0 0 2px 0;
-    padding: 0;
-    overflow: hidden;
 }
 
 #month,

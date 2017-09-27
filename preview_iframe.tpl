@@ -4,8 +4,8 @@
         <meta name="Powered-By" content="Serendipity v.{$head_version}" />
 
         <!-- Bootstrap -->
-        <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/bootstrap-3.3.4-dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/bootstrap-3.3.4-dist/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
         <!-- -->
 
         <!-- FontAwesome --->
@@ -15,7 +15,7 @@
         <!-- additional colorset stylesheet -->
         <link rel="stylesheet" type="text/css" href="{$serendipityHTTPPath}templates/{$template}/tbb_style.css" />
 
-        <script src="{$serendipityHTTPPath}templates/{$template}/bootstrap-3.3.4-dist/js/bootstrap.min.js" async></script>
+        <script src="{$serendipityHTTPPath}templates/{$template}/bootstrap-3.3.7-dist/js/bootstrap.min.js" async></script>
         <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en" defer></script>
 
         <script type="text/javascript">
