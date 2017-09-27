@@ -9,7 +9,7 @@
         <!-- -->
 
         <!-- FontAwesome --->
-        <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/font-awesome-4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/font-awesome-4.7.0/css/font-awesome.min.css">
         <!-- -->
 
         <!-- additional colorset stylesheet -->

@@ -294,7 +294,7 @@ function serendipity_plugin_api_event_hook($event, &$bag, $eventData, $addData =
             echo '<link rel="stylesheet" href="' . $template_path . '/bootstrap-3.3.4-dist/css/bootstrap.min.css">' . "\n";
             echo '<script src="' . $template_path . '/bootstrap-3.3.4-dist/js/bootstrap.min.js" ></script>' . "\n";
             echo '<!-- FontAwesome -->' . "\n";
-            echo '<link rel="stylesheet" href="' . $template_path . '/font-awesome-4.5.0/css/font-awesome.min.css">' . "\n";
+            echo '<link rel="stylesheet" href="' . $template_path . '/font-awesome-4.7.0/css/font-awesome.min.css">' . "\n";
 
             return true;
             break;
