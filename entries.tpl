@@ -19,8 +19,8 @@
       {assign var="entry" value=$entry scope="parent"}
       <article>
         <header>
-          <h1 class="entry-title serendipity_title"><a href="{$entry.link}" rel="bookmark">{$entry.title}</a></h1>
-          <div class="serendipity_entry serendipity_entry_author_{$entry.author|@makeFilename} {if $entry.is_entry_owner}serendipity_entry_author_self{/if}">
+          <h1 class="text-center entry-title serendipity_title"><a href="{$entry.link}" rel="bookmark">{$entry.title}</a></h1>
+          <div class="text-center serendipity_entry serendipity_entry_author_{$entry.author|@makeFilename} {if $entry.is_entry_owner}serendipity_entry_author_self{/if}">
             {if (not $dategroup.is_sticky or ($dategroup.is_sticky and $template_option.show_sticky_entry_footer == 'true'))}
               <div class='serendipity_entryFooter byline'>
                 {if $template_option.footerauthor == 'true'}

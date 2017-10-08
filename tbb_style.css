@@ -2,6 +2,19 @@
 /* Template: bulletproof-tbb for Serendipity (http://www.s9y.org)     */
 /**********************************************************************/
 
+/* body {
+    font-family: 'Crimson Text', serif !important;    
+} */
+
+body a {
+    /* color: #df077a; */
+    color: #da7f8b;
+}
+
+body a:hover {
+    color: #c9a480;
+}
+
 .leaderboard_code {
     overflow-y: auto;
     overflow-x: hidden;
@@ -31,7 +44,7 @@
     padding-left:20px;
     line-height: 20px;
     color: #ffffff;
-    /* font-family: 'Futura URW', sans-serif !important;     */
+    font-family: 'Futura URW', sans-serif !important;
 }
 
 #sbsitenav > li > a:hover,
@@ -108,10 +121,6 @@
 .serendipity_commentsTitle {
     font-size: 100%;
     font-weight: bold;
-}
-
-.serendipity_entry_body {
-    font-size: 110%;
 }
 
 .serendipity_entryFooter.byline {
