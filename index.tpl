@@ -40,7 +40,7 @@
       <script src="{$serendipityHTTPPath}templates/{$template}/js/respond.min.js" type="text/javascript"></script>
       <![endif]-->
       <script src="{$serendipityHTTPPath}templates/{$template}/bootstrap-3.3.7-dist/js/bootstrap.min.js" async></script>
-      <script src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en" async></script>
+      <script src="https://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en" async></script>
       <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=budgetbabe&async=1"></script>
 
       {if $template_option.addthiswidget_loc == 'none' }
@@ -110,7 +110,7 @@
             {foreach from=$navlinks item="navlink" name="navbar"}
               <li class="{if $currpage==$navlink.href}currentpage{/if}{if $smarty.foreach.navbar.first} navlink_first{/if}{if $smarty.foreach.navbar.last} navlink_last{/if}"><a href="{$navlink.href}" title="{$navlink.title}">{$navlink.title}</a></li>
             {/foreach}
-            <form action="http://www.google.com/cse" id="cse-search-box" class="navbar-form navbar-right form" role="search">
+            <form action="https://www.google.com/cse" id="cse-search-box" class="navbar-form navbar-right form" role="search">
               <div class="form-group">
                 <input type="hidden" name="cx" value="{$template_option.googlesearch_partner_id}" />
                 <input type="hidden" name="ie" value="UTF-8" />
