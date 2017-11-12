@@ -1,17 +1,12 @@
 {if $is_embedded != true}
   <!DOCTYPE html>
-    <!--[if IE 7]><html class="ie ie7 ltie8 ltie9" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"><![endif]-->
-    <!--[if IE 8]><html class="ie ie8 ltie9" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"><![endif]-->
-    <!--[if !(IE 7) | !(IE 8)  ]><!-->
     <html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
-    <!--<![endif]-->
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>{$head_title|@default:$blogTitle}{if $head_subtitle} - {$head_subtitle}{/if}</title>
       <meta name="title" content="{$head_title|@default:$blogTitle}{if $head_subtitle} - {$head_subtitle}{/if}" />
       {serendipity_hookPlugin hook="frontend_header"}
-      -->
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       {if $is_single_entry and not $is_preview}
         {if !empty($template_option.addthisfbimage) }<link rel="image_src" href="{$template_option.addthisfbimage}" />{/if}
@@ -36,10 +31,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
       <script src="{$serendipityHTTPPath}templates/{$template}/bootstrap/dist/js/bootstrap.min.js"></script>
       <script src="{$serendipityHTTPPath}templates/{$template}/chosen-1.7.0/chosen.jquery.min.js"></script>
-      <!--[if lt IE 9]>
-      <script src="{$serendipityHTTPPath}templates/{$template}/js/html5shiv.min.js" type="text/javascript"></script>
-      <script src="{$serendipityHTTPPath}templates/{$template}/js/respond.min.js" type="text/javascript"></script>
-      <![endif]-->
+
       <script src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en" async></script>
       <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=budgetbabe&async=1"></script>
       <script src="{$serendipityHTTPPath}templates/{$template}/tbb.js"></script>
@@ -115,7 +107,7 @@
         <div class="collapse navbar-collapse" id="s9y-navbar-collapse">
           <div class="container">
             <div class="row justify-content-center">
-              <div class="col-8">
+              <div class="col">
                 <ul class="navbar-nav" id="sbsitenav">
                   {foreach from=$navlinks item="navlink" name="navbar"}
                   <li class="nav-item {if $currpage==$navlink.href}active{/if}{if $smarty.foreach.navbar.first} navlink_first{/if}{if $smarty.foreach.navbar.last} navlink_last{/if}">
@@ -124,21 +116,38 @@
                     </a>
                   </li>
                   {/foreach}
+                  <li class="nav-item serendipity_social_follow d-md-none">
+                    <a href="http://www.facebook.com/TheBudgetBabe" target="_blank" title="Follow The Budget Babe on Facebook!">
+                      <i class="fa fa-2x fa-facebook-official"></i>
+                    </a>
+                    <a href="http://www.twitter.com/budgetbabe" target="_blank" title="Follow The Budget Babe on Twitter!">
+                      <i class="fa fa-2x fa-twitter-square"></i>
+                    </a>
+                    <a href="http://www.instagram.com/budgetbabe" target="_blank" title="Follow The Budget Babe on Instagram!">
+                      <i class="fa fa-2x fa-instagram"></i>
+                    </a>
+                    <a href="http://www.pinterest.com/TheBudgetBabe" target="_blank" title="Follow The Budget Babe on Pinterest!">
+                      <i class="fa fa-2x fa-pinterest-square"></i>
+                    </a>
+                    <a href="https://www.bloglovin.com/blogs/budget-babe-226954" target="_blank" title="Follow The Budget Babe on Bloglovin!">
+                      <i class="fa fa-2x fa-plus-square"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <form action="http://www.google.com/cse" id="cse-search-box" class="input-group" role="search">
+                      <input type="hidden" name="cx" value="{$template_option.googlesearch_partner_id}" />
+                      <input type="hidden" name="ie" value="UTF-8" />
+                      <input type="hidden" class="btn btn-default" name="sa" value="Search" />
+                      <input type="text" id="search-input" class="form-control sb-closed" placeholder="Search for..." aria-label="Search for..." name="q">
+                      {*<button type="submit" class="form-control form-control-submit" >Submit</button>*}
+                      <span class="input-group-btn  d-none d-md-block">
+                        <button class="btn btn-link search-button sb-closed" type="button">
+                          <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+                        </button>
+                      </span>
+                    </form>
+                  </li>
                 </ul>
-              </div>
-              <div class="col">
-                <form action="http://www.google.com/cse" id="cse-search-box" class="input-group" role="search">
-                  <input type="hidden" name="cx" value="{$template_option.googlesearch_partner_id}" />
-                  <input type="hidden" name="ie" value="UTF-8" />
-                  <input type="hidden" class="btn btn-default" name="sa" value="Search" />
-                  <input type="text" id="search-input" class="form-control sb-closed" placeholder="Search for..." aria-label="Search for..." name="q">
-                  {*<button type="submit" class="form-control form-control-submit" >Submit</button>*}
-                  <span class="input-group-btn">
-                    <button class="btn btn-link search-button sb-closed" type="button">
-                      <i class="fa fa-search fa-lg fa-fw" aria-hidden="true"></i>
-                    </button>
-                  </span>
-                </form>
               </div>
             </div>
           </div>
