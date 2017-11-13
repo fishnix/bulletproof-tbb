@@ -110,14 +110,33 @@
             {foreach from=$navlinks item="navlink" name="navbar"}
               <li class="{if $currpage==$navlink.href}currentpage{/if}{if $smarty.foreach.navbar.first} navlink_first{/if}{if $smarty.foreach.navbar.last} navlink_last{/if}"><a href="{$navlink.href}" title="{$navlink.title}">{$navlink.title}</a></li>
             {/foreach}
-            <form action="https://www.google.com/cse" id="cse-search-box" class="navbar-form navbar-right form" role="search">
-              <div class="form-group">
-                <input type="hidden" name="cx" value="{$template_option.googlesearch_partner_id}" />
-                <input type="hidden" name="ie" value="UTF-8" />
-                <input type="text" class="form-control" name="q"/>
-                <input type="hidden" class="btn btn-default" name="sa" value="Search" />
-              </div>
-            </form>
+            <li class="visible-xs" id="serendipity_social_nav">
+              <a href="http://www.facebook.com/TheBudgetBabe" target="_blank" title="Follow The Budget Babe on Facebook!">
+                <i class="fa fa-2x fa-facebook-official"></i>
+              </a>
+              <a href="http://www.twitter.com/budgetbabe" target="_blank" title="Follow The Budget Babe on Twitter!">
+                <i class="fa fa-2x fa-twitter-square"></i>
+              </a>
+              <a href="http://www.instagram.com/budgetbabe" target="_blank" title="Follow The Budget Babe on Instagram!">
+                <i class="fa fa-2x fa-instagram"></i>
+              </a>
+              <a href="http://www.pinterest.com/TheBudgetBabe" target="_blank" title="Follow The Budget Babe on Pinterest!">
+                <i class="fa fa-2x fa-pinterest-square"></i>
+              </a>
+              <a href="https://www.bloglovin.com/blogs/budget-babe-226954" target="_blank" title="Follow The Budget Babe on Bloglovin!">
+                <i class="fa fa-2x fa-plus-square"></i>
+              </a>
+            </li>
+            <li>
+              <form action="https://www.google.com/cse" id="cse-search-box" class="navbar-form navbar-right form" role="search">
+                <div class="form-group">
+                  <input type="hidden" name="cx" value="{$template_option.googlesearch_partner_id}" />
+                  <input type="hidden" name="ie" value="UTF-8" />
+                  <input type="text" class="form-control" name="q"/>
+                  <input type="hidden" class="btn btn-default" name="sa" value="Search" />
+                </div>
+              </form>
+            </li>
           </ul>
         </div>
       </nav>

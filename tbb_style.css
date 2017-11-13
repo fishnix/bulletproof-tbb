@@ -217,6 +217,10 @@ footer p {
     color: #df077a;
 }
 
+#serendipity_social_nav a {
+    display: inline-block;
+}
+
 #sbsitenav .serendipitySideBarContent {
     padding: 0;
     border: 0;
