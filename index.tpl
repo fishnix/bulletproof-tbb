@@ -32,7 +32,7 @@
       <script src="{$serendipityHTTPPath}templates/{$template}/bootstrap/dist/js/bootstrap.min.js"></script>
       <script src="{$serendipityHTTPPath}templates/{$template}/chosen-1.7.0/chosen.jquery.min.js"></script>
 
-      <script src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en" async></script>
+      <script src="https://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en" async></script>
       <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=budgetbabe&async=1"></script>
       <script src="{$serendipityHTTPPath}templates/{$template}/tbb.js"></script>
 
