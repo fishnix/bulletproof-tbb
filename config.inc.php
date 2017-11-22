@@ -129,12 +129,6 @@ $template_config = array(
         'default'       => 'true',
     ),
     array(
-        'var'           => 'cocommentactive',
-        'name'          => COCOMMENT_ACTIVE,
-        'type'          => 'boolean',
-        'default'       => 'false',
-    ),
-    array(
         'var'           => 'prev_next_style',
         'name'          => PREV_NEXT_STYLE,
         'type'          => 'select',
@@ -240,6 +234,18 @@ $template_config = array(
         'name'          => NAVLINK_AMOUNT,
         'type'          => 'string',
         'default'       => '5',
+    ),
+    array(
+        'var'           => 'use_rawnavbar',
+        'name'          => USE_RAW_NAVBAR,
+        'type'          => 'boolean',
+        'default'       => 'false',
+    ),
+    array(
+        'var'           => 'rawnavbar',
+        'name'          => RAW_NAVBAR,
+        'type'          => 'text',
+        'default'       => '',
     )
 );
 

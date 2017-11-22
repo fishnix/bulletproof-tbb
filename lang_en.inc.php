@@ -54,8 +54,6 @@
 @define('PREV_NEXT_TEXT','Text only');
 @define('PREV_NEXT_TEXT_ICON','Text and icon');
 @define('PREV_NEXT_ICON','Icon only');
-// coComment support
-@define('COCOMMENT_ACTIVE','Integrate coComment (http://www.cocomment.com) into comment form');
 // Counter code
 @define('COUNTER_CODE', 'Insert code for counter and/or web stat tool');
 @define('USE_COUNTER', 'Choose whether to use counter code inserted above');
@@ -71,7 +69,7 @@
 // Additional footer text
 @define('FOOTER_TEXT', 'Use this to insert additional text into the page footer');
 @define('USE_FOOTER_TEXT', 'Integrate footer text');
-//Sitenav
+// Sitenav
 @define('SITENAV_POSITION','Position of the navbar');
 @define('SITENAV_NONE','No navbar');
 @define('SITENAV_ABOVE','Above the banner');
@@ -87,3 +85,7 @@
 @define('NAVLINK_AMOUNT', 'Enter number of links in the navbar (needs reload of the Manage Styles page)');
 @define('NAV_LINK_TEXT', 'Enter the navbar link text');
 @define('NAV_LINK_URL', 'Enter the full URL of your link');
+@define('USE_RAW_NAVBAR', 'Use the navbar code provided below instead of generating one.');
+@define('RAW_NAVBAR', 'Navbar markup');
+// Overrides
+@define('IN_REPLY_TO', 'Reply To');

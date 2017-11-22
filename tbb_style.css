@@ -2,17 +2,14 @@
 /* Template: bulletproof-tbb for Serendipity (http://www.s9y.org)     */
 /**********************************************************************/
 
-/* body {
-    font-family: 'Crimson Text', serif !important;    
-} */
-
 body a {
     /* color: #df077a; */
     color: #da7f8b;
 }
 
 body a:hover {
-    color: #c9a480;
+    /* color: #c9a480; */
+    color: #df077a;
 }
 
 .leaderboard_code {
@@ -66,7 +63,6 @@ body a:hover {
 
 #cse-search-box > .input-group-btn > button {
     color: #ffffff;
-    /* color: rgba(0,0,0,.5); */
     border: 0px;  
 }
 
@@ -80,19 +76,21 @@ body a:hover {
     max-width: 100%;
 }
 
+.serendipity_social_follow a {
+    color: #212529;
+}
+
+.serendipity_social_follow a:hover {
+    color: #da7f8b;
+}
+
+/* 
 .serendipity_social_follow {
     margin: 2px;
     padding: 5px;
     font-size: 100%;
 }
-
-.serendipity_social_follow a {
-    color: #080808;
-}
-
-.serendipity_social_follow a:hover {
-    color: #f8c9c9;
-}
+*/
 
 #serendipityRightSideBar {
     /* background-color: #ffffff;
@@ -100,12 +98,6 @@ body a:hover {
     overflow: visible;
     padding: 0px;
 }
-
-/*
-#serendipityRightSideBar .serendipitySideBarItem .serendipitySideBarTitle {
-    width: 300px;
-}
-*/
 
 .addthis_sharing_toolbox {
     padding-top: 12px;
@@ -186,14 +178,14 @@ body a:hover {
 
 .content h1 {
     text-transform: none;
-    font-size: 140%;
+    font-size: 165%;
     line-height: 150%;
     letter-spacing: .2em;
     margin: 5px 0 5px 0;
 }
 
 .content h1 a {
-    color: #080808;
+    color: #212529;
 }
 
 .content h1 a:hover {
@@ -202,15 +194,16 @@ body a:hover {
 }
 
 .content h2 {
-    font-size: 140%;
+    font-size: 150%;
 }
 
 .content h3 {
-    font-size: 130%;
+    font-size: 140%;
 }
 
 .entry-content {
-    font-size: 110%;
+    line-height: 130%;
+    font-size: 120%;
     border-bottom: 1px solid #dfdfdf;
     padding-bottom: 10px;
 }

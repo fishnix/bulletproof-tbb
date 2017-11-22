@@ -16,4 +16,6 @@ $j(document).ready(function(){
       }
     })
   })
+
+  $j("#serendipity_replyTo").addClass("custom-select");
 })
