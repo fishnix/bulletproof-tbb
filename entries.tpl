@@ -39,7 +39,7 @@
             {$entry.body}
             {if $entry.has_extended and not $is_single_entry and not $entry.is_extended}
               <div class="text-center">
-                <a href="{$entry.link}#extended" title='{$CONST.VIEW_EXTENDED_ENTRY|@sprintf:$entry.title|truncate:50:" ..."}' class="btn btn-primary btn-lg" role="button">Read More</a>
+                <a href="{$entry.link}#extended" title='{$CONST.VIEW_EXTENDED_ENTRY|@sprintf:$entry.title|truncate:50:" ..."}' class="btn btn-secondary btn-lg" role="button">Read More</a>
               </div>
             {/if}
           </div>

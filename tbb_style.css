@@ -24,7 +24,8 @@ body a:hover {
 }
 
 .navbar.main-nav {
-    background-color: #f8c9c9;
+    /* background-color: #f8c9c9; */
+    background-color: #f6ebe6;
     margin: 7.5px -15px;
     border: 0px;
     text-transform: uppercase;
