@@ -148,11 +148,11 @@
         <footer>
           <div class="text-center">
             {if $footer_prev_page}
-            <a href="{$footer_prev_page}" class="btn btn-default" role="button">Newer Posts</a>
+            <a href="{$footer_prev_page}" class="btn btn-primary" role="button">Newer Posts</a>
             {/if}
 
             {if $footer_next_page}
-            <a href="{$footer_next_page}" class="btn btn-default" role="button">Older Posts</a>
+            <a href="{$footer_next_page}" class="btn btn-primary" role="button">Older Posts</a>
             {/if}
           </div>
 

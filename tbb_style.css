@@ -25,22 +25,17 @@ body a:hover {
 
 .navbar.main-nav {
     background-color: #f8c9c9;
-    /* background-color:#e2bdbd; */
     margin: 7.5px -15px;
     border: 0px;
-    /* margin-bottom: 0px; */
     text-transform: uppercase;
-    /* font-weight: bold; */
     padding: 0px;
 }
 
 #sbsitenav > li > a {
-    /* padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 20px; */
     padding-left:20px;
     line-height: 20px;
-    color: #ffffff;
+    /* color: #ffffff; */
+    color: #212529;
     font-family: 'Futura URW', sans-serif !important;
 }
 
@@ -62,7 +57,7 @@ body a:hover {
 }
 
 #cse-search-box > .input-group-btn > button {
-    color: #ffffff;
+    color: #212529;
     border: 0px;  
 }
 
