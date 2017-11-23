@@ -176,7 +176,7 @@ body a:hover {
     text-transform: none;
     font-size: 165%;
     line-height: 150%;
-    letter-spacing: .2em;
+    /* letter-spacing: .2em; */
     margin: 5px 0 5px 0;
 }
 
