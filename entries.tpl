@@ -59,7 +59,7 @@
         {/if}
 
         <!-- AddThis Widget -->
-        <div class="addthis_sharing_toolbox text-center"
+        <div class="addthis_inline_share_toolbox_vxsc text-center"
              data-url="{$entry.rdf_ident}"
              data-title="{$entry.title}"
              addthis:url="{$entry.rdf_ident}"
