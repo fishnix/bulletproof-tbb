@@ -136,7 +136,7 @@ body a:hover {
 .serendipitySideBarTitle {
     text-transform: uppercase;
     font-size: 95%;
-    letter-spacing: .2em;
+    letter-spacing: normal;
     color: #505050;
     padding: 8px 5px 8px 5px;
     border-left: 0px solid #dfdfdf;
@@ -252,4 +252,10 @@ blockquote p {
     letter-spacing: .2em;
     margin: 1em 0;
     padding: 0.5em 0;
+}
+
+.at-h3 .at-recommended-label  {
+    font-family: "Futura URW",sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
 }
