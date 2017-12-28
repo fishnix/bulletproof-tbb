@@ -3,12 +3,10 @@
 /**********************************************************************/
 
 body a {
-    /* color: #df077a; */
     color: #da7f8b;
 }
 
 body a:hover {
-    /* color: #c9a480; */
     color: #df077a;
 }
 
@@ -70,6 +68,11 @@ body a:hover {
     display: block;
     height: auto;
     max-width: 100%;
+    padding: 0px;
+}
+
+.serendipity_social_follow {
+    margin: 5px 0 5px 0;
 }
 
 .serendipity_social_follow a {
@@ -80,17 +83,15 @@ body a:hover {
     color: #da7f8b;
 }
 
-/* 
-.serendipity_social_follow {
-    margin: 2px;
-    padding: 5px;
-    font-size: 100%;
+.serendipity_pagination_buttons a {
+    color: #da7f8b;
 }
-*/
+
+.serendipity_pagination_buttons a:hover {
+    color: #df077a;
+}
 
 #serendipityRightSideBar {
-    /* background-color: #ffffff;
-    color: #505050; */
     overflow: visible;
     padding: 0px;
 }
@@ -120,10 +121,12 @@ body a:hover {
     display: inline;
 }
 
-.serendipity_entryFooter {
-    margin: 5px 0;
-    padding: 5px 0 10px;
-    clear: left;
+.serendipity_commentlink a {
+    color: #212529;
+}
+
+.serendipity_commentlink a:hover {
+    color: #df077a;
 }
 
 .serendipitySideBarItem {
@@ -146,7 +149,6 @@ body a:hover {
 }
 
 .serendipitySideBarContent {
-    /*font-size: 100%;*/
     padding: 10px;
     border-left: 0px solid #dfdfdf;
     background-color: #ffffff;
@@ -176,7 +178,6 @@ body a:hover {
     text-transform: none;
     font-size: 165%;
     line-height: 150%;
-    /* letter-spacing: .2em; */
     margin: 5px 0 5px 0;
 }
 

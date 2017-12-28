@@ -3,13 +3,11 @@
 
 {foreach name=dg from=$entries item="dategroup"}
 
-<div class="hentry serendipity_Entry_Date{if $dategroup.is_sticky} serendipity_Sticky_Entry{/if}">
+<div class="hentry{if $dategroup.is_sticky} serendipity_Sticky_Entry{/if}">
 	{if $dategroup.is_sticky}
 		{if $template_option.show_sticky_entry_heading == 'true'}
 	    <h3 class="serendipity_date">{$CONST.STICKY_POSTINGS}</h3>
 		{/if}
-	{else}
-		<!--<h3 class="serendipity_date"><abbr class="published updated" title="{$dategroup.date|@formatTime:'%Y-%m-%dT%H:%M:%S%Z'}">{$dategroup.date|@formatTime:$template_option.date_format}</abbr></h3>-->
 	{/if}
 
 	{foreach name=dg_entries from=$dategroup.entries item="entry"}
@@ -19,7 +17,7 @@
       {assign var="entry" value=$entry scope="parent"}
       <article>
         <header>
-          <h1 class="text-center entry-title serendipity_title"><a href="{$entry.link}" rel="bookmark">{$entry.title}</a></h1>
+          <h1 class="display-1 text-center entry-title"><a href="{$entry.link}" rel="bookmark">{$entry.title}</a></h1>
           <div class="text-center serendipity_entry serendipity_entry_author_{$entry.author|@makeFilename} {if $entry.is_entry_owner}serendipity_entry_author_self{/if}">
             {if (not $dategroup.is_sticky or ($dategroup.is_sticky and $template_option.show_sticky_entry_footer == 'true'))}
               <div class='serendipity_entryFooter byline'>
@@ -50,41 +48,73 @@
         </div>
 
       {if (not $dategroup.is_sticky or ($dategroup.is_sticky and $template_option.show_sticky_entry_footer == 'true'))}
-        <div class='serendipity_entryFooter text-center'>
-          <!-- AddThis Widget -->
-          <div class="addthis_sharing_toolbox text-center"
-              data-url="{$entry.rdf_ident}"
-              data-title="{$entry.title}"
-              addthis:url="{$entry.rdf_ident}"
-              addthis:title="{$entry.title}">
-          </div>
-
-          {if $template_option.footercomments == 'true'}
-            {if $entry.has_comments}
-              {if $template_option.altcommtrack == 'true'}
-              <a href="{$entry.link}#comments">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
-              {else}
-              <a href="{$entry.link}#comments">{$entry.label_comments} ({$entry.comments})</a>
+        <div class="serendipity_entryFooter">
+          <div class="row justify-content-center align-items-center">
+            {if $template_option.footercomments == 'true'}
+              {if $entry.has_comments}
+                <div class="col-4">
+                  <p class="h4 pull-right serendipity_commentlink">
+                    {if $template_option.altcommtrack == 'true'}
+                    <a href="{$entry.link}#comments">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
+                    {else}
+                    <a href="{$entry.link}#comments">{$entry.label_comments} ({$entry.comments})</a>
+                    {/if}
+                  </p>
+                </div>
               {/if}
             {/if}
-          {/if}
+
+            <div class="col-6">
+              <!-- AddThis Widget -->
+              <div class="addthis_inline_share_toolbox_vxsc pull-left"
+                  data-url="{$entry.rdf_ident}"
+                  data-title="{$entry.title}"
+                  addthis:url="{$entry.rdf_ident}"
+                  addthis:title="{$entry.title}">
+              </div>
+            </div>
+          </div>
 
           {if $entry.is_entry_owner and not $is_preview}
-          <div class="editentrylink"><a href="{$entry.link_edit}">{$CONST.EDIT_ENTRY}</a></div>
+          <div class="row justify-content-center align-items-center">
+            <div class="col">
+              <div class="editentrylink"><a href="{$entry.link_edit}">{$CONST.EDIT_ENTRY}</a></div>
+            </div>
+          </div>
           {/if}
 
           {if $template_option.footercategories == 'true'}
             {if $entry.categories}
-            <p class="entry-catagories text-center">
-              Posted in: {foreach from=$entry.categories item="entry_category" name="categories"}<a href="{$entry_category.category_link}">{$entry_category.category_name|@escape}</a>{if not $smarty.foreach.categories.last}, {/if}{/foreach}
-            </p>
+            <div class="row justify-content-center align-items-center">
+              <div class="col">
+                <p class="entry-catagories text-center">
+                Posted in: {foreach from=$entry.categories item="entry_category" name="categories"}<a href="{$entry_category.category_link}">{$entry_category.category_name|@escape}</a>{if not $smarty.foreach.categories.last}, {/if}{/foreach}
+                </p>
+              </div>
+            </div>
             {/if}
           {/if}
 
           {if $is_single_entry and not $is_preview}
-          <div class="center-block addthis_recommended_horizontal"></div>
+          <div class="row justify-content-center align-items-center">
+            <div class="col">
+              <div class="center-block addthis_recommended_horizontal"></div>
+            </div>
+          </div>
           {/if}
-          
+
+          {if $smarty_entrypaging}
+          <div class="text-center">
+            {if $pagination_prev_link}
+            <a href="{$pagination_prev_link}" class="btn btn-secondary" role="button" title="{$pagination_prev_title}">Previous Post</a>
+            {/if}
+
+            {if $pagination_next_link}
+            <a href="{$pagination_next_link}" class="btn btn-secondary" role="button" title="{$pagination_next_title}">Next Post</a>
+            {/if}
+          </div>
+          {/if}
+
           {$entry.add_footer}
       {/if}
       </div>

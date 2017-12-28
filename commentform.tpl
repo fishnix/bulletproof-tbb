@@ -13,7 +13,10 @@
     <div class="form-group row">
       <label for="serendipity_commentform_email" class="col-2 col-form-label">{$CONST.EMAIL}</label>
       <div class="col-10">
-        <input class="form-control" type="text" id="serendipity_commentform_email" name="serendipity[email]" value="{$commentform_email}">
+        <input class="form-control" type="text" id="serendipity_commentform_email" name="serendipity[email]" value="{$commentform_email}" aria-describedby="emailHelpBlock">
+        <small id="emailHelpBlock" class="form-text text-muted">
+        E-Mail addresses will not be displayed and will only be used for E-Mail notifications.
+        </small>
       </div>
     </div>
 
@@ -34,7 +37,11 @@
     <div class="form-group row">
       <label for="serendipity_commentform_comment" class="col-2 col-form-label">{$CONST.COMMENT}</label>
       <div class="col-10">
-        <textarea class="frm form-control" type="text" id="serendipity_commentform_comment" name="serendipity[comment]">{$commentform_data}</textarea>
+        <textarea class="frm form-control" type="text" id="serendipity_commentform_comment" name="serendipity[comment]" aria-describedby="commentFormHelpBlock">{$commentform_data}</textarea>
+        <small id="commentFormHelpBlock" class="form-text text-muted">
+        Enclosing asterisks marks text as bold (*word*), underscore are made via _word_.<br />
+        Standard emoticons like :-) and ;-) are converted to images.<br />
+        </small>
       </div>
     </div>
 
@@ -67,14 +74,16 @@
       </div>
     {/if}
 
+    <!-- Disabled frontend comment hook to get rid of annoying messages from plugins
     <div class="row d-flex justify-content-center">
-      <div class="col-12 alert alert-light text-center" role="alert">
-        {serendipity_hookPlugin hook="frontend_comment" data=$commentform_entry}
+        <div class="col-12 text-center alert alert-warning" role="alert">
+        {*serendipity_hookPlugin hook="frontend_comment" data=$commentform_entry*}
       </div>
     </div>
+    -->
 
     <div class="btn-group d-flex justify-content-center" role="group">
-      <button type="submit" name="serendipity[submit]" class="btn btn-primary" value="{$CONST.SUBMIT_COMMENT}">{$CONST.SUBMIT_COMMENT}</button>
+      <button type="submit" name="serendipity[submit]" class="btn btn-secondary btn-lg" value="{$CONST.SUBMIT_COMMENT}">{$CONST.SUBMIT_COMMENT}</button>
     </div>
   </form>
 </div>

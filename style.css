@@ -102,13 +102,11 @@ abbr, acronym, .help{
 }
 
 #serendipity_credit_line {
-    float: left;
     margin: 5px 0 0 10px;
     display: inline;
 }
 
 #serendipity_bulletproof_button {
-    float: right;
     margin: 5px 10px 5px 0;
     display: inline;
 }
