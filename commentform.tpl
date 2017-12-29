@@ -74,13 +74,11 @@
       </div>
     {/if}
 
-    <!-- Disabled frontend comment hook to get rid of annoying messages from plugins
     <div class="row d-flex justify-content-center">
-        <div class="col-12 text-center alert alert-warning" role="alert">
-        {*serendipity_hookPlugin hook="frontend_comment" data=$commentform_entry*}
+      <div class="col-12 text-center">
+        {serendipity_hookPlugin hook="frontend_comment" data=$commentform_entry}
       </div>
     </div>
-    -->
 
     <div class="btn-group d-flex justify-content-center" role="group">
       <button type="submit" name="serendipity[submit]" class="btn btn-secondary btn-lg" value="{$CONST.SUBMIT_COMMENT}">{$CONST.SUBMIT_COMMENT}</button>

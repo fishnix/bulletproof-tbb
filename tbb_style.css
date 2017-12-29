@@ -260,3 +260,7 @@ blockquote p {
     font-weight: 500;
     line-height: 1.1;
 }
+
+.serendipity_commentDirection {
+    display: none;
+}

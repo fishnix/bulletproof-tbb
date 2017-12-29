@@ -178,11 +178,11 @@
           {/foreach}
 
           {if $is_comment_added}
-            <div class="serendipity_center serendipity_msg_notice">{$CONST.COMMENT_ADDED}</div>
+            <div class="text-center h4">{$CONST.COMMENT_ADDED}</div>
           {elseif $is_comment_moderate}
-            <div class="serendipity_center serendipity_msg_notice">{$CONST.COMMENT_ADDED}<br />{$CONST.THIS_COMMENT_NEEDS_REVIEW}</div>
+            <div class="text-center h4">{$CONST.COMMENT_ADDED}<br />{$CONST.THIS_COMMENT_NEEDS_REVIEW}</div>
           {elseif not $entry.allow_comments}
-            <div class="serendipity_center serendipity_msg_important">{$CONST.COMMENTS_CLOSED}</div>
+            <div class="text-center h4">{$CONST.COMMENTS_CLOSED}</div>
           {else}
             <div class="serendipity_section_commentform">
               <div class="serendipity_commentsTitle">Leave a comment</div>

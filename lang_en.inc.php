@@ -89,3 +89,5 @@
 @define('RAW_NAVBAR', 'Navbar markup');
 // Overrides
 @define('IN_REPLY_TO', 'Reply To');
+@define('THIS_COMMENT_NEEDS_REVIEW', 'It will be displayed after approval');
+@define('COMMENTS_CLOSED', 'Comments are closed for this entry');
