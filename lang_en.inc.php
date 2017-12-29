@@ -91,3 +91,5 @@
 @define('IN_REPLY_TO', 'Reply To');
 @define('THIS_COMMENT_NEEDS_REVIEW', 'It will be displayed after approval');
 @define('COMMENTS_CLOSED', 'Comments are closed for this entry');
+@define('VIEW_FULL', 'View All Entries');
+@define('VIEW_TOPICS', 'View Topic List');

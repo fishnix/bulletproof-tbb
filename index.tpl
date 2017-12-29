@@ -77,7 +77,7 @@
     <!-- START Blog title container -->
     <div class="container-fluid">
       <div class="row justify-content-center">
-        <div class="col-8">
+        <div class="col-5">
           <a class="homelinkimage" href="{$serendipityBaseURL}">
             <img alt="{$blogTitle}" class="img-fluid" src="{$template_option.headerimage}">
           </a>

@@ -3,11 +3,11 @@
 /**********************************************************************/
 
 body a {
-    color: #da7f8b;
+    color: #e57a8b
 }
 
 body a:hover {
-    color: #df077a;
+    color: #c8a382
 }
 
 .leaderboard_code {
@@ -41,7 +41,7 @@ body a:hover {
 #sbsitenav > li > a:hover,
 #sbsitenav > li > a:focus {
     background-color: transparent;
-    color: #df077a; 
+    color: #e57a8b; 
 }
 
 #cse-search-box > input.form-control::-webkit-input-placeholder {
@@ -80,15 +80,7 @@ body a:hover {
 }
 
 .serendipity_social_follow a:hover {
-    color: #da7f8b;
-}
-
-.serendipity_pagination_buttons a {
-    color: #da7f8b;
-}
-
-.serendipity_pagination_buttons a:hover {
-    color: #df077a;
+    color: #e57a8b;
 }
 
 #serendipityRightSideBar {
@@ -126,7 +118,7 @@ body a:hover {
 }
 
 .serendipity_commentlink a:hover {
-    color: #df077a;
+    color: #e57a8b;
 }
 
 .serendipitySideBarItem {
@@ -163,7 +155,7 @@ body a:hover {
 
 .form-control:focus {
     border-color: #FF0000;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(223, 7, 122, 1);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #e57a8b;
 }
 
 .content {
@@ -187,7 +179,7 @@ body a:hover {
 
 .content h1 a:hover {
     text-decoration: none;
-    color: #df077a;
+    color: #e57a8b;
 }
 
 .content h2 {
@@ -201,8 +193,17 @@ body a:hover {
 .entry-content {
     line-height: 130%;
     font-size: 120%;
-    border-bottom: 1px solid #dfdfdf;
+    /* border-bottom: 1px solid #dfdfdf; */
     padding-bottom: 10px;
+}
+
+article {
+    border-bottom: 1px solid #dfdfdf;
+    margin-bottom: 5px;
+}
+
+footer {
+    margin-top: 5px;
 }
 
 #month,

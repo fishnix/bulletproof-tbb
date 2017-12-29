@@ -296,11 +296,18 @@ function serendipity_plugin_api_event_hook($event, &$bag, $eventData, $addData =
         case 'backend_header':
             $template_path = $serendipity['serendipityHTTPPath'] . $serendipity['templatePath'] . $serendipity['template'];
 
-            // echo '<!-- Bootstrap -->' . "\n";
-            // echo '<link rel="stylesheet" href="' . $template_path . '/bootstrap-3.3.7-dist/css/bootstrap.min.css">' . "\n";
-            // echo '<script src="' . $template_path . '/bootstrap-3.3.7-dist/js/bootstrap.min.js" ></script>' . "\n";
-            // echo '<!-- FontAwesome -->' . "\n";
-            // echo '<link rel="stylesheet" href="' . $template_path . '/font-awesome-4.7.0/css/font-awesome.min.css">' . "\n";
+            echo '<link rel="stylesheet" type="text/css" href="' . $template_path . '/tbb_style.css">';
+
+            echo '<!-- Crimson Text Font -->' . "\n";
+            echo '<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">' . "\n";
+
+            echo '<!-- Bootstrap -->' . "\n";
+            echo '<link rel="stylesheet" href="' . $template_path . '/bootstrap/dist/css/bootstrap.min.css" />' . "\n";
+            echo '<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>' . "\n";
+            echo '<script src="' . $template_path . '/bootstrap/dist/js/bootstrap.min.js"></script>' . "\n";
+
+            echo '<!-- FontAwesome -->' . "\n";
+            echo '<link rel="stylesheet" href="' . $template_path . '/font-awesome-4.7.0/css/font-awesome.min.css" />' . "\n";
 
             return true;
             break;

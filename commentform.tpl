@@ -38,10 +38,6 @@
       <label for="serendipity_commentform_comment" class="col-2 col-form-label">{$CONST.COMMENT}</label>
       <div class="col-10">
         <textarea class="frm form-control" type="text" id="serendipity_commentform_comment" name="serendipity[comment]" aria-describedby="commentFormHelpBlock">{$commentform_data}</textarea>
-        <small id="commentFormHelpBlock" class="form-text text-muted">
-        Enclosing asterisks marks text as bold (*word*), underscore are made via _word_.<br />
-        Standard emoticons like :-) and ;-) are converted to images.<br />
-        </small>
       </div>
     </div>
 
