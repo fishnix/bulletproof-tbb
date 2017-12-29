@@ -256,6 +256,10 @@ blockquote p {
     padding: 0.5em 0;
 }
 
+.serendipity_section_commentform {
+    margin-bottom: 10px;
+}
+
 .at-h3 .at-recommended-label  {
     font-family: "Futura URW",sans-serif;
     font-weight: 500;
