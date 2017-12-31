@@ -36,8 +36,10 @@
           <div class="serendipity_entry_body">
             {$entry.body}
             {if $entry.has_extended and not $is_single_entry and not $entry.is_extended}
-              <div class="text-center">
-                <a href="{$entry.link}#extended" title='{$CONST.VIEW_EXTENDED_ENTRY|@sprintf:$entry.title|truncate:50:" ..."}' class="btn btn-secondary btn-lg" role="button">Read More</a>
+              <div class="row justify-content-center">
+                <div class="col text-center">
+                  <a href="{$entry.link}#extended" title='{$CONST.VIEW_EXTENDED_ENTRY|@sprintf:$entry.title|truncate:50:" ..."}' class="btn btn-secondary btn-lg" role="button">Read More</a>
+                </div>
               </div>
             {/if}
           </div>
@@ -52,8 +54,8 @@
           <div class="row justify-content-center align-items-center">
             {if $template_option.footercomments == 'true'}
               {if $entry.has_comments}
-                <div class="col-6">
-                  <p class="h5 text-center serendipity_commentlink">
+                <div class="col-5">
+                  <p class="h6 pull-right serendipity_commentlink">
                     {if $template_option.altcommtrack == 'true'}
                     <a href="{$entry.link}#comments">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
                     {else}
@@ -64,7 +66,7 @@
               {/if}
             {/if}
 
-            <div class="col-6">
+            <div class="col-7">
               <!-- AddThis Widget -->
               <div class="addthis_inline_share_toolbox_vxsc text-center"
                   data-url="{$entry.rdf_ident}"
