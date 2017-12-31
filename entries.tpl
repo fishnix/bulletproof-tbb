@@ -53,7 +53,7 @@
             {if $template_option.footercomments == 'true'}
               {if $entry.has_comments}
                 <div class="col-6">
-                  <p class="h4 text-center serendipity_commentlink">
+                  <p class="h5 text-center serendipity_commentlink">
                     {if $template_option.altcommtrack == 'true'}
                     <a href="{$entry.link}#comments">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
                     {else}
