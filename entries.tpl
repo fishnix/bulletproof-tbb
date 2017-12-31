@@ -52,8 +52,8 @@
           <div class="row justify-content-center align-items-center">
             {if $template_option.footercomments == 'true'}
               {if $entry.has_comments}
-                <div class="col-4">
-                  <p class="h4 pull-right serendipity_commentlink">
+                <div class="col-6">
+                  <p class="h4 text-center serendipity_commentlink">
                     {if $template_option.altcommtrack == 'true'}
                     <a href="{$entry.link}#comments">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
                     {else}
@@ -66,7 +66,7 @@
 
             <div class="col-6">
               <!-- AddThis Widget -->
-              <div class="addthis_inline_share_toolbox_vxsc pull-left"
+              <div class="addthis_inline_share_toolbox_vxsc text-center"
                   data-url="{$entry.rdf_ident}"
                   data-title="{$entry.title}"
                   addthis:url="{$entry.rdf_ident}"

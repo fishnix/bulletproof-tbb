@@ -108,7 +108,7 @@
           <div class="container">
             <div class="row justify-content-center">
               <div class="col">
-                {if !$template_option.use_rawnavbar}
+                {if $template_option.navbar == 'default'}
                 <ul class="navbar-nav" id="sbsitenav">
                   {foreach from=$navlinks item="navlink" name="navbar"}
                   <li class="nav-item {if $currpage==$navlink.href}active{/if}">
@@ -118,6 +118,8 @@
                   </li>
                   {/foreach}
                 </ul>
+                {else if $template_option.navbar == 'smarty'}
+                  {include file="custom_navbar.tpl"}
                 {else}
                   {$template_option.rawnavbar}
                 {/if}

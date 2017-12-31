@@ -85,7 +85,7 @@
 @define('NAVLINK_AMOUNT', 'Enter number of links in the navbar (needs reload of the Manage Styles page)');
 @define('NAV_LINK_TEXT', 'Enter the navbar link text');
 @define('NAV_LINK_URL', 'Enter the full URL of your link');
-@define('USE_RAW_NAVBAR', 'Use the navbar code provided below instead of generating one.');
+@define('NAVBAR_SOURCE', 'Use this source for the navbar code.');
 @define('RAW_NAVBAR', 'Navbar markup');
 // Overrides
 @define('IN_REPLY_TO', 'Reply To');

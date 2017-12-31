@@ -236,11 +236,14 @@ $template_config = array(
         'default'       => '5',
     ),
     array(
-        'var'           => 'use_rawnavbar',
-        'name'          => USE_RAW_NAVBAR,
-        'type'          => 'boolean',
-        'default'       => 'false',
-    ),
+        'var'           => 'navbar',
+        'name'          => NAVBAR_SOURCE,
+        'type'          => 'select',
+        'default'       => 'default',
+        'select_values' => array('default' => 'Default',
+                                 'smarty' => 'Smarty Template (custom_navbar.tpl)',
+                                 'raw' => 'Raw Source Below')
+   ),
     array(
         'var'           => 'rawnavbar',
         'name'          => RAW_NAVBAR,
