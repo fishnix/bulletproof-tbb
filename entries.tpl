@@ -60,7 +60,7 @@
             {if $entry.has_extended and not $is_single_entry and not $entry.is_extended}
               <div class="col-12 col-sm-4 text-center">
                 <div class="readmore_link">
-                  <a href="{$entry.link}#extended" title='{$CONST.VIEW_EXTENDED_ENTRY|@sprintf:$entry.title|truncate:50:" ..."}' class="btn btn-secondary btn-lg" role="button">Read More</a>
+                  <a href="{$entry.link}#extended" title='{$CONST.VIEW_EXTENDED_ENTRY|@sprintf:$entry.title|truncate:50:" ..."}' class="btn btn-secondary btn-lg rounded-0" role="button">Read More</a>
                 </div>
               </div>
             {/if}
@@ -107,11 +107,11 @@
           {if $smarty_entrypaging}
           <div class="text-center">
             {if $pagination_prev_link}
-            <a href="{$pagination_prev_link}" class="btn btn-secondary" role="button" title="{$pagination_prev_title}">Previous Post</a>
+            <a href="{$pagination_prev_link}" class="btn btn-secondary btn-lg rounded-0" role="button" title="{$pagination_prev_title}">Previous Post</a>
             {/if}
 
             {if $pagination_next_link}
-            <a href="{$pagination_next_link}" class="btn btn-secondary" role="button" title="{$pagination_next_title}">Next Post</a>
+            <a href="{$pagination_next_link}" class="btn btn-secondary btn-lg rounded-0" role="button" title="{$pagination_next_title}">Next Post</a>
             {/if}
           </div>
           {/if}

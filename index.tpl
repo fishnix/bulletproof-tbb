@@ -150,11 +150,11 @@
         <footer>
           <div class="text-center">
             {if $footer_prev_page}
-            <a href="{$footer_prev_page}" class="btn btn-secondary" role="button">Newer Posts</a>
+            <a href="{$footer_prev_page}" class="btn btn-secondary btn-lg rounded-0" role="button">Newer Posts</a>
             {/if}
 
             {if $footer_next_page}
-            <a href="{$footer_next_page}" class="btn btn-secondary" role="button">Older Posts</a>
+            <a href="{$footer_next_page}" class="btn btn-secondary btn-lg rounded-0" role="button">Older Posts</a>
             {/if}
           </div>
 

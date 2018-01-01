@@ -77,7 +77,7 @@
     </div>
 
     <div class="btn-group d-flex justify-content-center" role="group">
-      <button type="submit" name="serendipity[submit]" class="btn btn-secondary btn-lg" value="{$CONST.SUBMIT_COMMENT}">{$CONST.SUBMIT_COMMENT}</button>
+      <button type="submit" name="serendipity[submit]" class="btn btn-secondary btn-lg rounded-0" value="{$CONST.SUBMIT_COMMENT}">{$CONST.SUBMIT_COMMENT}</button>
     </div>
   </form>
 </div>
