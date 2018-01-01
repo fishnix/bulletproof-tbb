@@ -19,16 +19,16 @@
     <a class="nav-link" href="/categories/41-Decor" title="Decor">Decor</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="/pages/shop.html" title="Budget Fashion Guide">Budget Fashion Guide</a>
+    <a class="nav-link" href="/index.php?/pages/shop.html" title="Budget Fashion Guide">Budget Fashion Guide</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="http://liketoknow.it/budgetbabe" title="Home">Shop Instagram</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="/pages/contact.html" title="Contact">Contact</a>
+    <a class="nav-link" href="/index.php?/pages/contact.html" title="Contact">Contact</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="/pages/about.html" title="About">About</a>
+    <a class="nav-link" href="/index.php?/pages/about.html" title="About">About</a>
   </li>
 
   <li class="nav-item serendipity_social_follow d-md-none">
