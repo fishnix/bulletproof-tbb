@@ -35,40 +35,39 @@
         <div class="entry-content">
           <div class="serendipity_entry_body">
             {$entry.body}
-            {if $entry.has_extended and not $is_single_entry and not $entry.is_extended}
-              <div class="row justify-content-center">
-                <div class="col text-center">
-                  <a href="{$entry.link}#extended" title='{$CONST.VIEW_EXTENDED_ENTRY|@sprintf:$entry.title|truncate:50:" ..."}' class="btn btn-secondary btn-lg" role="button">Read More</a>
-                </div>
-              </div>
-            {/if}
-          </div>
 
           {if $entry.is_extended}
             <div class="serendipity_entry_extended"><a id="extended"></a>{$entry.extended}</div>
           {/if}
+          </div>
         </div>
 
       {if (not $dategroup.is_sticky or ($dategroup.is_sticky and $template_option.show_sticky_entry_footer == 'true'))}
         <div class="serendipity_entryFooter">
           <div class="row justify-content-center align-items-center">
-            {if $template_option.footercomments == 'true'}
-              {if $entry.has_comments}
-                <div class="col-5">
-                  <p class="h6 pull-right serendipity_commentlink">
-                    {if $template_option.altcommtrack == 'true'}
-                    <a href="{$entry.link}#comments">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
-                    {else}
-                    <a href="{$entry.link}#comments">{$entry.label_comments} ({$entry.comments})</a>
-                    {/if}
-                  </p>
-                </div>
-              {/if}
+            {if $entry.has_comments}
+              <div class="col-12 col-sm-4 text-center">
+                <p class="h6 serendipity_commentlink">
+                  {if $template_option.altcommtrack == 'true'}
+                  <a href="{$entry.link}#comments">{if $entry.comments == 0}{$CONST.NO_COMMENTS}{else}{$entry.comments} {$entry.label_comments}{/if}</a>
+                  {else}
+                  <a href="{$entry.link}#comments">{$entry.label_comments} ({$entry.comments})</a>
+                  {/if}
+                </p>
+              </div>
             {/if}
 
-            <div class="col-7">
+            {if $entry.has_extended and not $is_single_entry and not $entry.is_extended}
+              <div class="col-12 col-sm-4 text-center">
+                <div class="readmore_link">
+                  <a href="{$entry.link}#extended" title='{$CONST.VIEW_EXTENDED_ENTRY|@sprintf:$entry.title|truncate:50:" ..."}' class="btn btn-secondary btn-lg" role="button">Read More</a>
+                </div>
+              </div>
+            {/if}
+
+            <div class="col-12 col-sm-4 text-center">
               <!-- AddThis Widget -->
-              <div class="addthis_inline_share_toolbox_vxsc text-center"
+              <div class="addthis_inline_share_toolbox_vxsc"
                   data-url="{$entry.rdf_ident}"
                   data-title="{$entry.title}"
                   addthis:url="{$entry.rdf_ident}"
@@ -78,8 +77,8 @@
           </div>
 
           {if $entry.is_entry_owner and not $is_preview}
-          <div class="row justify-content-center align-items-center">
-            <div class="col">
+          <div class="row justify-content-center">
+            <div class="col text-center">
               <div class="editentrylink"><a href="{$entry.link_edit}">{$CONST.EDIT_ENTRY}</a></div>
             </div>
           </div>
