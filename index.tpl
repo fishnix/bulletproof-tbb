@@ -19,7 +19,7 @@
       <link rel="shortcut icon" href="{$serendipityBaseURL}favicon.ico" />
 
       <link rel="stylesheet" type="text/css" href="{$head_link_stylesheet}" />
-      <link rel="stylesheet" type="text/css" href="{$serendipityHTTPPath}templates/{$template}/tbb_style.css" />
+      <link rel="stylesheet" type="text/css" href="{$serendipityHTTPPath}templates/{$template}/tbb_style_20180101.css" />
 
       <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
       <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/bootstrap/dist/css/bootstrap.min.css" />
