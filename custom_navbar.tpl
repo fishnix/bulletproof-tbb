@@ -22,7 +22,7 @@
     <a class="nav-link" href="/pages/shop.html" title="Budget Fashion Guide">Budget Fashion Guide</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="http://liketoknow.it/budgetbabe" title="Home">Instagram</a>
+    <a class="nav-link" href="http://liketoknow.it/budgetbabe" title="Home">Shop Instagram</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="/pages/contact.html" title="Contact">Contact</a>
