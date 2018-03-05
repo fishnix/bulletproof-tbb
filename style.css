@@ -7,12 +7,12 @@
 /* http://s9y-bulletproof.com                                         */
 /**********************************************************************/
 
-
+/* 
 body {
     font: 115.01% Georgia, Verdana, Arial, Helvetica, sans-serif;
     background-color: #ffffff;
 
-}
+} */
 
 /*** General styles ***/
 p {
@@ -102,13 +102,11 @@ abbr, acronym, .help{
 }
 
 #serendipity_credit_line {
-    float: left;
     margin: 5px 0 0 10px;
     display: inline;
 }
 
 #serendipity_bulletproof_button {
-    float: right;
     margin: 5px 10px 5px 0;
     display: inline;
 }
@@ -329,6 +327,7 @@ ul.staticpage_navigation {
     line-height: 1.5em;
 }
 
+/*
 .serendipity_commentsValue .frm_check_label,
 .serendipity_commentsValue .frm_radio_label,
 .serendipity_commentsLabel {
@@ -363,7 +362,7 @@ ul.staticpage_navigation {
     background: #efefef;
     color: #000;
 }
-
+ 
 #serendipity_comment_CommentForm dt {
     float: left;
     margin-bottom: 0.5%;
@@ -374,7 +373,7 @@ ul.staticpage_navigation {
     padding-left: 0em;
     margin-left: 20%;
     margin-bottom: 1%;
-}
+} */
 
 #serendipity_comment textarea {
     margin-bottom: 1%;

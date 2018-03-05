@@ -1,0 +1,7 @@
+// TBB Custom SCSS variables
+
+$theme-colors: map-merge($theme-colors, (secondary: #f6ebe6));
+$font-family-sans-serif: "Crimson Text", sans-serif;
+$font-family-serif: "Crimson Text", serif;
+$headings-font-family:   "Futura URW", sans-serif;
+$font-family-base: $font-family-serif;
