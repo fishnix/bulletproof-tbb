@@ -42,21 +42,19 @@
     </div>
 
     {if $is_commentform_showToolbar}
-      <div class="row d-flex justify-content-center">
+      <div class="row d-flex justify-content-center my-3">
         <div class="form-check form-check-inline">
-          <label for="checkbox_remember" class="custom-control custom-checkbox">
-            <input id="checkbox_remember" type="checkbox" name="serendipity[remember]" value="{$commentform_remember}" class="custom-control-input">
-            <span class="custom-control-indicator"></span>
-            <span class="custom-control-description">{$CONST.REMEMBER_INFO}</span>
-          </label>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" id="checkbox_remember" name="serendipity[remember]" value="{$commentform_remember}" class="custom-control-input">
+            <label class="custom-control-label" for="checkbox_remember">{$CONST.REMEMBER_INFO}</label>
+          </div>
         </div>
         {if $is_allowSubscriptions}
         <div class="form-check form-check-inline">
-          <label for="checkbox_subscribe" class="custom-control custom-checkbox">
-            <input id="checkbox_subscribe" type="checkbox" name="serendipity[subscribe]" value="{$commentform_subscribe}" class="custom-control-input">
-            <span class="custom-control-indicator"></span>
-            <span class="custom-control-description">{$CONST.SUBSCRIBE_TO_THIS_ENTRY}</span>
-          </label>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" id="checkbox_subscribe" name="serendipity[subscribe]" value="{$commentform_subscribe}" class="custom-control-input">
+            <label class="custom-control-label" for="checkbox_subscribe">{$CONST.SUBSCRIBE_TO_THIS_ENTRY}</label>
+          </div>
         </div>
         {/if}
       </div>

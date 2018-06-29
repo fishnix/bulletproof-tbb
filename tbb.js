@@ -4,7 +4,7 @@ var $j = jQuery.noConflict();
 $j(document).ready(function(){
   $j('.search-button').on("click",(function(e){
     $j("#search-button").toggleClass("sb-closed");        
-    $j("#search-input").toggleClass("sb-closed");
+    $j("#search-input").toggleClass("d-md-none").focus();
     e.stopPropagation();
   }));
     

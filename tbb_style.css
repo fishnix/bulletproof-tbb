@@ -2,14 +2,6 @@
 /* Template: bulletproof-tbb for Serendipity (http://www.s9y.org)     */
 /**********************************************************************/
 
-body a {
-    color: #e57a8b
-}
-
-body a:hover {
-    color: #c8a382
-}
-
 .leaderboard_code {
     overflow-y: auto;
     overflow-x: hidden;
@@ -43,18 +35,7 @@ body a:hover {
     color: #e57a8b; 
 }
 
-#cse-search-box > input.form-control::-webkit-input-placeholder {
-    display: none;
-}
-
-#cse-search-box > input.form-control::-moz-placeholder {
-    display: none;
-}
-#cse-search-box > input.sb-closed.form-control {
-    display: none;
-}
-
-#cse-search-box > .input-group-btn > button {
+.search-button {
     color: #212529;
     border: 0px;  
 }

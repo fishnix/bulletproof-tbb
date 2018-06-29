@@ -22,7 +22,7 @@
     <a class="nav-link" href="/index.php?/pages/shop.html" title="Budget Fashion Guide">Budget Fashion Guide</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="http://liketoknow.it/budgetbabe" target="_blank" title="Home">Shop Instagram</a>
+    <a class="nav-link" href="https://www.thebudgetbabe.com/index.php?/pages/instagram.html" title="Shop Our Instagram">Shop Instagram</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="/index.php?/pages/contact.html" title="Contact">Contact</a>
@@ -49,16 +49,20 @@
     </a>
   </li>
   <li class="nav-item">
-    <form action="https://www.google.com/cse" id="cse-search-box" class="input-group" role="search">
+    <form action="https://www.google.com/cse" id="cse-search-box" role="search">
       <input type="hidden" name="cx" value="partner-pub-0870076065709133:4683431631" />
       <input type="hidden" name="ie" value="UTF-8" />
       <input type="hidden" class="btn btn-default" name="sa" value="Search" />
-      <input type="text" id="search-input" class="form-control sb-closed" placeholder="Search for..." aria-label="Search for..." name="q">
-      <span class="input-group-btn  d-none d-md-block">
-      <button class="btn btn-link search-button sb-closed" type="button">
-        <i class="fa fa-search fa-lg" aria-hidden="true"></i>
-      </button>
-      </span>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-btn d-none d-md-block">
+            <button class="btn btn-outline-dark border-0 search-button" type="button">
+              <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+            </button>
+          </span>
+          <input type="text" id="search-input" class="form-control d-block d-md-none" placeholder="Search for..." aria-label="Search for..." name="q">
+        </div>
+      </div>
     </form>
   </li>
 </ul>
