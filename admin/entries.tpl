@@ -8,8 +8,10 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="insUrlModal">Insert URL</h4>
+                <h5 class="modal-title" id="insUrlModal">Insert URL</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
             <div class="modal-body">
                 <form>
@@ -38,7 +40,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-primary wrap_insurlModal">Insert URL</button>
+                <button type="button" class="btn btn-primary text-dark wrap_insurlModal">Insert URL</button>
             </div>
         </div>
     </div>

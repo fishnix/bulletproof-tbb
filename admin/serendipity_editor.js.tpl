@@ -1700,7 +1700,7 @@ $(function() {
     }
 
     // Equal Heights
-    $(window).load(function() {
+    $(window).on('load', function() {
         if (mq_small) {
             serendipity.sync_heights();
         }
