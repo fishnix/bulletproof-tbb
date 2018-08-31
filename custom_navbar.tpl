@@ -19,10 +19,10 @@
     <a class="nav-link" href="/categories/41-Decor" title="Decor">Decor</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="/index.php?/pages/shop.html" title="Budget Fashion Guide">Budget Fashion Guide</a>
+    <a class="nav-link" href="/categories/469-Nordstrom-Anniversary-Sale" title="Nordstrom Sale">Nordstrom Sale</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="https://www.thebudgetbabe.com/index.php?/pages/instagram.html" title="Shop Our Instagram">Shop Instagram</a>
+    <a class="nav-link" href="/index.php?/pages/instagram.html" title="Shop Our Instagram">Shop Instagram</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="/index.php?/pages/contact.html" title="Contact">Contact</a>
