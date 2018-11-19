@@ -19,7 +19,7 @@
     <a class="nav-link" href="/categories/41-Decor" title="Decor">Decor</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="/categories/469-Nordstrom-Anniversary-Sale" title="Nordstrom Sale">Nordstrom Sale</a>
+    <a class="nav-link" href="/categories/542-Holiday-2018" title="Holiday 2018">Holiday 2018</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="/index.php?/pages/instagram.html" title="Shop Our Instagram">Shop Instagram</a>
