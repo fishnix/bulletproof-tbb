@@ -19,9 +19,6 @@
     <a class="nav-link" href="/categories/41-Decor" title="Decor">Decor</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="/categories/547-Spring-2019" title="Spring 2019">Spring 2019</a>
-  </li>
-  <li class="nav-item">
     <a class="nav-link" href="/index.php?/pages/instagram.html" title="Shop Our Instagram">Shop Instagram</a>
   </li>
   <li class="nav-item">
