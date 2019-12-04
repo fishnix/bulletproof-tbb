@@ -50,6 +50,11 @@
                         <label for="radio_link_yes">{$CONST.I_WANT_BIG_IMAGE}</label>
                     </div>
                 </div>
+
+                <div class="form_checkbox">
+                    <input type="checkbox" name="includeDimensions" id="includeDimensions">
+                    <label for="includeDimensions">{$CONST.INCLUDE_DIMENSIONS}</label>
+                </div>
                 {serendipity_hookPlugin hookAll=true hook='frontend_image_selector_imagesize' eventData=$media.file}
             </fieldset>
             {if NOT $media.filename_only}

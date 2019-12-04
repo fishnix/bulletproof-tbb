@@ -93,3 +93,4 @@
 @define('COMMENTS_CLOSED', 'Comments are closed for this entry');
 @define('VIEW_FULL', 'View All Entries');
 @define('VIEW_TOPICS', 'View Topic List');
+@define('INCLUDE_DIMENSIONS', 'Inlcude image dimensions in tag');

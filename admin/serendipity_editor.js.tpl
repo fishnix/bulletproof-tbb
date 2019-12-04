@@ -335,6 +335,13 @@
 
         var f = document.forms['serendipity[selForm]'].elements;
 
+        // fishnix - add dimension include/exclude
+        var includeDim = false;
+        if (f['includeDimensions'] && f['includeDimensions'].checked == true) {
+            includeDim = true;
+        };
+        console.debug('includeDim? ', includeDim);
+
         img           = f['imgName'].value;
         var imgWidth  = f['imgWidth'].value;
         var imgHeight = f['imgHeight'].value;
@@ -386,7 +393,8 @@
         if (floating == "") {
             floating = "center";
         }
-        img = "<!-- s9ymdb:" + imgID + " --><img class=\"serendipity_image_"+ floating +"\" width=\"" + imgWidth + "\" height=\"" + imgHeight + '"  src="' + img + "\" " + (title != '' ? 'title="' + title + '"' : '') + " alt=\"" + alt + "\">";
+
+        img = "<!-- s9ymdb:" + imgID + " --><img class=\"serendipity_image_"+ floating + (includeDim ? ' width="' + imgWidth + '" height="' + imgHeight : '') + '"  src="' + img + "\" " + (title != '' ? 'title="' + title + '"' : '') + " alt=\"" + alt + "\">";
 
         if ($(':input[name="serendipity[isLink]"]:checked').val() == "yes") {
             // wrap the img in a link to the image. TODO: The label in the media_chooser.tpl explains it wrong
@@ -530,7 +538,7 @@
     // save in the cookie which options were selected when inserting a image from the media db
     serendipity.rememberMediaOptions = function() {
         $('#imageForm :input').each(function(index, element) {
-            if (! (element.type == 'radio' && element.checked == false)) {
+            if (! (element.type == 'radio' && element.checked == false) || (element.type == 'checkbox' && element.checked == false)) {
                 serendipity.SetCookie(element.name.replace(/\[/g, '_').replace(/\]/g, ''), $(element).val());
             }
         });
