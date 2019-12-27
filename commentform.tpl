@@ -15,7 +15,7 @@
       <div class="col-10">
         <input class="form-control" type="text" id="serendipity_commentform_email" name="serendipity[email]" value="{$commentform_email}" aria-describedby="emailHelpBlock">
         <small id="emailHelpBlock" class="form-text text-muted">
-        E-Mail addresses will not be displayed and will only be used for E-Mail notifications.
+        E-Mail addresses will not be displayed.
         </small>
       </div>
     </div>
