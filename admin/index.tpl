@@ -30,7 +30,6 @@
         </div>
     </header>
 {/if}
-
     <main id="workspace" class="clearfix">
     {if NOT $admin_vars.is_logged_in}
         {$admin_vars.out|serendipity_refhookPlugin:'backend_login_page'}

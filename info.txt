@@ -1,7 +1,7 @@
 Name: Bulletproof-TBB v3.0
 Author: TheBudgetBabe (based on a theme by the Bulletproof development team)
-Date: 2017-12-23
+Date: 2018-12-01
 Require Serendipity: 2.0
 Engine: '2k11'
 Backend: Yes
-Version: 3.0.0beta
+Version: 3.0.1beta
