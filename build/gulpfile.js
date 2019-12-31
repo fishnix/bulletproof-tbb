@@ -7,7 +7,7 @@ var gulp  = require('gulp'),
   autoprefixer = require('autoprefixer');
 
 function buildCss() {
-    return gulp.src(['src/scss/*.scss'])
+    return gulp.src(['src/scss/*.scss', 'node_modules/bootstrap4c-chosen/dist/css/component-chosen.css'])
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss([ autoprefixer({ browsers: [
