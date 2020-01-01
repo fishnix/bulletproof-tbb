@@ -25,7 +25,9 @@
       {foreach name=e from=$category_entries item="catEntry"}
         <div class="card bg-default">
           {if $catEntry.cardImageSrc != null && $catEntry.cardImageSrc != ''}
-          <img class="card-img-top" src="{$catEntry.cardImageSrc}" alt="{$catEntry.cardImageAlt}">
+          <a href="{$catEntry.link}">
+            <img class="card-img-top" src="{$catEntry.cardImageSrc}" alt="{$catEntry.cardImageAlt}">
+          </a>
           {/if}
           <div class="card-body">
             <h1 class="display-3 text-center card-title">

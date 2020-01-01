@@ -293,8 +293,6 @@ $template_loaded_config['colorset_data'] = $colorset_data;
 function serendipity_plugin_api_event_hook($event, &$bag, $eventData, $addData = null) {
     global $serendipity;
 
-//    print_r($serendipity);
-
     switch($event) {
         case 'backend_header':
             $template_path = $serendipity['serendipityHTTPPath'] . $serendipity['templatePath'] . $serendipity['template'];
@@ -305,14 +303,17 @@ function serendipity_plugin_api_event_hook($event, &$bag, $eventData, $addData =
             echo '<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">' . "\n";
 
             echo '<!-- Bootstrap -->' . "\n";
-            echo '<link rel="stylesheet" href="' . $template_path . '/bootstrap.min.css" />' . "\n";
-
-            echo '<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>' . "\n";
-            echo '<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>' . "\n";
-            echo '<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>' . "\n";
+            echo '<link rel="stylesheet" href="' . $template_path . '/dist/css/bootstrap.min.css" />' . "\n";
 
             echo '<!-- FontAwesome -->' . "\n";
-            echo '<link rel="stylesheet" href="' . $template_path . '/font-awesome-4.7.0/css/font-awesome.min.css" />' . "\n";
+            echo '<link rel="stylesheet" href="' . $template_path . '/dist/css/fontawesome.min.css" />' . "\n";
+
+            echo '<script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>' . "\n";
+            echo '<script src="' . $template_path . '/dist/js/bootstrap.bundle.min.js"></script>' . "\n";
+
+            echo '<!-- Chosen -->' . "\n";
+            echo '<link rel="stylesheet" href="' . $template_path . '/dist/chosen-js/chosen.min.css" />' . "\n";
+            echo '<script src="' . $template_path . '/dist/chosen-js/chosen.jquery.min.js"></script>' . "\n";
 
             return true;
             break;

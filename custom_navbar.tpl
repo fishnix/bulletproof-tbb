@@ -33,19 +33,19 @@
 
   <li class="nav-item serendipity_social_follow d-md-none">
     <a href="http://www.facebook.com/TheBudgetBabe" target="_blank" title="Follow The Budget Babe on Facebook!">
-      <i class="fa fa-2x fa-facebook-official"></i>
+      <i class="fab fa-2x fa-fw fa-facebook-square"></i>
     </a>
     <a href="http://www.twitter.com/budgetbabe" target="_blank" title="Follow The Budget Babe on Twitter!">
-      <i class="fa fa-2x fa-twitter-square"></i>
+      <i class="fab fa-2x fa-fw fa-twitter-square"></i>
     </a>
     <a href="http://www.instagram.com/budgetbabe" target="_blank" title="Follow The Budget Babe on Instagram!">
-      <i class="fa fa-2x fa-instagram"></i>
+      <i class="fab fa-2x fa-fw fa-instagram"></i>
     </a>
     <a href="http://www.pinterest.com/TheBudgetBabe" target="_blank" title="Follow The Budget Babe on Pinterest!">
-      <i class="fa fa-2x fa-pinterest-square"></i>
+      <i class="fab fa-2x fa-fw fa-pinterest-square"></i>
     </a>
     <a href="https://www.bloglovin.com/blogs/budget-babe-226954" target="_blank" title="Follow The Budget Babe on Bloglovin!">
-      <i class="fa fa-2x fa-plus-square"></i>
+      <i class="fas fa-2x fa-fw fa-plus-square"></i>
     </a>
   </li>
   <li class="nav-item">
