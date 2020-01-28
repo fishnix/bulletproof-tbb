@@ -97,7 +97,7 @@
         </div>
         <div class="row">
           <div class="col-12">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#s9y-navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" style="border:none;" type="button" data-toggle="collapse" data-target="#s9y-navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
           </div>
