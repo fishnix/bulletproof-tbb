@@ -9,7 +9,7 @@
     <div class="dropdown-menu" aria-labelledby="fashionDropdown">
       <a class="dropdown-item" href="/categories/422-Celebrity-Style" title="Celebrity Style">Celebrity Style</a>
       <a class="dropdown-item" href="/categories/10-The-Look-for-Less" title="Look For Less">Look For Less</a>
-      <a class="dropdown-item" href="/categories/15-Off-the-Rack" title="Off The Rack">Off The Rack</a>
+      <a class="dropdown-item" href="/categories/330-What-Im-Wearing" title="What I'm Wearing">What I'm Wearing</a>
     </div>
   </li>
   <li class="nav-item">
