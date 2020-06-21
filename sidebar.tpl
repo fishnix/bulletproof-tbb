@@ -12,11 +12,6 @@
             </a>
           </li>
           <li class="list-inline-item">
-            <a href="http://www.twitter.com/budgetbabe" target="_blank" title="Follow The Budget Babe on Twitter!">
-              <i class="fab fa-2x fa-fw fa-twitter-square"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
             <a href="http://www.instagram.com/budgetbabe" target="_blank" title="Follow The Budget Babe on Instagram!">
               <i class="fab fa-2x fa-fw fa-instagram"></i>
             </a>
@@ -24,6 +19,11 @@
           <li class="list-inline-item">
             <a href="http://www.pinterest.com/TheBudgetBabe" target="_blank" title="Follow The Budget Babe on Pinterest!">
               <i class="fab fa-2x fa-fw fa-pinterest-square"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.liketoknow.it/budgetbabe" target="_blank" title="Follow The Budget Babe on LikeToKnowIt!">
+              <span class="icomoon icomoon-2x icomoon-fw icon-liketoknowit" aria-hidden="true"></span>
             </a>
           </li>
           <li class="list-inline-item">

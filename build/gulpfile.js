@@ -7,7 +7,7 @@ var gulp  = require('gulp'),
   autoprefixer = require('autoprefixer');
 
 function buildCss() {
-    return gulp.src(['src/scss/*.scss', 'node_modules/bootstrap4c-chosen/dist/css/component-chosen.css'])
+    return gulp.src(['src/scss/*.scss', 'src/css/*.css', 'node_modules/bootstrap4c-chosen/dist/css/component-chosen.css'])
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(sourcemaps.write())
@@ -32,23 +32,30 @@ function installFontAwesomeFonts() {
     .pipe(gulp.dest('../dist/webfonts/'));
 }
 
+function installIcomoonFonts() {
+  return gulp.src(['src/font/icomoon/*'])
+    .pipe(gulp.dest('../dist/icomoon/'));
+}
+
 function watcher() {
     gulp.watch(['scss/*.scss'], gulp.series(buildCss));
 }
 
 exports.watch = gulp.series(
-    gulp.parallel(
-      buildCss,
-      installJS,
-      installChosen,
-      installFontAwesomeFonts
-    ),
-    watcher
-  );
-
-exports.default = gulp.parallel(
+  gulp.parallel(
     buildCss,
     installJS,
     installChosen,
-    installFontAwesomeFonts
-  );
+    installFontAwesomeFonts,
+    installIcomoonFonts
+  ),
+  watcher
+);
+
+exports.default = gulp.parallel(
+  buildCss,
+  installJS,
+  installChosen,
+  installFontAwesomeFonts,
+  installIcomoonFonts
+);
