@@ -13,6 +13,9 @@
   ],
   "author": "Alexander Rechsteiner",
   "license": "MIT",
+  "browserslist": [
+    "default"
+  ],
   "dependencies": {
     "bootstrap": "^4.3.1",
     "jquery": "^3.5.0",
