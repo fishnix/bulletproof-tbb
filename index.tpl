@@ -25,6 +25,7 @@
       <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/dist/css/bootstrap.min.css" />
       <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/dist/css/fontawesome.min.css" />
       <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/dist/css/component-chosen.min.css" />
+      <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/dist/css/icomoon.min.css" />
 
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
       <script src="{$serendipityHTTPPath}templates/{$template}/dist/js/bootstrap.bundle.min.js"></script>
