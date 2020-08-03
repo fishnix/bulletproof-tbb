@@ -2,6 +2,9 @@
   <li class="nav-item">
     <a class="nav-link" href="/" title="Home">Home</a>
   </li>
+  <li class="nav-link">
+    <a class="nav-item" href="/categories/469-Nordstrom-Anniversary-Sale" title="Nordstrom Anniversary Sale">NSALE</a>
+  </i>
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" id="fashionDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Fashion
