@@ -21,7 +21,7 @@
       <link rel="stylesheet" type="text/css" href="{$head_link_stylesheet}" />
       <link rel="stylesheet" type="text/css" href="{$serendipityHTTPPath}templates/{$template}/tbb_style.css" />
 
-      <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/dist/css/bootstrap.min.css" />
       <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/dist/css/fontawesome.min.css" />
       <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/dist/css/component-chosen.min.css" />
