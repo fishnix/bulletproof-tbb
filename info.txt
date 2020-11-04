@@ -4,4 +4,4 @@ Date: 2020-01-01
 Require Serendipity: 2.0
 Engine: '2k11'
 Backend: Yes
-Version: 3.1.1
+Version: 3.2.3-pre01
