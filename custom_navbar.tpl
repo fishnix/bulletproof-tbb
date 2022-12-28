@@ -3,7 +3,7 @@
     <a class="nav-link" href="/" title="Home">Home</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="/categories/555-Holiday" title="Holiday 2021">Holiday 2021</a>
+    <a class="nav-link" href="/categories/23-Gift-Guides" title="Gift Guides">Gift Guides</a>
   </li>
   <li class="nav-link">
     <a class="nav-item" href="https://www.amazon.com/shop/budgetbabe" target="_blank" title="Budgetbabe Amazon Storefront">Amazon Storefront</a>
