@@ -28,7 +28,7 @@
     "autoprefixer": "*",
     "gulp": "^4.0.0",
     "gulp-clean-css": "^4.0.0",
-    "gulp-postcss": "^8.0.0",
+    "gulp-postcss": "^9.0.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^5.1.0",
     "gulp-scss-lint": "^1.0.0",
