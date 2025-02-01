@@ -99,24 +99,6 @@ $template_config = array(
         'default'       => 'false',
     ),
     array(
-        'var'           => 'addthisaccount',
-        'name'          => ADDTHIS_ACCOUNT,
-        'type'          => 'string',
-        'default'       => '',
-    ),
-    array(
-        'var'           => 'addthistwittervia',
-        'name'          => ADDTHIS_TWITTER_VIA,
-        'type'          => 'string',
-        'default'       => 'AddThis',
-    ),
-    array(
-        'var'           => 'addthisfbimage',
-        'name'          => ADDTHIS_FACEBOOK_IMAGE,
-        'type'          => 'string',
-        'default'       => '',
-    ),
-    array(
         'var'           => 'show_sticky_entry_footer',
         'name'          => SHOW_STICKY_ENTRY_FOOTER,
         'type'          => 'boolean',

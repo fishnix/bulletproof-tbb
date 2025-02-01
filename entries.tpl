@@ -67,15 +67,6 @@
                 </div>
               {/if}
 
-              <div class="col-12 col-sm-4 text-center">
-                <!-- AddThis Widget -->
-                <div class="addthis_inline_share_toolbox_vxsc"
-                    data-url="{$entry.rdf_ident}"
-                    data-title="{$entry.title}"
-                    addthis:url="{$entry.rdf_ident}"
-                    addthis:title="{$entry.title}">
-                </div>
-              </div>
             </div>
 
             {if $entry.is_entry_owner and not $is_preview}
@@ -96,14 +87,6 @@
                 </div>
               </div>
               {/if}
-            {/if}
-
-            {if $is_single_entry and not $is_preview}
-            <div class="row justify-content-center align-items-center">
-              <div class="col">
-                <div class="center-block addthis_recommended_horizontal"></div>
-              </div>
-            </div>
             {/if}
 
             {if $smarty_entrypaging}

@@ -42,11 +42,6 @@
 @define('FOOTER_COMMENTS','Show number of comments in the entry footer');
 @define('FOOTER_TRACKBACKS','Show number of trackback in the entry footer');
 @define('ALT_COMMTRACK','Use alternate display for number of comments and trackbacks (i.e. "No comments" or "1 comment" instead of "Comments (0)" or "Comments (1)")');
-@define('SHOW_ADDTHIS_WIDGET','Show AddThis (http://www.addthis.com) bookmark widget in entry footer');
-@define('ADDTHIS_WIDGET_LOC','Location of the AddThis Widget');
-@define('ADDTHIS_ACCOUNT','AddThis.com account number.  Not required but will provide statistics about how readers are bookmarking and sharing your content if provided.');
-@define('ADDTHIS_TWITTER_VIA','This account will be attributed tweets from AddThis');
-@define('ADDTHIS_FACEBOOK_IMAGE','The full URL to an image to show shen sharing links on Facebook');
 @define('SHOW_STICKY_ENTRY_FOOTER','Show entry footer for sticky postings (requires plugin "Extended properties for entries")');
 @define('SHOW_STICKY_ENTRY_HEADING','Show entry heading for sticky postings (requires plugin "Extended properties for entries")');
 // Page footer next page  and previous page links

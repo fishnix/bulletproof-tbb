@@ -8,9 +8,6 @@
       <meta name="title" content="{$head_title|@default:$blogTitle}{if $head_subtitle} - {$head_subtitle}{/if}" />
       {serendipity_hookPlugin hook="frontend_header"}
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      {if $is_single_entry and not $is_preview}
-        {if !empty($template_option.addthisfbimage) }<link rel="image_src" href="{$template_option.addthisfbimage}" />{/if}
-      {/if}
       <meta http-equiv="Content-Type" content="text/html; charset={$head_charset}" />
       <meta name="Powered-By" content="Serendipity v.{$head_version}" />
       <link rel="alternate"  type="application/rss+xml" title="{$blogTitle} RSS feed" href="{$serendipityBaseURL}{$serendipityRewritePrefix}feeds/index.rss2" />
@@ -32,24 +29,7 @@
       <script src="{$serendipityHTTPPath}templates/{$template}/dist/chosen-js/chosen.jquery.min.js"></script>
 
       <script src="https://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en" async></script>
-      <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=budgetbabe&async=1"></script>
       <script src="{$serendipityHTTPPath}templates/{$template}/tbb.js"></script>
-
-      {if $template_option.addthiswidget_loc == 'none' }
-        /* Disable addthis */
-      {else}
-        {literal}
-          <script>
-            window.addThisLinkFilter = function(link, layer) {
-              if (link.url && link.url.indexOf('/serendipity_admin.php') > -1) {
-                return false;
-              } else {
-                return link;
-              }
-            };
-          </script>
-        {/literal}
-      {/if}
 
       {if $template_option.additional_head_code_toggle == 'true'}
         {$template_option.additional_head_code}
@@ -179,26 +159,6 @@
     </div>
     <!-- Footer Container END -->
   {serendipity_hookPlugin hook="frontend_footer"}
-  {if $template_option.addthiswidget_loc == 'none' }
-    /* Disable addthis */
-  {else}
-    {literal}
-      <script type="text/javascript" async>
-        var addthis_config = {
-          data_track_addressbar: false,
-          data_ga_property: 'UA-2676654-1',
-          data_ga_social : true
-        };
-        var addthis_share = {
-          url_transforms : {
-            shorten: {
-              twitter: 'bitly'
-            }
-          }
-        };
-      </script>
-    {/literal}
-  {/if}
   <script src="//platform.twitter.com/oct.js"></script>
   <script type="text/javascript">twttr.conversion.trackPid('l4iog');</script>
   <noscript>
