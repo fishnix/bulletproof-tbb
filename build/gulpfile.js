@@ -1,5 +1,6 @@
+const sass = require('gulp-sass')(require('sass'));
+
 var gulp  = require('gulp'),
-  sass = require('gulp-sass'),
   sourcemaps = require('gulp-sourcemaps'),
   cleanCss = require('gulp-clean-css'),
   rename = require('gulp-rename'),
@@ -12,6 +13,13 @@ function buildCss() {
         .pipe(sass().on('error', sass.logError))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('../dist/css/'))
+        .pipe(cleanCss())
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('../dist/css/'))
+}
+
+function minifyS9yCss() {
+    return gulp.src('../*.css')
         .pipe(cleanCss())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('../dist/css/'))
@@ -54,6 +62,7 @@ exports.watch = gulp.series(
 
 exports.default = gulp.parallel(
   buildCss,
+  minifyS9yCss,
   installJS,
   installChosen,
   installFontAwesomeFonts,
