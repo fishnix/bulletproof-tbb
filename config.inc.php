@@ -99,24 +99,6 @@ $template_config = array(
         'default'       => 'false',
     ),
     array(
-        'var'           => 'addthisaccount',
-        'name'          => ADDTHIS_ACCOUNT,
-        'type'          => 'string',
-        'default'       => '',
-    ),
-    array(
-        'var'           => 'addthistwittervia',
-        'name'          => ADDTHIS_TWITTER_VIA,
-        'type'          => 'string',
-        'default'       => 'AddThis',
-    ),
-    array(
-        'var'           => 'addthisfbimage',
-        'name'          => ADDTHIS_FACEBOOK_IMAGE,
-        'type'          => 'string',
-        'default'       => '',
-    ),
-    array(
         'var'           => 'show_sticky_entry_footer',
         'name'          => SHOW_STICKY_ENTRY_FOOTER,
         'type'          => 'boolean',
@@ -297,7 +279,7 @@ function serendipity_plugin_api_event_hook($event, &$bag, $eventData, $addData =
         case 'backend_header':
             $template_path = $serendipity['serendipityHTTPPath'] . $serendipity['templatePath'] . $serendipity['template'];
 
-            echo '<link rel="stylesheet" type="text/css" href="' . $template_path . '/tbb_style.min.css">';
+            echo '<link rel="stylesheet" type="text/css" href="' . $template_path . '/dist/css/tbb_style.min.css">';
 
             echo '<!-- Crimson Text Font -->' . "\n";
             echo '<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">' . "\n";

@@ -51,8 +51,6 @@
 @define('FOOTER_COMMENTS',              'Zobrazit v patičce počet komentářů');
 @define('FOOTER_TRACKBACKS',            'Zobrazit v patičce počet odezev');
 @define('ALT_COMMTRACK',                'Použít alternativní zobrazení počtu komentářů a odezev (např. "Žádné komentáře" nebo "1 komentář" místo "Komentářů (0)" nebo "Komentářů (1)")');
-@define('SHOW_ADDTHIS_WIDGET',          'Zobrzit záložku AddThis (http://www.addthis.com) v patičce příspěvku');
-@define('ADDTHIS_ACCOUNT',              'Číslo účtu AddThis.com. Není vyžadováno, ale pokud je zadáno, umožní vést statistiku, jak Vás vaši čtenáři čtou, jak si Vás ukládají do záložek a jak si mezi sebou sdílí obsah Vašich stránek.');
 @define('SHOW_STICKY_ENTRY_FOOTER',     'Zobrazit patičku u stálých (přilepených) příspěvků (vyžaduje nainstalování pluginu událostí "Rozšířené vlastnosti příspěvků")');
 @define('SHOW_STICKY_ENTRY_HEADING',    'Zobraz nadpis u stálých (přilepených) příspěvků (vyžaduje nainstalování pluginu událostí "Rozšířené vlastnosti příspěvků")');
 // Page footer next page  and previous page links

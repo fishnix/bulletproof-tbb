@@ -68,10 +68,6 @@
     padding: 0px;
 }
 
-.addthis_sharing_toolbox {
-    padding-top: 12px;
-}
-
 .between-post-ad {
     padding-top: 10px;
     padding-bottom: 15px;
@@ -93,7 +89,7 @@
     display: inline;
 }
 
-.serendipity_commentlink, .readmore_link, .addthis_inline_share_toolbox_vxsc {
+.serendipity_commentlink, .readmore_link {
     margin-top: 10px;
     margin-bottom: 10px;
     display: inline-block;

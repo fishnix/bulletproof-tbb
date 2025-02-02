@@ -3,7 +3,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset={$head_charset}" />
     <meta name="Powered-By" content="Serendipity v.{$head_version}" />
 
-  <link rel="stylesheet" type="text/css" href="{$serendipityHTTPPath}templates/{$template}/tbb_style.min.css" />
+  <link rel="stylesheet" type="text/css" href="{$serendipityHTTPPath}templates/{$template}/dist/css/tbb_style.min.css" />
 
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
   <link rel="stylesheet" href="{$serendipityHTTPPath}templates/{$template}/dist/css/bootstrap.min.css" />

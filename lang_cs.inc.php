@@ -9,76 +9,74 @@
  */
  
  // Colorsets
-@define('THEME_COLORSET',               'Barevná sada');
-@define('USER_STYLESHEET',              'Použít doplòující uživatelský soubor s css styly. Uživatel musí tento soubor ruènì vytvoøit v adresáøi šablony bulletproof. Tento soubor musí být pojmenovám user.css a mùže být použit k nahrazení nìkterých stylù.');
+@define('THEME_COLORSET',               'Barevnï¿½ sada');
+@define('USER_STYLESHEET',              'Pouï¿½ï¿½t doplï¿½ujï¿½cï¿½ uï¿½ivatelskï¿½ soubor s css styly. Uï¿½ivatel musï¿½ tento soubor ruï¿½nï¿½ vytvoï¿½it v adresï¿½ï¿½i ï¿½ablony bulletproof. Tento soubor musï¿½ bï¿½t pojmenovï¿½m user.css a mï¿½ï¿½e bï¿½t pouï¿½it k nahrazenï¿½ nï¿½kterï¿½ch stylï¿½.');
 // Layout
-@define('LAYOUT_TYPE',                  'Uspoøádání blogu (B = Tìlo blogu, S = Sloupec (postranní), ON = Obsah nejdøíve)');
-@define('LAYOUT_SBS',                   'Tøi sloupce, S-B-S');
-@define('LAYOUT_BSS',                   'Tøi sloupce, B-S-S, ON');
-@define('LAYOUT_SSB',                   'Tøi sloupce, S-S-B');
+@define('LAYOUT_TYPE',                  'Uspoï¿½ï¿½dï¿½nï¿½ blogu (B = Tï¿½lo blogu, S = Sloupec (postrannï¿½), ON = Obsah nejdï¿½ï¿½ve)');
+@define('LAYOUT_SBS',                   'Tï¿½i sloupce, S-B-S');
+@define('LAYOUT_BSS',                   'Tï¿½i sloupce, B-S-S, ON');
+@define('LAYOUT_SSB',                   'Tï¿½i sloupce, S-S-B');
 @define('LAYOUT_SB',                    'Dva sloupce, S-B');
 @define('LAYOUT_BS',                    'Dva sloupce, B-S, ON');
-@define('LAYOUT_SC',                    'Jeden sloupec, Postranní sloupec pod ním, ON');
-@define('LAYOUT_SBF',                   'Dva sloupce, dva postranní sloupce - na stranì a pod tìlem');
-@define('LAYOUT_BSF',                   'Dva sloupce, dva postranní sloupce - na stranì a pod tìlem, ON');
-@define('JAVASCRIPT_COLUMNS',           'Vytvoø stejnì vysoké sloupce pomocí javascriptu (trochu zpomalí vykreslování stránky).');
+@define('LAYOUT_SC',                    'Jeden sloupec, Postrannï¿½ sloupec pod nï¿½m, ON');
+@define('LAYOUT_SBF',                   'Dva sloupce, dva postrannï¿½ sloupce - na stranï¿½ a pod tï¿½lem');
+@define('LAYOUT_BSF',                   'Dva sloupce, dva postrannï¿½ sloupce - na stranï¿½ a pod tï¿½lem, ON');
+@define('JAVASCRIPT_COLUMNS',           'Vytvoï¿½ stejnï¿½ vysokï¿½ sloupce pomocï¿½ javascriptu (trochu zpomalï¿½ vykreslovï¿½nï¿½ strï¿½nky).');
 // Custom header
-@define('BP_CUSTOM_HEADER',             'Vlastní obrázek v záhlaví stránky');
-@define('BP_HEADER_IMAGE',              'Vyber obrázek');
-@define('BP_HEADER_TYPE',               'Opakování obrázku v záhlaví');
+@define('BP_CUSTOM_HEADER',             'Vlastnï¿½ obrï¿½zek v zï¿½hlavï¿½ strï¿½nky');
+@define('BP_HEADER_IMAGE',              'Vyber obrï¿½zek');
+@define('BP_HEADER_TYPE',               'Opakovï¿½nï¿½ obrï¿½zku v zï¿½hlavï¿½');
 @define('BP_HEADER_BANNER',             'Banner (neopakovat)');
-@define('BP_HEADER_HTILED',             'Vodorovnì opakovaný');
-@define('BP_HEADER_VTILED',             'Svisle opakovaný');
-@define('BP_HEADER_BTILED',             'Vodorovnì i svisle opakovaný');
-@define('BP_HEADER_POSHOR',             'Vodorovné zarovnání');
-@define('BP_HEADER_POSVER',             'Svislé zarovnání');
-@define('BP_CENTER',                    'na støed');
-@define('BP_TOP',                       'nahoøe');
+@define('BP_HEADER_HTILED',             'Vodorovnï¿½ opakovanï¿½');
+@define('BP_HEADER_VTILED',             'Svisle opakovanï¿½');
+@define('BP_HEADER_BTILED',             'Vodorovnï¿½ i svisle opakovanï¿½');
+@define('BP_HEADER_POSHOR',             'Vodorovnï¿½ zarovnï¿½nï¿½');
+@define('BP_HEADER_POSVER',             'Svislï¿½ zarovnï¿½nï¿½');
+@define('BP_CENTER',                    'na stï¿½ed');
+@define('BP_TOP',                       'nahoï¿½e');
 @define('BP_BOTTOM',                    'dole');
 // Fahrner Image Replacement
-@define('FIR_BTITLE',                   'Zobrazovat název blogu v záhlaví');
-@define('FIR_BDESCR',                   'Zobrazovat popis (podnadpis) blogu v záhlaví');
+@define('FIR_BTITLE',                   'Zobrazovat nï¿½zev blogu v zï¿½hlavï¿½');
+@define('FIR_BDESCR',                   'Zobrazovat popis (podnadpis) blogu v zï¿½hlavï¿½');
 // Date format
-@define('BP_DATE_FORMAT',               'Formát data');
+@define('BP_DATE_FORMAT',               'Formï¿½t data');
 // Entry footer
-@define('ENTRY_FOOTER_POS',             'Umístìní patièky/záhlaví pøíspìvku (takové to s informacemi o autoru, datu vydání, zaøazení do kategorií; rozdìlení patièky = kategorie pøíspìvku nad, zbytek pod pøíspìvkem)');
-@define('BELOW_ENTRY',                  'Patièka = pod pøíspìvkem');
-@define('BELOW_TITLE',                  'Záhlaví = pod nadpisem pøíspìvku');
-@define('SPLIT_FOOTER',                 'Rozdìlit patièku/záhlaví');
-@define('FOOTER_AUTHOR',                'Zobrazit v patièce autora');
-@define('FOOTER_CATEGORIES',            'Zobrazit v patièce kategorie');
-@define('FOOTER_TIMESTAMP',             'Zobrazit v patièce èas zveøejnìní');
-@define('FOOTER_COMMENTS',              'Zobrazit v patièce poèet komentáøù');
-@define('FOOTER_TRACKBACKS',            'Zobrazit v patièce poèet odezev');
-@define('ALT_COMMTRACK',                'Použít alternativní zobrazení poètu komentáøù a odezev (napø. "Žádné komentáøe" nebo "1 komentáø" místo "Komentáøù (0)" nebo "Komentáøù (1)")');
-@define('SHOW_ADDTHIS_WIDGET',          'Zobrzit záložku AddThis (http://www.addthis.com) v patièce pøíspìvku');
-@define('ADDTHIS_ACCOUNT',              'Èíslo úètu AddThis.com. Není vyžadováno, ale pokud je zadáno, umožní vést statistiku, jak Vás vaši ètenáøi ètou, jak si Vás ukládají do záložek a jak si mezi sebou sdílí obsah Vašich stránek.');
-@define('SHOW_STICKY_ENTRY_FOOTER',     'Zobrazit patièku u stálých (pøilepených) pøíspìvkù (vyžaduje nainstalování pluginu událostí "Rozšíøené vlastnosti pøíspìvkù")');
-@define('SHOW_STICKY_ENTRY_HEADING',    'Zobraz nadpis u stálých (pøilepených) pøíspìvkù (vyžaduje nainstalování pluginu událostí "Rozšíøené vlastnosti pøíspìvkù")');
+@define('ENTRY_FOOTER_POS',             'Umï¿½stï¿½nï¿½ patiï¿½ky/zï¿½hlavï¿½ pï¿½ï¿½spï¿½vku (takovï¿½ to s informacemi o autoru, datu vydï¿½nï¿½, zaï¿½azenï¿½ do kategoriï¿½; rozdï¿½lenï¿½ patiï¿½ky = kategorie pï¿½ï¿½spï¿½vku nad, zbytek pod pï¿½ï¿½spï¿½vkem)');
+@define('BELOW_ENTRY',                  'Patiï¿½ka = pod pï¿½ï¿½spï¿½vkem');
+@define('BELOW_TITLE',                  'Zï¿½hlavï¿½ = pod nadpisem pï¿½ï¿½spï¿½vku');
+@define('SPLIT_FOOTER',                 'Rozdï¿½lit patiï¿½ku/zï¿½hlavï¿½');
+@define('FOOTER_AUTHOR',                'Zobrazit v patiï¿½ce autora');
+@define('FOOTER_CATEGORIES',            'Zobrazit v patiï¿½ce kategorie');
+@define('FOOTER_TIMESTAMP',             'Zobrazit v patiï¿½ce ï¿½as zveï¿½ejnï¿½nï¿½');
+@define('FOOTER_COMMENTS',              'Zobrazit v patiï¿½ce poï¿½et komentï¿½ï¿½ï¿½');
+@define('FOOTER_TRACKBACKS',            'Zobrazit v patiï¿½ce poï¿½et odezev');
+@define('ALT_COMMTRACK',                'Pouï¿½ï¿½t alternativnï¿½ zobrazenï¿½ poï¿½tu komentï¿½ï¿½ï¿½ a odezev (napï¿½. "ï¿½ï¿½dnï¿½ komentï¿½ï¿½e" nebo "1 komentï¿½ï¿½" mï¿½sto "Komentï¿½ï¿½ï¿½ (0)" nebo "Komentï¿½ï¿½ï¿½ (1)")');
+@define('SHOW_STICKY_ENTRY_FOOTER',     'Zobrazit patiï¿½ku u stï¿½lï¿½ch (pï¿½ilepenï¿½ch) pï¿½ï¿½spï¿½vkï¿½ (vyï¿½aduje nainstalovï¿½nï¿½ pluginu udï¿½lostï¿½ "Rozï¿½ï¿½ï¿½enï¿½ vlastnosti pï¿½ï¿½spï¿½vkï¿½")');
+@define('SHOW_STICKY_ENTRY_HEADING',    'Zobraz nadpis u stï¿½lï¿½ch (pï¿½ilepenï¿½ch) pï¿½ï¿½spï¿½vkï¿½ (vyï¿½aduje nainstalovï¿½nï¿½ pluginu udï¿½lostï¿½ "Rozï¿½ï¿½ï¿½enï¿½ vlastnosti pï¿½ï¿½spï¿½vkï¿½")');
 // Page footer next page  and previous page links
-@define('PREV_NEXT_STYLE',              'Zobrazit patièku "další/pøedchozí pøíspìvek" ve tvaru');
+@define('PREV_NEXT_STYLE',              'Zobrazit patiï¿½ku "dalï¿½ï¿½/pï¿½edchozï¿½ pï¿½ï¿½spï¿½vek" ve tvaru');
 @define('PREV_NEXT_TEXT',               'Text');
 @define('PREV_NEXT_TEXT_ICON',          'Text a ikonka');
 @define('PREV_NEXT_ICON',               'Ikonka');
 // coComment support
-@define('COCOMMENT_ACTIVE',             'Vložit coComment (http://www.cocomment.com) do formuláøe komentáøù');
+@define('COCOMMENT_ACTIVE',             'Vloï¿½it coComment (http://www.cocomment.com) do formulï¿½ï¿½e komentï¿½ï¿½ï¿½');
 // Counter code
-@define('COUNTER_CODE',                 'Vložit kód poèítadla pøístupù a/nebo statistik webu');
-@define('USE_COUNTER',                  'Použít výše zadaný kód poèítadla/statistik?');
+@define('COUNTER_CODE',                 'Vloï¿½it kï¿½d poï¿½ï¿½tadla pï¿½ï¿½stupï¿½ a/nebo statistik webu');
+@define('USE_COUNTER',                  'Pouï¿½ï¿½t vï¿½ï¿½e zadanï¿½ kï¿½d poï¿½ï¿½tadla/statistik?');
 // Additional footer text
-@define('FOOTER_TEXT',                  'Následující text bude vložen do patièky pøíspìvkù');
-@define('USE_FOOTER_TEXT',              'Vložit výše zadaný text do patièky?');
+@define('FOOTER_TEXT',                  'Nï¿½sledujï¿½cï¿½ text bude vloï¿½en do patiï¿½ky pï¿½ï¿½spï¿½vkï¿½');
+@define('USE_FOOTER_TEXT',              'Vloï¿½it vï¿½ï¿½e zadanï¿½ text do patiï¿½ky?');
 //Sitenav
-@define('SITENAV_POSITION',             'Poloha navigaèní lišty');
-@define('SITENAV_NONE',                 'Žádná navigaèní lišta');
-@define('SITENAV_ABOVE',                'Nad obrázkem v záhlaví stránky');
-@define('SITENAV_BELOW',                'Pod obrázkem v záhlaví stránky');
-@define('SITENAV_LEFT',                 'Na zaèátku LEVÉHO postranního sloupce');
-@define('SITENAV_RIGHT',                'Na zaèátku PRAVÉHO postranního sloupce');
-@define('SITENAV_FOOTER',               'Zobraz navigaèní lištu v patièce stránky (pokud je v pøedchozí volbì vybráno "Žádná navigaèní lišta", nebude zobrazena nikdy bez ohledu na tuto volbu)');
-@define('SITENAV_QUICKSEARCH',          'Zobrazit políèko rychlého vyhledávání v navigaèní lištì (zobrazuje se pouze v navigaèní lištì nad nebo pod obrázkem v záhlaví stránky. Je-li navigaèní lišta v postranních sloupcích, vyhledávací políèko není nikdy zobrazeno.)');
-@define('SITENAV_TITLE',                'Nadpis pro navigaèní lištu/menu (pouze pokud je zobrazena na zaèátku postranního sloupce)');
-@define('SITENAV_TITLE_TEXT',           'Hlavní menu');
-@define('NAVLINK_AMOUNT',               'Zadejte poèet odkazù navigaèní lišty (ihned po zadání této volby kliknìte na "Uloži" a obnovte stránku)');
+@define('SITENAV_POSITION',             'Poloha navigaï¿½nï¿½ liï¿½ty');
+@define('SITENAV_NONE',                 'ï¿½ï¿½dnï¿½ navigaï¿½nï¿½ liï¿½ta');
+@define('SITENAV_ABOVE',                'Nad obrï¿½zkem v zï¿½hlavï¿½ strï¿½nky');
+@define('SITENAV_BELOW',                'Pod obrï¿½zkem v zï¿½hlavï¿½ strï¿½nky');
+@define('SITENAV_LEFT',                 'Na zaï¿½ï¿½tku LEVï¿½HO postrannï¿½ho sloupce');
+@define('SITENAV_RIGHT',                'Na zaï¿½ï¿½tku PRAVï¿½HO postrannï¿½ho sloupce');
+@define('SITENAV_FOOTER',               'Zobraz navigaï¿½nï¿½ liï¿½tu v patiï¿½ce strï¿½nky (pokud je v pï¿½edchozï¿½ volbï¿½ vybrï¿½no "ï¿½ï¿½dnï¿½ navigaï¿½nï¿½ liï¿½ta", nebude zobrazena nikdy bez ohledu na tuto volbu)');
+@define('SITENAV_QUICKSEARCH',          'Zobrazit polï¿½ï¿½ko rychlï¿½ho vyhledï¿½vï¿½nï¿½ v navigaï¿½nï¿½ liï¿½tï¿½ (zobrazuje se pouze v navigaï¿½nï¿½ liï¿½tï¿½ nad nebo pod obrï¿½zkem v zï¿½hlavï¿½ strï¿½nky. Je-li navigaï¿½nï¿½ liï¿½ta v postrannï¿½ch sloupcï¿½ch, vyhledï¿½vacï¿½ polï¿½ï¿½ko nenï¿½ nikdy zobrazeno.)');
+@define('SITENAV_TITLE',                'Nadpis pro navigaï¿½nï¿½ liï¿½tu/menu (pouze pokud je zobrazena na zaï¿½ï¿½tku postrannï¿½ho sloupce)');
+@define('SITENAV_TITLE_TEXT',           'Hlavnï¿½ menu');
+@define('NAVLINK_AMOUNT',               'Zadejte poï¿½et odkazï¿½ navigaï¿½nï¿½ liï¿½ty (ihned po zadï¿½nï¿½ tï¿½to volby kliknï¿½te na "Uloï¿½i" a obnovte strï¿½nku)');
 @define('NAV_LINK_TEXT',                'Test odkazu');
 @define('NAV_LINK_URL',                 'URL adresa odkazu');

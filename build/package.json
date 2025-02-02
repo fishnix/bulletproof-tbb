@@ -17,21 +17,22 @@
     "default"
   ],
   "dependencies": {
+    "@fortawesome/fontawesome-free": "*",
     "bootstrap": "^4.3.1",
-    "jquery": "^3.5.0",
-    "node-gyp": "^5.0.7",
-    "chosen-js": "^1.8.7",
     "bootstrap4c-chosen": "^1.1.1",
-    "@fortawesome/fontawesome-free": "*"
+    "chosen-js": "^1.8.7",
+    "jquery": "^3.5.0",
+    "node-gyp": "^5.0.7"
   },
   "devDependencies": {
     "autoprefixer": "*",
-    "gulp": "^4.0.0",
+    "gulp": "^4.0.2",
     "gulp-clean-css": "^4.0.0",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^5.1.0",
     "gulp-scss-lint": "^1.0.0",
-    "gulp-sourcemaps": "^2.6.4"
+    "gulp-sourcemaps": "^2.6.4",
+    "sass": "^1.83.4"
   }
 }
