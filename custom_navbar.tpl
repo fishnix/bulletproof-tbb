@@ -1,6 +1,6 @@
 <ul class="navbar-nav" id="sbsitenav">
   <li class="nav-item">
-    <a class="nav-link" href="/" title="Blog">Home</a>
+    <a class="nav-link" href="/" title="Blog">Blog</a>
   </li>
   <li class="nav-link">
     <a class="nav-item" href="https://www.liketoknow.it/budgetbabe" target="_blank" title="Budgetbabe LTK">Shop My LTK</a>
