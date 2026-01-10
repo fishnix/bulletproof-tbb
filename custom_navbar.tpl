@@ -1,28 +1,15 @@
 <ul class="navbar-nav" id="sbsitenav">
   <li class="nav-item">
-    <a class="nav-link" href="/" title="Home">Home</a>
+    <a class="nav-link" href="/" title="Blog">Home</a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/categories/23-Gift-Guides" title="Gift Guides">Gift Guides</a>
-  </li>
+  <li class="nav-link">
+    <a class="nav-item" href="https://www.liketoknow.it/budgetbabe" target="_blank" title="Budgetbabe LTK">Shop My LTK</a>
+  </i>
   <li class="nav-link">
     <a class="nav-item" href="https://www.amazon.com/shop/budgetbabe" target="_blank" title="Budgetbabe Amazon Storefront">Amazon Storefront</a>
   </i>
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" id="fashionDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Fashion
-    </a>
-    <div class="dropdown-menu" aria-labelledby="fashionDropdown">
-      <a class="dropdown-item" href="/categories/422-Celebrity-Style" title="Celebrity Style">Celebrity Style</a>
-      <a class="dropdown-item" href="/categories/10-The-Look-for-Less" title="Look For Less">Look For Less</a>
-      <a class="dropdown-item" href="/categories/330-What-Im-Wearing" title="What I'm Wearing">What I'm Wearing</a>
-    </div>
-  </li>
   <li class="nav-item">
-    <a class="nav-link" href="/categories/41-Decor" title="Decor">Decor</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/index.php?/pages/instagram.html" title="Shop Our Instagram">Shop Instagram</a>
+    <a class="nav-link" href="/categories/23-Gift-Guides" title="Gift Guides">Gift Guides</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="/index.php?/pages/contact.html" title="Contact">Contact</a>
